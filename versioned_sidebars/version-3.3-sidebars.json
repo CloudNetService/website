@@ -1,0 +1,89 @@
+{
+  "version-3.3/someSidebar": [
+    {
+      "type": "doc",
+      "id": "version-3.3/index"
+    },
+    {
+      "type": "doc",
+      "id": "version-3.3/changelog"
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Setup",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.3/setup/requirements"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/setup/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/setup/cluster"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Components",
+      "items": [
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Modules",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/bridge"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/cloudflare"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/cloudperms"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/database-mysql"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/labymod"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/npc"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/report"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/signs"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/smart"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/storage-ftp"
+            },
+            {
+              "type": "doc",
+              "id": "version-3.3/components/modules/syncproxy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
