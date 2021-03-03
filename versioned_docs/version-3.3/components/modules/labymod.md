@@ -24,12 +24,11 @@ Enables (or disables) the LabyMod Module (`true`/`false`)
 Enables (or disabled) the custom rich presence (`true`/`false`)
 :::tip
 If you disable the custom rich presence, LabyMod will show the default one:
-:::
-
 ```
 DOMAIN
 Ingame
 ```
+:::
 
 #### displayType
 Configures what should be replaced by the `%display%` variable in the format
