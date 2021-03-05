@@ -41,6 +41,10 @@
           "id": "version-3.3/components/tasks"
         },
         {
+          "type": "doc",
+          "id": "version-3.3/components/groups"
+        },
+        {
           "collapsed": true,
           "type": "category",
           "label": "Modules",
