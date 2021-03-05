@@ -1,7 +1,6 @@
 ---
 id: tasks
 title: Tasks
-sidebar_label: Tasks
 ---
 
 A task is a configuration from which [services](#) can be started.

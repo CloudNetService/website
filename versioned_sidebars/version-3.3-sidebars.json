@@ -34,6 +34,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-3.3/components/services"
+        },
+        {
+          "type": "doc",
           "id": "version-3.3/components/tasks"
         },
         {
