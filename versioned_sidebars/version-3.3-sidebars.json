@@ -45,6 +45,14 @@
           "id": "version-3.3/components/groups"
         },
         {
+          "type": "doc",
+          "id": "version-3.3/components/templates"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/components/template-storages"
+        },
+        {
           "collapsed": true,
           "type": "category",
           "label": "Modules",
