@@ -25,7 +25,6 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -44,7 +43,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'CloudNet v3',
               to: 'docs/3.3/',
             },
           ],
@@ -66,13 +65,13 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/CloudNetService',
             },
+            {
+              label: 'SpigotMC',
+              href: 'https://www.spigotmc.org/resources/cloudnet-v3-the-cloud-network-environment-technology.42059/'
+            }
           ],
         },
       ],
