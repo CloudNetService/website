@@ -12,74 +12,74 @@ import TabItem from '@theme/TabItem';
 Use this repository to work with the release version of the API (recommended)
 
 <Tabs
-groupId="repositories"
-defaultValue="maven"
-values={[
-{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"}
+  groupId="repositories"
+  defaultValue="maven"
+  values={[
+  {label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"}
 ]}>
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<repository>
-    <id>cloudnet-releases</id>
-    <url>https://repo.cloudnetservice.eu/repository/releases/</url>
-</repository>
-```
+  ```xml
+  <repository>
+      <id>cloudnet-releases</id>
+      <url>https://repo.cloudnetservice.eu/repository/releases/</url>
+  </repository>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-maven { url 'https://repo.cloudnetservice.eu/repository/releases/' }
-```
+  ```groovy
+  maven { url 'https://repo.cloudnetservice.eu/repository/releases/' }
+  ```
 
-</TabItem>
-<TabItem value="gradle-kotlin">
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-maven("https://repo.cloudnetservice.eu/repository/releases/")
-```
+  ```kotlin
+  maven("https://repo.cloudnetservice.eu/repository/releases/")
+  ```
 
-</TabItem>
-</Tabs>
+  </TabItem>
+  </Tabs>
 
-### Snapshots
-Use this repository to work with a snapshot version of the API (**Only** recommended for development!)
+  ### Snapshots
+  Use this repository to work with a snapshot version of the API (**Only** recommended for development!)
 
-<Tabs
-groupId="repositories"
-defaultValue="maven"
-values={[
-{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"}
-]}>
-<TabItem value="maven">
+  <Tabs
+  groupId="repositories"
+  defaultValue="maven"
+  values={[
+  {label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"}
+  ]}>
+  <TabItem value="maven">
 
-```xml
-<repository>
-    <id>cloudnet-snapshots</id>
-    <url>https://repo.cloudnetservice.eu/repository/snapshots/</url>
-</repository>
-```
+  ```xml
+  <repository>
+      <id>cloudnet-snapshots</id>
+      <url>https://repo.cloudnetservice.eu/repository/snapshots/</url>
+  </repository>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-maven { url 'https://repo.cloudnetservice.eu/repository/snapshots/' }
-```
+  ```groovy
+  maven { url 'https://repo.cloudnetservice.eu/repository/snapshots/' }
+  ```
 
-</TabItem>
-<TabItem value="gradle-kotlin">
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-maven("https://repo.cloudnetservice.eu/repository/snapshots/")
-```
+  ```kotlin
+  maven("https://repo.cloudnetservice.eu/repository/snapshots/")
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ## Dependencies
@@ -88,623 +88,631 @@ You have to replace `${VERSION}` with the version which you want to use. (e.g. `
 ### cloudnet
 CloudNet application for modules (NOT AVAILABLE FOR PLUGINS!)
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet>
-```
+  ```xml
+  <cloudnet>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet org="de.dytanic.cloudnet" name="cloudnet" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet org="de.dytanic.cloudnet" name="cloudnet" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ### cloudnet-driver
 CloudNet driver for plugins and modules
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet-driver>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet-driver</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet-driver>
-```
+  ```xml
+  <cloudnet-driver>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet-driver</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet-driver>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet-driver:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet-driver:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet-driver:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet-driver:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-driver" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-driver" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet-driver org="de.dytanic.cloudnet" name="cloudnet-driver" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet-driver org="de.dytanic.cloudnet" name="cloudnet-driver" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet-driver', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet-driver', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet-driver "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet-driver "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet-driver:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet-driver:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ### cloudnet-wrapper-jvm
 CloudNet wrapper for plugins
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet-wrapper-jvm>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet-wrapper-jvm</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet-wrapper-jvm>
-```
+  ```xml
+  <cloudnet-wrapper-jvm>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet-wrapper-jvm</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet-wrapper-jvm>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet-wrapper-jvm:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet-wrapper-jvm:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet-wrapper-jvm:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet-wrapper-jvm:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-wrapper-jvm" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-wrapper-jvm" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet-wrapper-jvm org="de.dytanic.cloudnet" name="cloudnet-wrapper-jvm" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet-wrapper-jvm org="de.dytanic.cloudnet" name="cloudnet-wrapper-jvm" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet-wrapper-jvm', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet-wrapper-jvm', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet-wrapper-jvm "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet-wrapper-jvm "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet-wrapper-jvm:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet-wrapper-jvm:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ### cloudnet-bridge
 CloudNet bridge module for plugins and modules
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet-bridge>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet-bridge</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet-bridge>
-```
+  ```xml
+  <cloudnet-bridge>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet-bridge</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet-bridge>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet-bridge:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet-bridge:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet-bridge:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet-bridge:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-bridge" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-bridge" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet-bridge org="de.dytanic.cloudnet" name="cloudnet-bridge" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet-bridge org="de.dytanic.cloudnet" name="cloudnet-bridge" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet-bridge', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet-bridge', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet-bridge "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet-bridge "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet-bridge:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet-bridge:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ### cloudnet-cloudperms
 CloudNet CloudPerms module for plugins and modules
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet-cloudperms>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet-cloudperms</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet-cloudperms>
-```
+  ```xml
+  <cloudnet-cloudperms>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet-cloudperms</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet-cloudperms>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet-cloudperms:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet-cloudperms:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet-cloudperms:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet-cloudperms:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-cloudperms" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-cloudperms" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet-cloudperms org="de.dytanic.cloudnet" name="cloudnet-cloudperms" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet-cloudperms org="de.dytanic.cloudnet" name="cloudnet-cloudperms" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet-cloudperms', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet-cloudperms', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet-cloudperms "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet-cloudperms "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet-cloudperms:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet-cloudperms:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ### cloudnet-syncproxy
 CloudNet SyncProxy module for plugins (proxy) and modules
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet-syncproxy>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet-syncproxy</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet-syncproxy>
-```
+  ```xml
+  <cloudnet-syncproxy>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet-syncproxy</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet-syncproxy>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet-syncproxy:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet-syncproxy:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet-syncproxy:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet-syncproxy:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-syncproxy" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-syncproxy" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet-syncproxy org="de.dytanic.cloudnet" name="cloudnet-syncproxy" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet-syncproxy org="de.dytanic.cloudnet" name="cloudnet-syncproxy" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet-syncproxy', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet-syncproxy', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet-syncproxy "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet-syncproxy "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet-syncproxy:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet-syncproxy:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ### cloudnet-signs
 CloudNet signs module for plugins and modules
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet-signs>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet-signs</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet-signs>
-```
+  ```xml
+  <cloudnet-signs>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet-signs</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet-signs>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet-signs:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet-signs:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet-signs:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet-signs:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-signs" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-signs" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet-signs org="de.dytanic.cloudnet" name="cloudnet-signs" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet-signs org="de.dytanic.cloudnet" name="cloudnet-signs" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet-signs', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet-signs', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet-signs "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet-signs "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet-signs:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet-signs:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
 
 ### cloudnet-npcs
 CloudNet NPCs module for plugins and modules
 <Tabs
-groupId="dependencies"
-defaultValue="maven"
-values={[{label: "Maven", value: "maven"},
-{label: "Gradle", value: "gradle-groovy"},
-{label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-{label: "SBT", value: "sbt"},
-{label: "Ivy", value: "ivy"},
-{label: "Grape", value: "grape"},
-{label: "Leiningen", value: "leiningen"},
-{label: "Buildr", value: "buildr"}]} >
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+  {label: "Gradle", value: "gradle-groovy"},
+  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+  {label: "SBT", value: "sbt"},
+  {label: "Ivy", value: "ivy"},
+  {label: "Grape", value: "grape"},
+  {label: "Leiningen", value: "leiningen"},
+  {label: "Buildr", value: "buildr"}
+]} >
 
-<TabItem value="maven">
+  <TabItem value="maven">
 
-```xml
-<cloudnet-npcs>
-    <groupId>de.dytanic.cloudnet</groupId>
-    <artifactId>cloudnet-npcs</artifactId>
-    <version>${VERSION}</version>
-    <scope>provided</scope>
-</cloudnet-npcs>
-```
+  ```xml
+  <cloudnet-npcs>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet-npcs</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </cloudnet-npcs>
+  ```
 
-</TabItem>
-<TabItem value="gradle-groovy">
+  </TabItem>
+  <TabItem value="gradle-groovy">
 
-```groovy
-implementation 'de.dytanic.cloudnet:cloudnet-npcs:${VERSION}'
-```
-</TabItem>
-<TabItem value="gradle-kotlin">
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet-npcs:${VERSION}'
+  ```
+  </TabItem>
+  <TabItem value="gradle-kotlin">
 
-```kotlin
-implementation("de.dytanic.cloudnet:cloudnet-npcs:${VERSION}")
-```
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet-npcs:${VERSION}")
+  ```
 
-</TabItem>
-<TabItem value="sbt">
+  </TabItem>
+  <TabItem value="sbt">
 
-```
-libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-npcs" % "${VERSION}"
-```
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet-npcs" % "${VERSION}"
+  ```
 
-</TabItem>
-<TabItem value="ivy">
+  </TabItem>
+  <TabItem value="ivy">
 
-```xml
-<cloudnet-npcs org="de.dytanic.cloudnet" name="cloudnet-npcs" rev="${VERSION}"/>
-```
+  ```xml
+  <cloudnet-npcs org="de.dytanic.cloudnet" name="cloudnet-npcs" rev="${VERSION}"/>
+  ```
 
-</TabItem>
-<TabItem value="grape">
+  </TabItem>
+  <TabItem value="grape">
 
-```
-@Grapes(
-    @Grab(group='de.dytanic.cloudnet', module='cloudnet-npcs', version='${VERSION}')
-)
-```
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet-npcs', version='${VERSION}')
+  )
+  ```
 
-</TabItem>
-<TabItem value="leiningen">
+  </TabItem>
+  <TabItem value="leiningen">
 
-```
-[de.dytanic.cloudnet/cloudnet-npcs "${VERSION}"]
-```
+  ```
+  [de.dytanic.cloudnet/cloudnet-npcs "${VERSION}"]
+  ```
 
-</TabItem>
-<TabItem value="buildr">
+  </TabItem>
+  <TabItem value="buildr">
 
-```
-'de.dytanic.cloudnet:cloudnet-npcs:jar:${VERSION}'
-```
+  ```
+  'de.dytanic.cloudnet:cloudnet-npcs:jar:${VERSION}'
+  ```
 
-</TabItem>
+  </TabItem>
 </Tabs>
