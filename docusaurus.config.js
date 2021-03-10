@@ -9,7 +9,7 @@ module.exports = {
   organizationName: 'cloudnetservice', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
   stylesheets: [
-    "https://fonts.googleapis.com/icon?family=Material+Icons",
+    "https://fonts.googleapis.com/css?family=Material+Icons",
   ],
   themeConfig: {
     navbar: {
@@ -22,7 +22,7 @@ module.exports = {
         {
           to: 'docs/3.3/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Documentation',
           position: 'left',
         },
         {
@@ -40,7 +40,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
               label: 'CloudNet v3',

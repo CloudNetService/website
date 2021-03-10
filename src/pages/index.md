@@ -1,2 +1,0 @@
-# CloudNetService
-Front page TODO
