@@ -58,7 +58,7 @@ function Home() {
     return (
         <Layout
             title={``}
-            description="Description will go into a meta tag in <head />">
+            description="CloudNET - The Cloud Network Environment Technology">
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
                 <div className="container">
                     <h1 className="hero__title">CloudNet&shy;Service</h1>
