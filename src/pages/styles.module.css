@@ -6,15 +6,27 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 2rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  -webkit-clip-path: polygon(0 0,100% 0,100% calc(100% - 4vw),0 100%);
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 4vw),0 100%);
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+  }
+}
+
+.heroText {
+  margin: auto;
+}
+
+@media screen and (max-width: 999px){
+  .heroImage {
+    display: none;
   }
 }
 

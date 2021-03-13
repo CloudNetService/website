@@ -61,17 +61,24 @@ function Home() {
             description="CloudNET - The Cloud Network Environment Technology">
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
                 <div className="container">
-                    <h1 className="hero__title">CloudNet&shy;Service</h1>
-                    <p className="hero__subtitle">{siteConfig.tagline}</p>
-                    <div className={styles.buttons}>
-                        <Link
+                    <div className="row">
+                      <div className={clsx('col', 'col--8', styles.heroText)}>
+                        <h1 className="hero__title">CloudNet&shy;Service</h1>
+                        <p className="hero__subtitle">{siteConfig.tagline}</p>
+                        <div className={styles.buttons}>
+                          <Link
                             className={clsx(
-                                'button button--outline button--secondary button--lg',
-                                styles.getStarted,
+                              'button button--outline button--secondary button--lg',
+                              styles.getStarted,
                             )}
                             to={useBaseUrl('docs/3.3/')}>
                             Get Started
-                        </Link>
+                          </Link>
+                        </div>
+                      </div>
+                      <div className={clsx('col', 'col--4', styles.heroImage)}>
+                        <img alt="CloudNetService Logo" src="/img/logo.svg"/>
+                      </div>
                     </div>
                 </div>
             </header>
