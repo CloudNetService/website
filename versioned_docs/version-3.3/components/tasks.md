@@ -153,7 +153,7 @@ Example:
 
 ### properties
 The properties can contain any json object which you can access trough the api.  
-By default, it contains only the [SmartConfig from the Smart Module](./modules/smart)
+By default, it contains only the [SmartConfig from the Smart Module](../modules/smart)
 
 ## Sample Configuration
 ```json

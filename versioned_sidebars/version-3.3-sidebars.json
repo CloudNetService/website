@@ -51,57 +51,57 @@
         {
           "type": "doc",
           "id": "version-3.3/components/template-storages"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Modules",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/bridge"
         },
         {
-          "collapsed": true,
-          "type": "category",
-          "label": "Modules",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/bridge"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/cloudflare"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/cloudperms"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/database-mysql"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/labymod"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/npc"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/report"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/signs"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/smart"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/storage-ftp"
-            },
-            {
-              "type": "doc",
-              "id": "version-3.3/components/modules/syncproxy"
-            }
-          ]
+          "type": "doc",
+          "id": "version-3.3/modules/cloudflare"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/cloudperms"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/database-mysql"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/labymod"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/npc"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/report"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/signs"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/smart"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/storage-ftp"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/modules/syncproxy"
         }
       ]
     }
