@@ -57,8 +57,8 @@ function Home() {
     const {siteConfig = {}} = context;
     return (
         <Layout
-            title={``}
-            description="CloudNET - The Cloud Network Environment Technology">
+            title={`CloudNET - The Cloud Network Environment Technology`}
+            description="A modern application that can dynamically and easily deploy Minecraft oriented software.">
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
                 <div className="container">
                     <div className="row">
