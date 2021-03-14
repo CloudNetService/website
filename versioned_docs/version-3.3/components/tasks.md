@@ -3,7 +3,7 @@ id: tasks
 title: Tasks
 ---
 
-A task is a configuration from which [services](#) can be started.
+A task is a configuration from which [services](services) can be started.
 
 ## Configuration
 The configuration path for each task is `local/tasks/NAME.json`  
@@ -59,7 +59,7 @@ Example (starting the services on Nodes 1, 2 and 4):
 ```
 
 ### groups
-Here you can specify to which [groups](#) the task should belong.
+Here you can specify to which [groups](groups) the task should belong.
 
 ### deletedFilesAfterStop
 Here you can specify files which should always be deleted after stopping the server.  
