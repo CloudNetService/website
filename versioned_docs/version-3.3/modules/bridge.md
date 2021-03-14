@@ -16,8 +16,25 @@ Disabling the onlyProxyProtection is NOT recommended!
 Please ensure that your Firewall is set up correctly if you disable it.
 :::
 ### excludedOnlyProxyWalkableGroups
+Here you can add specific groups for which the [OnlyProxyProtection](#onlyproxyprotection) should be disabled.  
+Example:
+```json
+    "excludedOnlyProxyWalkableGroups":[
+      "BauServer",
+      "DevServer"
+],
+```
+
 ### excludedGroups
-This is a json array containing groups on which the bridge will not be installed
+This is a json array containing groups on which the bridge will not be installed.  
+Example:
+```json
+    "excludedGroups":[
+      "BauServer",
+      "DevServer"
+],
+```
+
 ### bungeeFallbackConfigurations
 This is a json array containing different fallback configurations for different proxy groups.
 ### hubCommandNames
