@@ -97,7 +97,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/cloudnetservice/website/edit/master/',
+          editUrl: 'https://github.com/cloudnetservice/website/edit/main/',
           includeCurrentVersion: false,
           versions: {
             "3.3": {
@@ -114,7 +114,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl:
-              'https://github.com/cloudnetservice/website/edit/master/blog/',
+              'https://github.com/cloudnetservice/website/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
