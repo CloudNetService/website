@@ -11,6 +11,19 @@ module.exports = {
   stylesheets: [
     "https://fonts.googleapis.com/css?family=Material+Icons",
   ],
+  scripts: [
+    {
+      src: 'https://webstats.cloudnetservice.eu/js/plausible.js',
+      async: true,
+      defer: true,
+      'data-domain': 'cloudnetservice.dev'
+    },
+    {
+      src: 'https://offen.cloudnetservice.eu/script.js',
+      async: true,
+      'data-account-id': '909677c6-44ea-4f33-aa5b-b30a09d9e7e3'
+    }
+  ],
   themeConfig: {
     navbar: {
       title: 'CloudNetService',
@@ -109,4 +122,16 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'de'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      de: {
+        label: 'Deutsch'
+      }
+    }
+  }
 };
