@@ -16,7 +16,7 @@ You can use it for your small, upcoming network or in a cluster for hundreds of 
 - [Multi MOTD Support](modules/syncproxy.md) - Create cool animated MOTDs
 - [MultiProxy Support](modules/syncproxy.md) - Balance your players on different proxies
 - Automated SRV-Record management (for MultiProxy) with the [Cloudflare Module](modules/cloudflare.md)
-- Much more do explore
+- Much more to explore
 
 ## Support
 Join our [Discord Server](https://discord.cloudnetservice.eu) to get support through our private ticket system
