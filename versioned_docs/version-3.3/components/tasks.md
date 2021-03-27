@@ -59,7 +59,7 @@ Example (starting the services on Nodes 1, 2 and 4):
 ```
 
 ### groups
-Here you can specify to which [groups](groups) the task should belong.
+Here you can specify to which [groups](groups.md) the task should belong.
 
 ### deletedFilesAfterStop
 Here you can specify files which should always be deleted after stopping the server.  
@@ -153,7 +153,7 @@ Example:
 
 ### properties
 The properties can contain any json object which you can access trough the api.  
-By default, it contains only the [SmartConfig from the Smart Module](../modules/smart)
+By default, it contains only the [SmartConfig from the Smart Module](../modules/smart.md)
 
 ## Sample Configuration
 ```json

@@ -7,7 +7,7 @@ sidebar_label: Signs
 ![CloudNet-Signs-Module-Example.png](img/CloudNet-Signs-Module-Example.png)  
 The sign system has a sorted, animated live-updating sign system, depending on the order of occupation.
 The tags can even be targeted to specific groups with a template path limitation, which will then only show services
-with the specified template. Every service behind the signs themselves needs the [CloudNet Bridge module](./bridge),
+with the specified template. Every service behind the signs themselves needs the [CloudNet Bridge module](bridge.md),
 so that the information for the presentation on the signs is available.
 Otherwise, the signs will only show the server in the starting phase.
 The signs can be managed using the `/cloudsign` command, which is available on Bukkit or Nukkit servers.

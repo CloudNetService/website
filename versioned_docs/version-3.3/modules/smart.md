@@ -4,7 +4,7 @@ title: Smart Module
 sidebar_label: Smart
 ---
 
-The Smart module extends the configurations of the tasks, it also needs the [CloudNet Bridge Module](bridge) to work.
+The Smart module extends the configurations of the tasks, it also needs the [CloudNet Bridge Module](bridge.md) to work.
 It can automatically start services depending on the player count on other services.
 
 ## Configuration

@@ -4,7 +4,7 @@ title: Installation
 ---
 
 ## Requirements
-To get started with CloudNet installation, make sure you meet all the [**requirements**](./requirements).
+To get started with CloudNet installation, make sure you meet all the [**requirements**](requirements.md).
 ## Installation
 1. Start your SSH client and connect to your server.
 2. Navigate to your directory with `cd ../PATH/` (e.g. `cd ../home/`) and create a folder for CloudNet with `mkdir NAME` (e.g. `mkdir cloudnet`). Navigate to the newly created folder with `cd NAME/` (e.g. `cd cloudnet/`).

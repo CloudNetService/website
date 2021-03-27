@@ -21,7 +21,7 @@ This is a JsonArray of database addresses. You do not need to add an element if 
 All other keys should be self explaining :)
 :::
 ## Sample Configuration
-The default configuration of the Databse-MySQL Module looks like this:
+The default configuration of the Database-MySQL Module looks like this:
 ```json
 {
   "database":"mysql",
