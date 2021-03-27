@@ -110,6 +110,7 @@ module.exports = {
             }*/
           },
           lastVersion: "3.3",
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
