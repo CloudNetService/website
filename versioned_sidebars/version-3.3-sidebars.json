@@ -5,10 +5,6 @@
       "id": "version-3.3/index"
     },
     {
-      "type": "doc",
-      "id": "version-3.3/changelog"
-    },
-    {
       "collapsed": false,
       "type": "category",
       "label": "Setup",
@@ -104,6 +100,10 @@
           "id": "version-3.3/modules/syncproxy"
         }
       ]
+    },
+    {
+      "type": "doc",
+      "id": "version-3.3/changelog"
     }
   ]
 }
