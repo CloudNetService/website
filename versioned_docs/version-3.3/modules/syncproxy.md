@@ -13,6 +13,7 @@ The module also has maintenance mode with a whitelist or a permission.
 ![CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png](img/CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png)
 :::caution Warning
 Due to missing features in BungeeCord, the permission only works in combination with our [CloudPerms Module](cloudperms.md)!
+:::
 
 ## Configuration
 The configuration file is located under the following path: `modules/CloudNet-SyncProxy/config.json`
