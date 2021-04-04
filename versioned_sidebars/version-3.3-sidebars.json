@@ -102,6 +102,97 @@
       ]
     },
     {
+      "collapsed": true,
+      "type": "category",
+      "label": "Commands",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/cluster"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/clear"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/copy"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/create"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/debug"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/exit"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/groups"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/help"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/me"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/npc"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/paste"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/permissions"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/players"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/reload"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/report"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/screen"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/service"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/signs"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/syncproxy"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/tasks"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.3/commands/template"
+        }
+      ]
+    },
+    {
       "type": "doc",
       "id": "version-3.3/changelog"
     }
