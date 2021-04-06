@@ -24,9 +24,13 @@ COMMAND:  - screen write <command> ...
 ```
 
 ## screen list
+**Usage:** `screen list`
+
 This command lists the services for which you enabled the console output.
 
 ## screen disableAll
+**Usage:** `screen disableAll`
+
 This command disables the output of all services.
 
 ## screen toggle

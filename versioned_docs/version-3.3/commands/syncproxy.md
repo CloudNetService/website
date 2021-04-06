@@ -28,9 +28,13 @@ COMMAND:  - syncproxy target <targetGroup> maintenance <enabled>
 ```
 
 ## syncproxy reload
+**Usage:** `synyproxy reload`
+
 This command reloads the [SyncProxy-Module](../modules/syncproxy.md) Configuration and applies any changes.
 
 ## syncproxy list
+**Usage:** `synyproxy list`
+
 This command lists all configs for the different proxy groups.
 
 ## syncproxy target maxPlayers

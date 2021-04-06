@@ -28,4 +28,5 @@ This command creates a new entry for the given [target group](../components/grou
 [NPC Configuration](../modules/npc.md).
 
 ## npc reload
+**Usage:** `npc reload`
 This command reloads the [NPC-Module](../modules/npc.md) Configuration and applies any changes.

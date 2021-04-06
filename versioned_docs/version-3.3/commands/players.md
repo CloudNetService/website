@@ -28,6 +28,8 @@ COMMAND:  - players player <name> connect <server>
 ```
 
 ## players online foreach
+**Usage:** `players online foreach`
+
 You can use the command `players online foreach | <ARGUMENT>` to go through all players and execute a certain action with them.  
 You can add multiple arguments, each must be separated with `|`
 
@@ -44,6 +46,8 @@ You have to include the quotation marks wherever given in the example! This is n
 :::
 
 ## players online
+**Usage:** `players online`
+
 This command prints information about all online players.  
 By default, the amount of output is limited. You can bypass this by adding the argument `| --force` to the command.
 
@@ -52,6 +56,8 @@ Do not use the `--force` argument when you have a lot of online players. It coul
 :::
 
 ## players registered
+**Usage:** `players registered`
+
 This command prints information about all registered players. This means every player who ever joined on your CloudNet network.  
 By default, the amount of output is limited. You can bypass this by adding the argument `| --force` to the command.
 

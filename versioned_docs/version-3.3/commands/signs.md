@@ -22,6 +22,8 @@ COMMAND:  - signs create entry <targetGroup> <BUKKIT, NUKKIT>
 ```
 
 ## signs reload
+**Usage:** `signs reload`
+
 This command reloads the [Signs-Module](../modules/signs.md) Configuration and applies any changes.
 
 ## signs create entry

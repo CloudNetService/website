@@ -31,6 +31,8 @@ COMMAND:  - template copy <storage:prefix/name (sourceTemplate)> <storage:prefix
 This command lists the available templates, if given filtered with the provided storage.
 
 ## template versions
+**Usage:** `template versions`
+
 This command lists all available versions which can be installed with the [template install](#template-install) command.
 
 ## template install

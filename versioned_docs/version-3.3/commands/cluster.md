@@ -46,6 +46,8 @@ With this command you can add a new node to your local configuration.
 This command removes the node with the given `nodeId` from your local configuration.
 
 ## cluster nodes
+**Usage:** `cluster nodes`
+
 This prints information about the nodes in your cluster.  
 You can add `| id=<nodeId>` to the command, to view information for one specific node.
 
@@ -64,11 +66,17 @@ This command pushes the specified [local template](../components/templates.md) t
 This command pushes all local-templates to every node in the cluster.
 
 ## cluster push tasks
+**Usage:** `cluster push tasks`
+
 This command pushes the local task configurations to every node in the cluster.
 
 ## cluster push groups
+**Usage:** `cluster push groups`
+
 This command pushes the local groups configuration to every node in the cluster.
 
 
 ## cluster push local-perms
+**Usage:** `cluster push local-perms`
+
 This command pushes the local permission configuration to every node in the cluster.
