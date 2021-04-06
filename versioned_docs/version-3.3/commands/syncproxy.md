@@ -28,23 +28,37 @@ COMMAND:  - syncproxy target <targetGroup> maintenance <enabled>
 ```
 
 ## syncproxy reload
+**Usage:** `synyproxy reload`
+
 This command reloads the [SyncProxy-Module](../modules/syncproxy.md) Configuration and applies any changes.
 
 ## syncproxy list
+**Usage:** `synyproxy list`
+
 This command lists all configs for the different proxy groups.
 
-## syncproxy target &lt;targetGroup&gt; maxPlayers &lt;value&gt;
+## syncproxy target maxPlayers
+**Usage:** `syncproxy target <targetGroup> maxPlayers <value>`
+
 This command sets the max player count to the given amount for the specified proxy group.
 
-## syncproxy target &lt;targetGroup&gt; whitelist
+## syncproxy target whitelist
+**Usage:** `syncproxy target <targetGroup> whitelist`
+
 This command prints out the whitelisted people on the specified proxy group.
 
-## syncproxy target &lt;targetGroup&gt; whitelist add &lt;name&gt;
+## syncproxy target whitelist add
+**Usage:** `syncproxy target <targetGroup> whitelist add <name>`
+
 This command adds the given name to the maintenance whitelist of the specified proxy group.
 
-## syncproxy target &lt;targetGroup&gt; whitelist remove &lt;name&gt;
+## syncproxy target whitelist remove
+**Usage:** `syncproxy target <targetGroup> whitelist remove <name>`
+
 This command removes the given name from the maintenance whitelist of the specified proxy group.
 
-## syncproxy target &lt;targetGroup&gt; maintenance &lt;enabled&gt;
+## syncproxy target maintenance
+**Usage:** `syncproxy target <targetGroup> maintenance <enabled>`
+
 This command enables (`true`) or disables (`false`) the maintenance for the specified proxy group.  
 Possible arguments for `enabled` are "`true`" and "`false`".
