@@ -60,19 +60,27 @@ Do not use the `--force` argument when you have a lot of registered players. It 
 :::
 
 
-## players player &lt;name&gt;
+## players player
+**Usage:** `players player <name>`
+
 This command prints information about one specific registered player.
 
-## players player &lt;name&gt; kick [reason]
+## players player kick
+**Usage:** `players player <name> kick [reason]`
+
 This command kicks the player with the given name.  
 If you leave the reason out, the player is kicked without giving any reason.
 
-## players player &lt;name&gt; sendMessage &lt;message&gt;
+## players player sendMessage
+**Usage:** `players player <name> sendMessage <message>`
+
 This command sends a message to the player with te given name.  
 
 :::note 
 You do not need to include quotation marks here, because the message is always the last argument.
 :::
 
-## players player &lt;name&gt; connect &lt;server&gt;
-This command sens the player with the given name to the specified server.
+## players player connect
+**Usage:** `players player <name> connect <service>`
+
+This command sens the player with the given name to the specified service.
