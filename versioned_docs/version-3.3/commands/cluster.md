@@ -31,6 +31,8 @@ COMMAND:  - cluster push local-perms
 ```
 
 ## cluster shutdown
+**Usage:** `cluster shutdown`
+
 This sends a shutdown signal to all nodes of your cluster.
 Therefore, you do not have to stop every yourself in case you want to shut down.
 
@@ -52,6 +54,8 @@ This prints information about the nodes in your cluster.
 You can add `| id=<nodeId>` to the command, to view information for one specific node.
 
 ## cluster push all
+**Usage:** `cluster push all`
+
 This command pushes the local configurations ([templates](../components/templates.md), [tasks](../components/tasks.md),
 [groups](../components/groups.md) and [permissions](../modules/cloudperms.md)) to every node in the cluster.
 
