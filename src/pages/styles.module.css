@@ -48,3 +48,24 @@
   height: 200px;
   width: 200px;
 }
+
+.legalText {
+  padding-top: 2rem;
+}
+
+.plausibleOptOut {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.plausibleOptOutButton {
+  background-color: var(--ifm-color-primary);
+}
+
+.plausibleYes {
+  color: var(--ifm-color-success);
+}
+
+.plausibleNo {
+  color: var(--ifm-color-danger);
+}
