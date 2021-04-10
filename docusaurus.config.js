@@ -8,20 +8,13 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'cloudnetservice', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
-  stylesheets: [
-    "https://fonts.googleapis.com/css?family=Material+Icons",
-  ],
+  stylesheets: [],
   scripts: [
     {
       src: 'https://webstats.cloudnetservice.eu/js/plausible.js',
       async: true,
       defer: true,
-      'data-domain': 'cloudnetservice.dev'
-    },
-    {
-      src: 'https://offen.cloudnetservice.eu/script.js',
-      async: true,
-      'data-account-id': '909677c6-44ea-4f33-aa5b-b30a09d9e7e3'
+      'data-domain': 'cloudnetservice.eu'
     }
   ],
   themeConfig: {
@@ -39,7 +32,17 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'blog/',
+          activeBasePath: 'blog',
+          label: 'Blog',
+          position: 'left',
+        },
+        {
           type: 'docsVersionDropdown',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
         {
@@ -87,6 +90,19 @@ module.exports = {
             }
           ],
         },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Imprint',
+              to: 'imprint'
+            },
+            {
+              label: 'Data Privacy',
+              to: 'privacy'
+            }
+          ]
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} CloudNetService. Built with Docusaurus.`,
     },
