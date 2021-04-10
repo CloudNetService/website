@@ -150,5 +150,19 @@ module.exports = {
         label: 'Deutsch'
       }
     }
-  }
+  },
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html'],
+        redirects: [
+          {
+            to: '/docs/3.3/',
+            from: '/docs/'
+          }
+        ]
+      },
+    ],
+  ]
 };
