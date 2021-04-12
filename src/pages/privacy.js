@@ -62,14 +62,13 @@ function Home() {
           <li>Mozilla Firefox: <a href="https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen" target="_blank" rel="nofollow noopener">https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen</a></li>
           <li>Internet Explorer: <a href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="nofollow noopener">https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies</a></li>
           <li>Google Chrome: <a href="https://support.google.com/accounts/answer/61416?hl=de" target="_blank" rel="nofollow noopener">https://support.google.com/accounts/answer/61416?hl=de</a></li>
-          <li>Opera: <a href="http://www.opera.com/de/help" target="_blank" rel="nofollow noopener">http://www.opera.com/de/help</a></li>
+          <li>Opera: <a href="https://www.opera.com/de/help" target="_blank" rel="nofollow noopener">https://www.opera.com/de/help</a></li>
           <li>Safari: <a href="https://support.apple.com/kb/PH17191?locale=de_DE&viewlocale=de_DE" target="_blank" rel="nofollow noopener">https://support.apple.com/kb/PH17191?locale=de_DE&viewlocale=de_DE</a></li>
         </ul>
         <h3>Speicherdauer und eingesetzte Cookies:</h3>
         <p>Soweit Sie uns durch Ihre Browsereinstellungen oder Zustimmung die Verwendung von Cookies erlauben, können folgende Cookies auf unseren Webseiten zum Einsatz kommen:</p>
         <ul>
           <li>theme</li>
-          <li>plausible_ignore</li>
         </ul>
 
         <h2>Technisch notwendige Cookies </h2>
@@ -79,7 +78,6 @@ function Home() {
         <p>Für folgende Anwendungen benötigen wir Cookies:</p>
         <ul>
           <li>Übernahme von Designeinstellungen</li>
-          <li>Übernahme des Tracking Opt-Outs</li>
         </ul>
         <h3>Rechtsgrundlage und berechtigtes Interesse: </h3>
         <p>Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einer nutzerfreundlichen Gestaltung unserer Website.</p>
@@ -90,20 +88,7 @@ function Home() {
         <p>Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne diese Daten ist jedoch der Dienst und die Funktionsfähigkeit unserer Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein.</p>
         <h3>Widerspruch</h3>
         <p>Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.</p>
-        <p></p>
-
-        <h2>Analyse-Tools und Tools von Drittanbietern</h2>
-        <p>Wir verwendet den Privatsphäre-freundlichen Webanalysedienst von <a href="https://plausible.io" target="_blank">Plausible</a> im Selbsthosting, um anonyme Statistiken über die Nutzung der Webseite zu erheben. Basierend auf anonymisierten Daten erlaubt die Analyse keinen Rückschluss auf einzelne Personen. Die folgenden Daten werden hierbei verarbeitet:</p>
-        <ul>
-          <li>URL der Seite</li>
-          <li>HTTP Referer</li>
-          <li>Browser</li>
-          <li>Betriebssystem</li>
-          <li>Gerätetyp</li>
-          <li> Land (die IP-Adresse wird nicht gespeichert)</li>
-        </ul>
-        <p>Die Verarbeitung dieser Daten basiert auf unserem berechtigten Interesse an der Reichweitenmessung unserer Website (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen zu Plausible finden Sie unter <a href="https://plausible.io/data-policy" target="_blank">https://plausible.io/data-policy</a>.</p>
-        <p>Sie können auch dieses anonyme Tracking jederzeit <Link to={useBaseUrl('privacy/opt-out')} target="_blank">abschalten</Link>.</p>
+        <p/>
 
         <h2>Eingebettete YouTube-Videos</h2>
         <p>Auf unserer Website betten wir YouTube-Videos ein. Betreiber der entsprechenden Plugins ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA (nachfolgend „YouTube“). Die YouTube, LLC ist einer Tochtergesellschaft der Google LLC, 1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA (nachfolgend „Google“). Wenn Sie eine Seite mit dem YouTube-Plugin besuchen, wird eine Verbindung zu Servern von YouTube hergestellt. Dabei wird YouTube mitgeteilt, welche Seiten Sie besuchen. Wenn Sie in Ihrem YouTube-Account eingeloggt sind, kann YouTube Ihr Surfverhalten Ihnen persönlich zuzuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem YouTube-Account ausloggen. </p>

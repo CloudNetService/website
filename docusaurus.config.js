@@ -9,14 +9,7 @@ module.exports = {
   organizationName: 'cloudnetservice', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
   stylesheets: [],
-  scripts: [
-    {
-      src: 'https://webstats.cloudnetservice.eu/js/plausible.js',
-      async: true,
-      defer: true,
-      'data-domain': 'cloudnetservice.eu'
-    }
-  ],
+  scripts: [],
   themeConfig: {
     navbar: {
       title: 'CloudNetService',
