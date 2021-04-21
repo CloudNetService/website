@@ -219,3 +219,136 @@ The default configuration of the NPC Module looks like this:
   }
 }
 ```
+## Sample Configuration 1.8
+The default configuration of the NPC Module for the 1.8 looks like this:
+```json
+{
+  "config": {
+    "configurations": [
+      {
+        "targetGroup": "Lobby",
+        "infoLineDistance": 0.1,
+        "inventorySize": 54,
+        "startSlot": 10,
+        "endSlot": 54,
+        "showFullServices": true,
+        "onlineItem": {
+          "material": "INK_SACK",
+          "subId": 10,
+          "displayName": "§a%name%",
+          "lore": [
+            " ",
+            "§8● §e%state%",
+            "§8● §7%online_players%§8/§7%max_players%",
+            "§8● §7%motd%"
+          ]
+        },
+        "emptyItem": {
+          "material": "INK_SACK",
+          "subId": 7,
+          "displayName": "§7%name%",
+          "lore": [
+            " ",
+            "§8● §e%state%",
+            "§8● §7%online_players%§8/§7%max_players%",
+            "§8● §7%motd%"
+          ]
+        },
+        "fullItem": {
+          "material": "REDSTONE",
+          "subId": -1,
+          "displayName": "§c%name%",
+          "lore": [
+            " ",
+            "§8● §e%state%",
+            "§8● §7%online_players%§8/§7%max_players%",
+            "§8● §7%motd%"
+          ]
+        },
+        "inventoryLayout": {
+          "1": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "2": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "3": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "4": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "5": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "6": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "7": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "8": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          },
+          "9": {
+            "material": "STAINED_GLASS_PANE",
+            "subId": 15,
+            "displayName": " ",
+            "lore": []
+          }
+        },
+        "labyModEmotes": {
+          "emoteIds": [
+            2,
+            3,
+            49
+          ],
+          "onJoinEmoteIds": [
+            4,
+            20
+          ],
+          "minEmoteDelayTicks": 400,
+          "maxEmoteDelayTicks": 600,
+          "playEmotesSynchronous": false
+        },
+        "npcTabListRemoveTicks": 40
+      }
+    ],
+    "messages": {
+      "command-create-display-name-too-long": "§7The NPC displayName cannot be longer than 16 chars!",
+      "command-edit-success": "§7Successfully edited the NPC.",
+      "command-cleanup-success": "§7All NPCs on unloaded worlds have been removed successfully.",
+      "command-create-texture-fetch-fail": "§7Unable to fetch the skin of the provided Minecraft name! Try again later.",
+      "command-remove-success": "§7Successfully removed the server selector NPC.",
+      "command-no-npc-in-range": "§7There is no NPC in the range of 5 blocks!",
+      "command-edit-invalid-action": "§7The provided action isn't valid!",
+      "command-create-invalid-material": "§7The provided item isn't a valid material! (Use AIR for no item in hand)",
+      "command-create-success": "§7Successfully created the server selector NPC."
+    }
+  }
+}
+```
