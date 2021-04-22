@@ -37,7 +37,7 @@ If you want to turn off maintenance MOTDs empty the array. This should look like
 :::
 
 #### tablist
-This is a json array containing the different tablists which are randomly selected.
+This is a json array containing the different tablists which are playing in a animation.
 :::tip
 If you want to turn off tablist empty the array. This should look like this: `"tabListConfigurations": [],`
 :::
