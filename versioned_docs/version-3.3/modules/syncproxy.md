@@ -36,6 +36,12 @@ This is a json array containing the different maintenance MOTDs which are random
 If you want to turn off maintenance MOTDs empty the array. This should look like this: `"maintenanceMotds": [],`
 :::
 
+#### tablist
+This is a json array containing the different tablists which are randomly selected.
+:::tip
+If you want to turn off tablist empty the array. This should look like this: `"tabListConfigurations": [],`
+:::
+
 <br></br>
 
 ### tabListConfigurations
