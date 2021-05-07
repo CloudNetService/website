@@ -108,7 +108,7 @@ This command sets the [start port](../components/tasks.md#startport) specified i
 ## tasks task set autoDeleteOnStop
 **Usage:** `tasks task <name> set autoDeleteOnStop <autoDeleteOnStop>`
 
-This command enables (`true`) or disables (`false`) [auto delete on stop](../components/tasks.md#autodeleteonstop
+This command enables (`true`) or disables (`false`) [auto delete on stop](../components/tasks.md#autodeleteonstop)
 for the task with the given `name`.
 
 ## tasks task set staticServices
