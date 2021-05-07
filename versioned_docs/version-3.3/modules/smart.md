@@ -8,7 +8,7 @@ The Smart module extends the configurations of the tasks, it also needs the [Clo
 It can automatically start services depending on the player count on other services.
 
 ## Configuration
-The configuration is individually for each task. In can be found in the task file of the specific task in the
+The configuration is individually for each task. It can be found in the task file of the specific task in the
 `local/tasks/` directory (e.g. `local/tasks/Lobby.json`).
 
 ### enabled
