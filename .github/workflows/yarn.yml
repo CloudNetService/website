@@ -27,5 +27,5 @@ jobs:
         uses: actions/upload-artifact@v2
         if: success()
         with:
-          name: website-node${{ matrix.node }}-${{ github.sha }}
+          name: cloudnetservice-website-node${{ matrix.node }}-${{ github.sha }}
           path: build/
