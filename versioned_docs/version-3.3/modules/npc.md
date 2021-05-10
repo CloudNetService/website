@@ -32,7 +32,8 @@ Placeholders for the InfoLine:
 ## NPC Inventory
 :::caution Warning
 The inventory contains 1.13+ items in the default configuration!  
-If you do not change them, they will not be visible on versions below that.
+If you do not change them, they will not be visible on versions below that.  
+You can also use our [Sample Configuration for 1.8 to 1.12](#sample-configuration-18-to-112).
 :::
 ![CloudNet-NPC-Module-Inventory-Example.png](img/CloudNet-NPC-Module-Inventory-Example.png)  
 Placeholders for items in the inventory:
@@ -219,7 +220,7 @@ The default configuration of the NPC Module looks like this:
   }
 }
 ```
-## Sample Configuration 1.8
+## Sample Configuration 1.8 to 1.12
 The default configuration of the NPC Module for the 1.8 looks like this:
 ```json
 {
