@@ -9,7 +9,7 @@ A task is a configuration from which [services](services) can be started.
 The configuration path for each task is `local/tasks/NAME.json`  
 After changing a configuration, you need to execute `tasks reload` in the console.  
 :::tip
-We recommend managing the configurations with the [tasks command](#).
+We recommend managing the configurations with the [tasks command](../commands/tasks.md).
 In that case you do not need to keep an eye on the json syntax, and you do not need to reload the configurations after changing anything.
 :::
 
