@@ -16,6 +16,7 @@ function DependencyDownload() {
       opt.innerText = version.version
       versionSelect.appendChild(opt)
     })}
+    versionSelect.value = selectedDependency.currentVersion
 
     updateDownloadURL()
   }
@@ -58,7 +59,7 @@ function DependencyDownload() {
         </div>
         <div>
           <h4>Version</h4>
-          <select id="version-select" onChange={updateDownloadURL} className={clsx(styles.select)}>
+          <select id="version-select" onChange={updateDownloadURL} className={clsx(styles.select)} defaultValue={dependencies[0].currentVersion}>
             {dependencies[0].versions.map(version => {
               return <option key={version.version} value={version.version}>{version.version}</option>
             })}
@@ -78,6 +79,7 @@ export default DependencyDownload;
 const dependencies = [
   {
     name: "cloudnet",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -101,6 +103,7 @@ const dependencies = [
   },
   {
     name: "cloudnet-driver",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -124,6 +127,7 @@ const dependencies = [
   },
   {
     name: "cloudnet-wrapper-jvm",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -147,6 +151,7 @@ const dependencies = [
   },
   {
     name: "cloudnet-bridge",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -170,6 +175,7 @@ const dependencies = [
   },
   {
     name: "cloudnet-cloudperms",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -193,6 +199,7 @@ const dependencies = [
   },
   {
     name: "cloudnet-syncproxy",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -216,6 +223,7 @@ const dependencies = [
   },
   {
     name: "cloudnet-signs",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -239,6 +247,7 @@ const dependencies = [
   },
   {
     name: "cloudnet-npcs",
+    currentVersion: "3.3.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
