@@ -26,7 +26,7 @@ function DependencyDownload() {
       console.error(`ReleaseType ${version.releaseType} of ${version.name}(${version.version}) does not exist!`)
       return ""
     }
-    return templateURL.replaceAll("%groupId%", version.groupId).replaceAll("%artifactId%", version.artifactId).replaceAll("%version%", version.version)
+    return templateURL.replace(/%groupId%/g, version.groupId).replace(/%artifactId%/g, version.artifactId).replace(/%version%/g, version.version)
   }
 
   function updateDownloadURL() {
