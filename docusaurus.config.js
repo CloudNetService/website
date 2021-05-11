@@ -124,7 +124,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl:
-              'https://github.com/cloudnetservice/website/edit/development/blog/',
+            'https://github.com/cloudnetservice/website/edit/development/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -155,6 +155,13 @@ module.exports = {
             from: '/docs/'
           }
         ]
+      },
+    ],
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en", "de"],
       },
     ],
   ]

@@ -15,6 +15,7 @@
     "@docusaurus/core": "2.0.0-alpha.75",
     "@docusaurus/plugin-client-redirects": "^2.0.0-alpha.75",
     "@docusaurus/preset-classic": "2.0.0-alpha.75",
+    "@easyops-cn/docusaurus-search-local": "^0.16.2",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
