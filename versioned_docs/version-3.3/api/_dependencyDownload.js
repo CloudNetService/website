@@ -277,12 +277,6 @@ const dependencies = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-npcs",
         releaseType: "snapshot"
-      },
-      {
-        version: "3.5.0-SNAPSHOT",
-        groupId: "de/dytanic/cloudnet",
-        artifactId: "cloudnet-npcs",
-        releaseType: "snapshot"
       }
     ]
   }
