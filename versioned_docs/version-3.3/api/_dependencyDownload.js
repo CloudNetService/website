@@ -1,24 +1,19 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import ReactSelect from "react-select";
 
 function DependencyDownload() {
-  function loadVersions() {
-    let dependencySelect = document.getElementById("dependency-select")
-    let selectedDependencyName = dependencySelect.options[dependencySelect.selectedIndex].value
+  const [dependencyName, setDependencyName] = React.useState(dependencies[0].name)
+  const [versionName, setVersionName] = React.useState(dependencies[0].currentVersion)
+  const [versions, setVersions] = React.useState(getVersions(dependencies[0]))
+  const [downloadURL, setDownloadURL] = React.useState("")
+  let versionsRef = null;
 
-    let versionSelect = document.getElementById("version-select")
-    versionSelect.innerHTML = ""
-    let selectedDependency = dependencies.find(dependency => dependency.name === selectedDependencyName)
-    {selectedDependency.versions.map(version => {
-      let opt = document.createElement('option');
-      opt.value = version.version
-      opt.innerText = version.version
-      versionSelect.appendChild(opt)
-    })}
-    versionSelect.value = selectedDependency.currentVersion
-
-    updateDownloadURL()
+  function getVersions(dependency) {
+    return dependency.versions.map(version => {
+      return {value: version.version, label: version.version}
+    })
   }
 
   function getDownloadURL(version) {
@@ -30,46 +25,62 @@ function DependencyDownload() {
     return templateURL.replace(/%groupId%/g, version.groupId).replace(/%artifactId%/g, version.artifactId).replace(/%version%/g, version.version)
   }
 
-  function updateDownloadURL() {
-    let dependencySelect = document.getElementById('dependency-select')
-    let selectedDependencyName = dependencySelect.options[dependencySelect.selectedIndex].value
+  function updateDownloadURL(dependency, version) {
+    let selectedDependency = dependencies.find(localDependency => localDependency.name === dependency)
+    let selectedVersion = selectedDependency.versions.find(localVersion => localVersion.version === version);
+    setDownloadURL(getDownloadURL(selectedVersion))
+  }
 
-    let versionSelect = document.getElementById('version-select')
-    let selectedVersionName = versionSelect.options[versionSelect.selectedIndex].value
+  function handleDependencyChange(newValue) {
+    let selectedDependency = dependencies.find(dependency => dependency.name === newValue.value)
+    setVersions(getVersions(selectedDependency))
+    setVersionName(selectedDependency.currentVersion)
+    setDependencyName(selectedDependency.name)
+    updateDownloadURL(selectedDependency.name, selectedDependency.currentVersion)
+    versionsRef.select.setValue({value: selectedDependency.currentVersion, label: selectedDependency.currentVersion})
+  }
 
-    let selectedDependency = dependencies.find(dependency => dependency.name === selectedDependencyName)
-    let selectedVersion = selectedDependency.versions.find(version => version.version === selectedVersionName);
-
-    let downloadURL = getDownloadURL(selectedVersion)
-
-    let downloadButton = document.getElementById('dependency-download')
-    downloadButton.href = downloadURL
+  function handleVersionChange(newValue) {
+    setVersionName(newValue.value);
+    updateDownloadURL(dependencyName, newValue.value)
   }
 
   return (
     <div>
-      <div className={clsx(styles.selectParent)}>
         <div>
           <h4>Dependency</h4>
-          <select id="dependency-select" onChange={loadVersions} className={clsx(styles.select)}>
-            {dependencies.map(dependency => {
-              return <option key={dependency.name} value={dependency.name}>{dependency.name}</option>
+          <ReactSelect
+            options={dependencies.map(dependency => {return {value: dependency.name, label: dependency.name}})}
+            defaultValue={{value: dependencyName, label: dependencyName}}
+            onChange={handleDependencyChange}
+            className={clsx(styles.select)}
+            theme={theme => ({
+              ...theme,
+              colors: {
+                ...theme.colors
+              }
             })}
-          </select>
+          />
         </div>
         <div>
           <h4>Version</h4>
-          <select id="version-select" onChange={updateDownloadURL} className={clsx(styles.select)} defaultValue={dependencies[0].currentVersion}>
-            {dependencies[0].versions.map(version => {
-              return <option key={version.version} value={version.version}>{version.version}</option>
-            })}
-          </select>
+          <ReactSelect
+            ref={ref => {
+              versionsRef = ref
+            }}
+            options={versions}
+            defaultValue={{value: versionName, label: versionName}}
+            onChange={handleVersionChange}
+            className={clsx(styles.select)}
+          />
         </div>
         <div>
           <a target="_blank" className={clsx('button button--outline button--secondary button--mg', styles.downloadButton)}
-             href={getDownloadURL(dependencies[0].versions[0])} id="dependency-download">Download</a>
+             href={downloadURL} id="dependency-download"
+            key={downloadURL}
+          >Download</a>
         </div>
-      </div>
+
     </div>
   );
 }
@@ -263,6 +274,12 @@ const dependencies = [
       },
       {
         version: "3.4.0-SNAPSHOT",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-npcs",
+        releaseType: "snapshot"
+      },
+      {
+        version: "3.5.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-npcs",
         releaseType: "snapshot"
