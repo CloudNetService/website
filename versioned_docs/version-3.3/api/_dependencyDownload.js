@@ -45,6 +45,28 @@ function DependencyDownload() {
     updateDownloadURL(dependencyName, newValue.value)
   }
 
+  const customTheme = (theme) => ({
+    ...theme,
+    colors: {
+      ...theme.colors,
+      primary: "var(--ifm-color-primary)",
+      primary75: "var(--ifm-color-primary-light)",
+      primary50: "var(--ifm-color-primary-lighter)",
+      primary25: "var(--ifm-color-primary-lightest)",
+      neutral0: "var(--ifm-dropdown-background-color)",
+      neutral5: "var(--ifm-color-emphasis-0)",
+      neutral10: "var(--ifm-color-emphasis-100)",
+      neutral20: "var(--ifm-color-emphasis-200)",
+      neutral30: "var(--ifm-color-emphasis-300)",
+      neutral40: "var(--ifm-color-emphasis-400)",
+      neutral50: "var(--ifm-color-emphasis-500)",
+      neutral60: "var(--ifm-color-emphasis-600)",
+      neutral70: "var(--ifm-color-emphasis-700)",
+      neutral80: "var(--ifm-color-emphasis-800)",
+      neutral90: "var(--ifm-color-emphasis-900)"
+    }
+  })
+
   return (
     <div>
         <div>
@@ -54,12 +76,7 @@ function DependencyDownload() {
             defaultValue={{value: dependencyName, label: dependencyName}}
             onChange={handleDependencyChange}
             className={clsx(styles.select)}
-            theme={theme => ({
-              ...theme,
-              colors: {
-                ...theme.colors
-              }
-            })}
+            theme={customTheme}
           />
         </div>
         <div>
@@ -72,6 +89,7 @@ function DependencyDownload() {
             defaultValue={{value: versionName, label: versionName}}
             onChange={handleVersionChange}
             className={clsx(styles.select)}
+            theme={customTheme}
           />
         </div>
         <div>
