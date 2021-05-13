@@ -107,30 +107,6 @@ export default DependencyDownload;
 
 const dependencies = [
   {
-    name: "cloudnet",
-    currentVersion: "3.3.0-RELEASE",
-    versions: [
-      {
-        version: "3.3.0-SNAPSHOT",
-        groupId: "de/dytanic/cloudnet",
-        artifactId: "cloudnet",
-        releaseType: "snapshot"
-      },
-      {
-        version: "3.3.0-RELEASE",
-        groupId: "de/dytanic/cloudnet",
-        artifactId: "cloudnet",
-        releaseType: "release"
-      },
-      {
-        version: "3.4.0-SNAPSHOT",
-        groupId: "de/dytanic/cloudnet",
-        artifactId: "cloudnet",
-        releaseType: "snapshot"
-      }
-    ]
-  },
-  {
     name: "cloudnet-driver",
     currentVersion: "3.3.0-RELEASE",
     versions: [
@@ -198,6 +174,30 @@ const dependencies = [
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-bridge",
+        releaseType: "snapshot"
+      }
+    ]
+  },
+  {
+    name: "cloudnet",
+    currentVersion: "3.3.0-RELEASE",
+    versions: [
+      {
+        version: "3.3.0-SNAPSHOT",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet",
+        releaseType: "snapshot"
+      },
+      {
+        version: "3.3.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet",
+        releaseType: "release"
+      },
+      {
+        version: "3.4.0-SNAPSHOT",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet",
         releaseType: "snapshot"
       }
     ]
