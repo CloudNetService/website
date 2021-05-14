@@ -195,9 +195,12 @@
     {
       "type": "category",
       "collapsed": true,
-      "label": "",
+      "label": "CloudNet API",
       "items": [
-
+        {
+          "type": "doc",
+          "id": "version-3.3/api/start"
+        }
       ]
     },
     {
