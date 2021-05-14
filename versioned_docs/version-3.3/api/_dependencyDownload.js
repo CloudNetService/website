@@ -7,7 +7,11 @@ function DependencyDownload() {
   const [dependencyName, setDependencyName] = React.useState(dependencies[0].name)
   const [versionName, setVersionName] = React.useState(dependencies[0].currentVersion)
   const [versions, setVersions] = React.useState(getVersions(dependencies[0]))
-  const [downloadURL, setDownloadURL] = React.useState("")
+  const [downloadURL, setDownloadURL] = React.useState(() => {
+    let defaultDependency = dependencies[0]
+    let defaultVersion = defaultDependency.versions.find(version => version.version === defaultDependency.currentVersion)
+    return getDownloadURL(defaultVersion)
+  })
   let versionsRef = React.createRef();
 
   function getVersions(dependency) {
