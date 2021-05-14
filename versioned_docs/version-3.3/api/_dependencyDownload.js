@@ -33,11 +33,11 @@ function DependencyDownload() {
 
   function handleDependencyChange(newValue) {
     let selectedDependency = dependencies.find(dependency => dependency.name === newValue.value)
+    setDependencyName(selectedDependency.name)
     setVersions(getVersions(selectedDependency))
     setVersionName(selectedDependency.currentVersion)
-    setDependencyName(selectedDependency.name)
-    updateDownloadURL(selectedDependency.name, selectedDependency.currentVersion)
     versionsRef.select.setValue({value: selectedDependency.currentVersion, label: selectedDependency.currentVersion})
+    updateDownloadURL(selectedDependency.name, selectedDependency.currentVersion)
   }
 
   function handleVersionChange(newValue) {
@@ -302,10 +302,10 @@ const dependencies = [
 const releaseTypes = [
   {
     name: "release",
-    url: "https://repo.cloudnetservice.eu/repository/releases/%groupId%/%artifactId%/%version%/%artifactId%-%version%-javadoc.jar"
+    url: "https://repo.cloudnetservice.eu/repository/releases/%groupId%/%artifactId%/%version%/%artifactId%-%version%.jar"
   },
   {
     name: "snapshot",
-    url: "https://repo.cloudnetservice.eu/repository/snapshots/%groupId%/%artifactId%/%version%/%artifactId%-%version%-javadoc.jar"
+    url: "https://repo.cloudnetservice.eu/repository/snapshots/%groupId%/%artifactId%/%version%/%artifactId%-%version%.jar"
   }
 ]
