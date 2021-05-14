@@ -98,7 +98,7 @@ function DependencyDownload() {
         </div>
         <div>
           <a target="_blank" className={clsx('button button--outline button--secondary button--mg', styles.downloadButton)}
-             href={downloadURL} id="dependency-download"
+             href={downloadURL} id="dependency-download" rel="noopener noreferrer"
             key={downloadURL}
           >Download</a>
         </div>
