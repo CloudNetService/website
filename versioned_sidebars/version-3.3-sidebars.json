@@ -193,6 +193,17 @@
       ]
     },
     {
+      "type": "category",
+      "collapsed": true,
+      "label": "CloudNet API",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.3/api/start"
+        }
+      ]
+    },
+    {
       "type": "doc",
       "id": "version-3.3/changelog"
     }

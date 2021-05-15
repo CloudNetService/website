@@ -6,6 +6,7 @@ sidebar_label: Getting started
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import DependencyDownload from "./_dependencyDownload";
 
 ## Repositories
 ### Releases
@@ -85,87 +86,8 @@ Use this repository to work with the release version of the API (recommended)
 ## Dependencies
 You have to replace `${VERSION}` with the version which you want to use. (e.g. `3.3.0-RELEASE` or `3.4.0-SNAPSHOT`)
 
-### cloudnet
-CloudNet application for modules (NOT AVAILABLE FOR PLUGINS!)
-<Tabs
-  groupId="dependencies"
-  defaultValue="maven"
-  values={[{label: "Maven", value: "maven"},
-  {label: "Gradle", value: "gradle-groovy"},
-  {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
-  {label: "SBT", value: "sbt"},
-  {label: "Ivy", value: "ivy"},
-  {label: "Grape", value: "grape"},
-  {label: "Leiningen", value: "leiningen"},
-  {label: "Buildr", value: "buildr"}
-]} >
-
-  <TabItem value="maven">
-
-  ```xml
-  <dependency>
-      <groupId>de.dytanic.cloudnet</groupId>
-      <artifactId>cloudnet</artifactId>
-      <version>${VERSION}</version>
-      <scope>provided</scope>
-  </dependency>
-  ```
-
-  </TabItem>
-  <TabItem value="gradle-groovy">
-
-  ```groovy
-  implementation 'de.dytanic.cloudnet:cloudnet:${VERSION}'
-  ```
-  </TabItem>
-  <TabItem value="gradle-kotlin">
-
-  ```kotlin
-  implementation("de.dytanic.cloudnet:cloudnet:${VERSION}")
-  ```
-
-  </TabItem>
-  <TabItem value="sbt">
-
-  ```
-  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet" % "${VERSION}"
-  ```
-
-  </TabItem>
-  <TabItem value="ivy">
-
-  ```xml
-  <dependency org="de.dytanic.cloudnet" name="cloudnet" rev="${VERSION}"/>
-  ```
-
-  </TabItem>
-  <TabItem value="grape">
-
-  ```
-  @Grapes(
-      @Grab(group='de.dytanic.cloudnet', module='cloudnet', version='${VERSION}')
-  )
-  ```
-
-  </TabItem>
-  <TabItem value="leiningen">
-
-  ```
-  [de.dytanic.cloudnet/cloudnet "${VERSION}"]
-  ```
-
-  </TabItem>
-  <TabItem value="buildr">
-
-  ```
-  'de.dytanic.cloudnet:cloudnet:jar:${VERSION}'
-  ```
-
-  </TabItem>
-</Tabs>
-
 ### cloudnet-driver
-CloudNet driver for plugins and modules
+This dependency includes the CloudNet-Driver API which can be used in plugins and modules.
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -244,7 +166,7 @@ CloudNet driver for plugins and modules
 </Tabs>
 
 ### cloudnet-wrapper-jvm
-CloudNet wrapper for plugins
+This dependency includes the CloudNet-Wrapper API which can be used in plugins.
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -323,7 +245,7 @@ CloudNet wrapper for plugins
 </Tabs>
 
 ### cloudnet-bridge
-CloudNet bridge module for plugins and modules
+This dependency includes the CloudNet-Bridge API which can be used in plugins and modules.
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -401,8 +323,93 @@ CloudNet bridge module for plugins and modules
   </TabItem>
 </Tabs>
 
+### cloudnet
+This dependency includes the CloudNet-Application API which can be used in modules.
+
+:::caution Warning
+This dependency **cannot** be used in plugins!
+:::
+
+<Tabs
+  groupId="dependencies"
+  defaultValue="maven"
+  values={[{label: "Maven", value: "maven"},
+    {label: "Gradle", value: "gradle-groovy"},
+    {label: "Gradle Kotlin DSL", value: "gradle-kotlin"},
+    {label: "SBT", value: "sbt"},
+    {label: "Ivy", value: "ivy"},
+    {label: "Grape", value: "grape"},
+    {label: "Leiningen", value: "leiningen"},
+    {label: "Buildr", value: "buildr"}
+  ]} >
+
+  <TabItem value="maven">
+
+  ```xml
+  <dependency>
+      <groupId>de.dytanic.cloudnet</groupId>
+      <artifactId>cloudnet</artifactId>
+      <version>${VERSION}</version>
+      <scope>provided</scope>
+  </dependency>
+  ```
+
+  </TabItem>
+  <TabItem value="gradle-groovy">
+
+  ```groovy
+  implementation 'de.dytanic.cloudnet:cloudnet:${VERSION}'
+  ```
+
+  </TabItem>
+  <TabItem value="gradle-kotlin">
+
+  ```kotlin
+  implementation("de.dytanic.cloudnet:cloudnet:${VERSION}")
+  ```
+
+  </TabItem>
+  <TabItem value="sbt">
+
+  ```
+  libraryDependencies += "de.dytanic.cloudnet" % "cloudnet" % "${VERSION}"
+  ```
+
+  </TabItem>
+  <TabItem value="ivy">
+
+  ```xml
+  <dependency org="de.dytanic.cloudnet" name="cloudnet" rev="${VERSION}"/>
+  ```
+
+  </TabItem>
+  <TabItem value="grape">
+
+  ```
+  @Grapes(
+      @Grab(group='de.dytanic.cloudnet', module='cloudnet', version='${VERSION}')
+  )
+  ```
+
+  </TabItem>
+  <TabItem value="leiningen">
+
+  ```
+  [de.dytanic.cloudnet/cloudnet "${VERSION}"]
+  ```
+
+  </TabItem>
+  <TabItem value="buildr">
+
+  ```
+  'de.dytanic.cloudnet:cloudnet:jar:${VERSION}'
+  ```
+
+  </TabItem>
+</Tabs>
+
 ### cloudnet-cloudperms
-CloudNet CloudPerms module for plugins and modules
+This dependency includes the CloudNet-CloudPerms API which can be used in plugins and modules.
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -481,7 +488,12 @@ CloudNet CloudPerms module for plugins and modules
 </Tabs>
 
 ### cloudnet-syncproxy
-CloudNet SyncProxy module for plugins (proxy) and modules
+This dependency includes the CloudNet-SyncProxy API which can be used in **proxy plugins** and modules.
+
+:::tip
+You can compile this dependency into your server plugin to be able to use it!
+:::
+
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -560,7 +572,7 @@ CloudNet SyncProxy module for plugins (proxy) and modules
 </Tabs>
 
 ### cloudnet-signs
-CloudNet signs module for plugins and modules
+This dependency includes the CloudNet-Signs Module which can be used in plugins and modules.
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -639,7 +651,7 @@ CloudNet signs module for plugins and modules
 </Tabs>
 
 ### cloudnet-npcs
-CloudNet NPCs module for plugins and modules
+This dependency includes the CloudNet-NPC Module which can be used in plugins and modules.
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -716,3 +728,6 @@ CloudNet NPCs module for plugins and modules
 
   </TabItem>
 </Tabs>
+
+## Manual download
+<DependencyDownload/>
