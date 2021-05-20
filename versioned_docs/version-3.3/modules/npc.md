@@ -8,7 +8,7 @@ The CloudNet NPC module allows spawning of fake-players for server selection.
 ![CloudNet-NPC-Module-Example.png](img/CloudNet-NPC-Module-Example.png)  
 Every NPC provides server connect methods either trough an inventory or through direct connect. NPCs can be managed with the `/cloudnpc` command.
 
-## NPC properties
+## NPC properties {#npc-properties}
 Every NPC consists of the following properties, which can either be set on creation, or can be edited with the `/cloudnpc edit` command.
 ```
 targetGroup ------------- The group services must have to make joining over the NPC possible
@@ -29,7 +29,7 @@ Placeholders for the InfoLine:
 %online_servers% | %o_s% --- The amount of servers of the NPC targetGroup which are online
 ```
 
-## NPC Inventory
+## NPC Inventory {#npc-inventory}
 :::caution Warning
 The inventory contains 1.13+ items in the default configuration!  
 If you do not change them, they will not be visible on versions below that.  
@@ -60,7 +60,7 @@ Placeholders for items in the inventory:
 %whitelist% ------------------ "Enabled" or "Disabled" - Spigots whitelist
 ```
 
-## LabyMod emotes
+## LabyMod emotes {#labymod-emotes}
 The module does also offer the possibility to play emotes on the NPCs for LabyMod users. This can be configured in the config of the NPC module.
 ```json
         "labyModEmotes": {
@@ -87,7 +87,7 @@ playEmotesSynchronous --- If all NPCs should play the same emote
 ```
 For a list of all emote ids, see the [LabyMod developer docs](https://docs.labymod.net/pages/server/emote_api/).
 
-## Sample Configuration
+## Sample Configuration {#sample-configuration}
 The default configuration of the NPC Module looks like this:
 ```json
 {
@@ -220,7 +220,7 @@ The default configuration of the NPC Module looks like this:
   }
 }
 ```
-## Sample Configuration 1.8 to 1.12
+## Sample Configuration 1.8 to 1.12 {#sample-configuration-18-to-112}
 The default configuration of the NPC Module for the 1.8 looks like this:
 ```json
 {

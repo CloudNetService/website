@@ -34,12 +34,12 @@ COMMAND: - deployments=[storage:prefix/name  local:Lobby/Lobby;local:/PremiumLob
 COMMAND: - --start
 ```
 
-## create by
+## create by {#create-by}
 **Usage:** `create by <task> <amount>`
 
 This command creates a specified `amount` of new [services](../components/services.md) based on the specified `task`.
 
-## create new
+## create new {#create-new}
 **Usage:** `create new <name> <MINECRAFT_SERVER, GLOWSTONE, NUKKIT, GO_MINT, BUNGEECORD, VELOCITY, WATERDOG> <amount>`
 
 This command creates a specified `amount` independent service based on the `name` and type provided.  

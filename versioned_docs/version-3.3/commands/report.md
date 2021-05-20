@@ -22,13 +22,13 @@ COMMAND:  - report cloud
 COMMAND:  - report heap
 ```
 
-## report cloud
+## report cloud {#report-cloud}
 **Usage:** `report cloud`
 
 This command creates a file with a lot of information about your cloud instances.
 This includes the latest log lines, information on the threads used by the cloud, your nodes, your task configuration and more.  
 
-## report heap
+## report heap {#report-heap}
 **Usage:** `report heap`
 
 This command creates a heap dump of your Java Virtual Machine.

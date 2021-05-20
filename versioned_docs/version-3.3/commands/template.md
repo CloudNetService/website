@@ -25,32 +25,32 @@ COMMAND:  - template create <template> <MINECRAFT_SERVER, GLOWSTONE, NUKKIT, GO_
 COMMAND:  - template copy <storage:prefix/name (sourceTemplate)> <storage:prefix/name (targetTemplate)>
 ```
 
-## template list
+## template list {#template-list}
 **Usage:** `template list [storage]`  
 
 This command lists the available templates, if given filtered with the provided storage.
 
-## template versions
+## template versions {#template-versions}
 **Usage:** `template versions`
 
 This command lists all available versions which can be installed with the [template install](#template-install) command.
 
-## template install
+## template install {#template-install}
 **Usage:** `template install <storage:prefix/name> <versionType> <version>`  
 
 This command sets the max player count to the given amount for the specified proxy group.
 
-## template delete
+## template delete {#template-delete}
 **Usage:** `template delete <storage:prefix/name>`  
 
 This command deletes the given template.
 
-## template create
+## template create {#template-create}
 **Usage:** `template create <storage:prefix/name> <MINECRAFT_SERVER, GLOWSTONE, NUKKIT, GO_MINT, BUNGEECORD, VELOCITY, WATERDOG>`
 
 This command creates a template with the server type.
 
-## template copy
+## template copy {#template-copy}
 **Usage:** `template copy <storage:prefix/name (sourceTemplate)> <storage:prefix/name (targetTemplate)>`
 
 This command copies the given sourceTemplate to the given targetTemplate.

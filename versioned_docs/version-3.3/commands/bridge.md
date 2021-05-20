@@ -21,12 +21,12 @@ COMMAND:  - bridge reload
 COMMAND:  - bridge task <name> set requiredPermission <requiredPermission>
 ```
 
-## reload
+## reload {#reload}
 **Usage:** `bridge reload`
 
 This command reloads the configuration of the bridge module, to apply any changes made manually.
 
-## bridge task set requiredPermission
+## bridge task set requiredPermission {#bridge-task-set-requiredpermission}
 **Usage:** `bridge task <name> set requiredPermission <requiredPermission>`
 
 This command sets a required permission (to be able to join) for the task with the given `name`.
