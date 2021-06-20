@@ -85,7 +85,7 @@ maxEmoteDelayTicks ------ The maximum amount of time (in ticks) between the emot
 onJoinEmoteIds ---------- A list of LabyMod emote ids which will be played randomly to a new joined player
 playEmotesSynchronous --- If all NPCs should play the same emote
 ```
-For a list of all emote ids, see the [LabyMod developer docs](https://docs.labymod.net/pages/server/emote_api/).
+For a list of all emote ids, see the [LabyMod developer docs](https://docs.labymod.net/pages/server/labymod/emote_api/).
 
 ## Sample Configuration
 The default configuration of the NPC Module looks like this:

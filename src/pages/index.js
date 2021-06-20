@@ -14,7 +14,7 @@ const features = [
         description: (
             <>
                 CloudNet is open source and free to use, and this will not change!
-                You can find all our project in our <a href="https://github.com/CloudNetService/" target="_blank">GitHub organisation</a>
+                You can find all our projects in our <a href="https://github.com/CloudNetService/" target="_blank">GitHub organisation</a>
             </>
         ),
     },
@@ -23,8 +23,8 @@ const features = [
         icon: 'people',
         description: (
             <>
-                When you have any question regarding CloudNet, you are welcome to join our <a href="https://discord.cloudnetservice.eu" target="_blank">Discord Server</a>.
-                You can get there either private support in a ticket or ask our big community.
+                If you have any questions regarding CloudNet, you are welcome to join our <a href="https://discord.cloudnetservice.eu" target="_blank">Discord Server</a>.
+                You are able to get private support in a ticket or ask our big community there.
             </>
         ),
     },
