@@ -107,10 +107,14 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/cloudnetservice/website/edit/development/',
-          includeCurrentVersion: false,
+          includeCurrentVersion: true,
           versions: {
+            current: {
+              "label": "CloudNet v3.4 🚧",
+              "path": "next"
+            },
             "3.3": {
-              "label": "CloudNet v3",
+              "label": "CloudNet v3.3",
               "path": "3.3"
             },
             /*"2.2": {
