@@ -25,7 +25,7 @@ const features = [
                     GitHub organisation
                     </Translate></a>}}>
                 {
-                  "CloudNet is open source and free to use, and this will not change! You can find all our project in our {githubLink}."
+                  "CloudNet is open source and free to use, and this will not change! You can find all our projects in our {githubLink}."
                 }
             </Translate>
         ),
@@ -45,7 +45,7 @@ const features = [
                     Discord Server
                   </Translate></a>}}>
                 {
-                  "When you have any question regarding CloudNet, you are welcome to join our {discordLink}. You can get there either private support in a ticket or ask our big community."
+                  "If you have any questions regarding CloudNet, you are welcome to join our {discordLink}. If you have any questions regarding CloudNet, you are welcome to join our"
                 }
             </Translate>
         ),
