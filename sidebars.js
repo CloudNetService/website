@@ -205,6 +205,10 @@ module.exports = {
     },
     {
       "type": "doc",
+      "id": "faq"
+    },
+    {
+      "type": "doc",
       "id": "changelog"
     }
   ]
