@@ -22,7 +22,7 @@ COMMAND:  - bridge create entry <targetGroup>
 COMMAND:  - bridge task <name> set requiredPermission <requiredPermission>
 ```
 
-## reload {#reload}
+## bridge reload {#reload}
 **Usage:** `bridge reload`
 
 This command reloads the configuration of the bridge module, to apply any changes made manually.

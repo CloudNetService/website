@@ -28,6 +28,9 @@ For example, when you want to have several proxies for the Bedrock Edition.
 (Unfortunately, the Bedrock Edition does not support SRV-Records. Please contact us in that case for further assistance!)
 :::
 
+### javaCommand {#javacommand}
+The path to the Java installation with which services of this task are started.
+
 ### maintenance {#maintenance}
 Enables or disables the maintenance mode services of this task (`true`/`false`)
 :::info

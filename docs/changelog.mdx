@@ -26,7 +26,7 @@ values={[
 </Tabs>
 --->
 
-## v3.4.0 - date to be set {#v340}
+## v3.4.0 - DATE {#v340---DATE}
 
 ````mdx-code-block
 <Tabs
@@ -41,61 +41,64 @@ values={[
 
 <TabItem value="added">
 
-- Added a “requiredPermission” property to tasks
-- Added support for Raspberry Pi and Apple M1
-- Added the French language
-- Added IPv6 support to the whole cloud
-- Added commands to manage the configs of the NPC, Bridge and SyncProxy-modules
-- Added forced hosts to the Bridge-module
-- Added server group specific fallbacks
-- Added a property to set a specific java version for a task
-- Added [Tuinity](https://github.com/Tuinity/Tuinity) to the template installer
-- Added knockback & Labymod emotes to the NPC-module
-- Added support for Labymod banners in the Labymod-module
-- Added support for Minecraft 1.17
-- Added a custom process timeout
-- Added start and stop messages for services on different nodes
-- Added a command to delete a player from the database
+  - Added a “requiredPermission” property to tasks
+  - Added support for Raspberry Pi and Apple M1
+  - Added the French language
+  - Added IPv6 support to the whole cloud
+  - Added commands to manage the configs of the NPC, Bridge and SyncProxy-modules
+  - Added forced hosts to the Bridge-module
+  - Added server group specific fallbacks
+  - Added a property to set a specific java version for a task
+  - Added [Tuinity](https://github.com/Tuinity/Tuinity) to the template installer
+  - Added knockback & Labymod emotes to the NPC-module
+  - Added support for Labymod banners in the Labymod-module
+  - Added support for Minecraft 1.17
+  - Added a custom process timeout
+  - Added start and stop messages for services on different nodes
+  - Added a command to delete a player from the database
 
 </TabItem>
 <TabItem value="fixed">
 
-- Improved the sorting of the signs
-- Replaced some missing placeholders in the SyncProxy-module
-- Fixed the support for Java 16 and upcoming versions
-- Improve the command system's processing performance
-- Fixed clearing the properties of stopped services
-- Improved the permission system
-- Fixed NPC double interacts
-- Fixed synchronization problems in the cluster
-- Improved speed of channel messages
+  - Improved the sorting of the signs
+  - Replaced some missing placeholders in the SyncProxy-module
+  - Fixed the support for Java 16 and upcoming versions
+  - Improve the command system's processing performance
+  - Fixed clearing the properties of stopped services
+  - Improved the permission system
+  - Fixed NPC double interacts
+  - Fixed synchronization problems in the cluster
+  - Improved speed of channel messages
 
 </TabItem>
 <TabItem value="changed">
 
-- The cluster uses a head node to start the services
-- The whole Cloudflare module was rewritten
-- Removed the usage of java-io where capable
-- The login & logout strategy to prevent ghost players
-- Packets are now sent in chunks
-- Changed how task files are loaded
-- Changed how events are invoked to improve performance
-- Adjusted the default style of the tablist in the SyncProxy-module
+  - The cluster uses a head node to start the services
+  - The whole Cloudflare module was rewritten
+  - Removed the usage of java-io where capable
+  - The login & logout strategy to prevent ghost players
+  - Packets are now sent in chunks
+  - Changed how task files are loaded
+  - Changed how events are invoked to improve performance
+  - Adjusted the default style of the tablist in the SyncProxy-module
 
 </TabItem>
 <TabItem value="api">
 
-- Added template modifications from services
-- Added a global PlayerExecutor to execute methods for every online player
-- Deprecated the ITaskScheduler and replaced it with a ScheduledExecutorService
-- Deprecated some TemplateStorage methods in the driver, use CloudNetDriver#getLocalTemplateStorage
-- Removed old deprecated & scheduled for removal methods from the driver
-- Added a PlayerProvider to the IPlayerManager to retrieve online players
-- Added some PlayerExecutor#connect methods to connect the player on a fallback, a specific group, specific task using a ServerSelectorType
-- Added an AdventureComponentMessenger to support the adventure text 4 API & deprecated the old VelocityComponentMessenger
-- Added API access to the CloudServiceFactories
-- Moved the NameTags from the CloudPerms-Module to the SimpleNameTags plugin and deprecated it in the CloudPerms-Module
-- Added CloudNetDriver#getNodeUniqueId to retrieve the ID of the node
+  - Added template modifications from services
+  - Added a global PlayerExecutor to execute methods for every online player
+  - Deprecated the ITaskScheduler and replaced it with a ScheduledExecutorService
+  - Deprecated some TemplateStorage methods in the driver, use CloudNetDriver#getLocalTemplateStorage
+  - Removed old deprecated & scheduled for removal methods from the driver
+  - Added a PlayerProvider to the IPlayerManager to retrieve online players
+  - Added some PlayerExecutor#connect methods to connect the player on a fallback, a specific group, specific task using
+  a ServerSelectorType
+  - Added an AdventureComponentMessenger to support the adventure text 4 API & deprecated the old
+  VelocityComponentMessenger
+  - Added API access to the CloudServiceFactories
+  - Moved the NameTags from the CloudPerms-Module to the SimpleNameTags plugin and deprecated it in the
+  CloudPerms-Module
+  - Added CloudNetDriver#getNodeUniqueId to retrieve the ID of the node
 
 </TabItem>
 
@@ -119,50 +122,53 @@ values={[
 
 <TabItem value="added">
 
-- Add new CloudSetup
-- Add Global Groups
-- Add BALANCED template installer - spread task templates over all services
-- Added CloudNet-NPCs module
-- Added CloudNet-LabyMod module
-- Added a new option to the Smart module - keep a specified amount of empty services of a task online
-- Added support for negative potency on permissions on Bukkit servers to CPerms
+  - Add new CloudSetup
+  - Add Global Groups
+  - Add BALANCED template installer - spread task templates over all services
+  - Added CloudNet-NPCs module
+  - Added CloudNet-LabyMod module
+  - Added a new option to the Smart module - keep a specified amount of empty services of a task online
+  - Added support for negative potency on permissions on Bukkit servers to CPerms
 
 </TabItem>
 <TabItem value="fixed">
 
-- Fixed fallbacks
-- Fixed OnlyProxyJoin
-- Fixed data transfer between different Operating Systems
-- Fixed permission checks in LoginEvent
+  - Fixed fallbacks
+  - Fixed OnlyProxyJoin
+  - Fixed data transfer between different Operating Systems
+  - Fixed permission checks in LoginEvent
 
 </TabItem>
 <TabItem value="changed">
 
-- Improved command system
-- Split tasks-command to tasks and groups command
-- Accept wildcards in the tasks command
-- Rework the screen command
-- Allow numbers lower than 1 for the animationsPerSecond in the SyncProxy tablist
-- Reworked launcher
-- Reworked SyncProxy module
-- Reduced cloud heap usage
+  - Improved command system
+  - Split tasks-command to tasks and groups command
+  - Accept wildcards in the tasks command
+  - Rework the screen command
+  - Allow numbers lower than 1 for the animationsPerSecond in the SyncProxy tablist
+  - Reworked launcher
+  - Reworked SyncProxy module
+  - Reduced cloud heap usage
 
 </TabItem>
 <TabItem value="removed">
 
-- Removed GoMint and ProxProx support
+  - Removed GoMint and ProxProx support
 
 </TabItem>
 <TabItem value="api">
 
-**Please adjust your plugins and modules, deprecated methods will be removed in a future release.**
-- Deprecated some Singletons (e.g. AbstractSignManagement, BridgePlayerManager), should now be accessed via the `CloudNetDriver#getServicesRegistry`. See the cloudnet-examples module for help.
-- Deprecated CloudPermissionsManagement#getInstance, should now be accessed via CloudNetDriver#getPermissionManagement
-- Deprecated property methods in class ServiceInfoSnapshotUtil, properties can now be accessed via `ServiceInfoSnapshot#getProperty(ServiceProperty)`
-- Deprecated player methods in IPlayerManager, should now be accessed via `IPlayerManager#getPlayerExecutor` and `ICloudPlayer#getPlayerExecutor`
-- Added Bungee/VelocityPlayerFallbackEvent
-- Added CloudSignInteractEvents for Bukkit and Nukkit
-- Added NodeLocalBridgePlayerProxyLoginRequestEvent
+  **Please adjust your plugins and modules, deprecated methods will be removed in a future release.**
+  - Deprecated some Singletons (e.g. AbstractSignManagement, BridgePlayerManager), should now be accessed via the
+  `CloudNetDriver#getServicesRegistry`. See the cloudnet-examples module for help.
+  - Deprecated CloudPermissionsManagement#getInstance, should now be accessed via CloudNetDriver#getPermissionManagement
+  - Deprecated property methods in class ServiceInfoSnapshotUtil, properties can now be accessed via
+  `ServiceInfoSnapshot#getProperty(ServiceProperty)`
+  - Deprecated player methods in IPlayerManager, should now be accessed via `IPlayerManager#getPlayerExecutor` and
+  `ICloudPlayer#getPlayerExecutor`
+  - Added Bungee/VelocityPlayerFallbackEvent
+  - Added CloudSignInteractEvents for Bukkit and Nukkit
+  - Added NodeLocalBridgePlayerProxyLoginRequestEvent
 
 </TabItem>
 
@@ -182,7 +188,7 @@ values={[
 
 <TabItem value="fixed">
 
-- Fixed dependency downloading from maven central repository
+  - Fixed dependency downloading from maven central repository
 
 </TabItem>
 
@@ -202,9 +208,10 @@ values={[
 
 <TabItem value="fixed">
 
-- Fixed the issue that the online count was wrong when a player disconnects from a server
-- Fixed an issue that the smart module checked for all services (prepared, starting, ...) for the auto stop, which caused problems when using the preparedServices entry in the smart config
-- Fixed wrong hostAddress on first node setup
+  - Fixed the issue that the online count was wrong when a player disconnects from a server
+  - Fixed an issue that the smart module checked for all services (prepared, starting, ...) for the auto stop, which
+  caused problems when using the preparedServices entry in the smart config
+  - Fixed wrong hostAddress on first node setup
 
 </TabItem>
 
@@ -227,33 +234,33 @@ values={[
 
 <TabItem value="added">
 
-- Add Vault and permission pack support for Bukkit CloudPerms
-- Add new template installer
-- Add template installer support for forge and spongeforge
-- Add SFTP support to the FTP Module
-- Add progress bars for downloads
-- Add animated setup for the cloud and tasks
-- Add CloudSigns for Nukkit
-- Add paste sub-commands
-- Add tab completion for /cloud
+  - Add Vault and permission pack support for Bukkit CloudPerms
+  - Add new template installer
+  - Add template installer support for forge and spongeforge
+  - Add SFTP support to the FTP Module
+  - Add progress bars for downloads
+  - Add animated setup for the cloud and tasks
+  - Add CloudSigns for Nukkit
+  - Add paste sub-commands
+  - Add tab completion for /cloud
 
 </TabItem>
 <TabItem value="fixed">
 
-- Fix CloudSigns for Bukkit
-- Fix effect of permission `cloudnet.syncproxy.maintenance`
-- Fix spongeforge plugins
-- Fix overriding cluster synchronizations, add additional cluster push commands
+  - Fix CloudSigns for Bukkit
+  - Fix effect of permission `cloudnet.syncproxy.maintenance`
+  - Fix spongeforge plugins
+  - Fix overriding cluster synchronizations, add additional cluster push commands
 
 </TabItem>
 <TabItem value="changed">
 
-- Little bug fixes and adjustments
+  - Little bug fixes and adjustments
 
 </TabItem>
 <TabItem value="removed">
 
-- Fixed an issue which prevented the MySQL Connection to close.
+  - Fixed an issue which prevented the MySQL Connection to close.
 
 </TabItem>
 
@@ -276,41 +283,41 @@ values={[
 
 <TabItem value="added">
 
-- Add an option to delete files after stop to the task configuration
-- Add an option to select whether a template should be copied to a static service on every start
-- Add Waterdog bedrock proxy
-- Add database implementation for the wrapper
-- Add an option to disable player connection messages in the console
-- Add tab completion to the console
-- Add copy command
-- Add 'screen write' command
-- Add color in tablist for 1.13+
-- Make onlyProxyJoin way better
-- Add onlyProxyJoin to Nukkit
-- Add signKnockback for the signs
-- Add chat format for Bukkit
+  - Add an option to delete files after stop to the task configuration
+  - Add an option to select whether a template should be copied to a static service on every start
+  - Add Waterdog bedrock proxy
+  - Add database implementation for the wrapper
+  - Add an option to disable player connection messages in the console
+  - Add tab completion to the console
+  - Add copy command
+  - Add 'screen write' command
+  - Add color in tablist for 1.13+
+  - Make onlyProxyJoin way better
+  - Add onlyProxyJoin to Nukkit
+  - Add signKnockback for the signs
+  - Add chat format for Bukkit
 
 </TabItem>
 <TabItem value="fixed">
 
-- Fixed fallbacks
-- Fixed OnlyProxyJoin
-- Fixed data transfer between different Operating Systems
-- Fixed permission checks in LoginEvent
+  - Fixed fallbacks
+  - Fixed OnlyProxyJoin
+  - Fixed data transfer between different Operating Systems
+  - Fixed permission checks in LoginEvent
 
 </TabItem>
 <TabItem value="changed">
 
-- A lot of bug fixes
-- Limit version support to only 1.8.8+ instead of 1.5+
-- Put the smart config into the task configuration
-- Split functions of CloudNetDriver, CloudNet and Wrapper to feature-specific interfaces and classes
+  - A lot of bug fixes
+  - Limit version support to only 1.8.8+ instead of 1.5+
+  - Put the smart config into the task configuration
+  - Split functions of CloudNetDriver, CloudNet and Wrapper to feature-specific interfaces and classes
 
 </TabItem>
 <TabItem value="removed">
 
-- Remove support for plain CraftBukkit
-- Remove the tasks.json and give every task a separated file
+  - Remove support for plain CraftBukkit
+  - Remove the tasks.json and give every task a separated file
 
 </TabItem>
 
@@ -330,9 +337,9 @@ values={[
 
 <TabItem value="changed">
 
-- supported now Minecraft Server and Bukkit/Spigot 1.14.1
-- updated Javadocs
-- Many bug fixes
+  - supported now Minecraft Server and Bukkit/Spigot 1.14.1
+  - updated Javadocs
+  - Many bug fixes
 
 </TabItem>
 
@@ -353,17 +360,17 @@ values={[
 
 <TabItem value="added">
 
-- Added REST module
-- Added PlayerAPI
-- Added "players" command in console
-- Added PasteServer support (https://github.com/juliarn/PasteServer)
+  - Added REST module
+  - Added PlayerAPI
+  - Added "players" command in console
+  - Added PasteServer support (https://github.com/juliarn/PasteServer)
 
 </TabItem>
 <TabItem value="changed">
 
-- Updated Java documentation
-- Performance improvements
-- Bug fixes
+  - Updated Java documentation
+  - Performance improvements
+  - Bug fixes
 
 </TabItem>
 <TabItem value="removed">Removed</TabItem>
@@ -386,19 +393,19 @@ values={[
 
 <TabItem value="added">
 
-- Added Report Module "paste" command for paste the cached console log
-- Added MySQL-Database Module connection configurations and ssl support
-- Added Netty transport native support for KQueue and Epoll
-- Added auto updater for modules from one version
+  - Added Report Module "paste" command for paste the cached console log
+  - Added MySQL-Database Module connection configurations and ssl support
+  - Added Netty transport native support for KQueue and Epoll
+  - Added auto updater for modules from one version
 
 </TabItem>
 <TabItem value="changed">
 
-- Updated the recommended setup version
-- Updated modules that works with the API
-- API update
-- Performance updates
-- Bug fixes
+  - Updated the recommended setup version
+  - Updated modules that works with the API
+  - API update
+  - Performance updates
+  - Bug fixes
 
 </TabItem>
 
@@ -418,20 +425,21 @@ values={[
 ````
 <TabItem value="added">
 
-- Added a Permissions-System module, which supports the following PluginAPIs: => Bukkit, Velocity, ProxProx, GoMint, Nukkit, BungeeCord
-- Added Auto updater (Test auto updater, must be enabled manual)
-- Added "SimpleNameTags" Plugin for permissions system
+  - Added a Permissions-System module, which supports the following PluginAPIs: => Bukkit, Velocity, ProxProx, GoMint,
+  Nukkit, BungeeCord
+  - Added Auto updater (Test auto updater, must be enabled manual)
+  - Added "SimpleNameTags" Plugin for permissions system
 
 </TabItem>
 <TabItem value="changed">
 
-- New Easy Setup - CloudNet can installed under 1 minute with 5 Tasks and Groups and a sample network
-- Rewritten the permissions system
-- Updated the API and added a lot of new features like Wrapper/Node to Node SyncAPI, Permissions-System
-- General bug fixes • Implement now full own static services
-- Performance updates
-- Set base Bukkit Version from 1.4.7 to 1.5.2
-- Updated REST API
+  - New Easy Setup - CloudNet can installed under 1 minute with 5 Tasks and Groups and a sample network
+  - Rewritten the permissions system
+  - Updated the API and added a lot of new features like Wrapper/Node to Node SyncAPI, Permissions-System
+  - General bug fixes • Implement now full own static services
+  - Performance updates
+  - Set base Bukkit Version from 1.4.7 to 1.5.2
+  - Updated REST API
 
 </TabItem>
 
@@ -451,9 +459,11 @@ values={[
 
 <TabItem value="changed">
 
-- CloudNet 3 is a completely new cloud system with a completely new concept and new technical approaches --that bring many new possibilities.
-- It is a BETA version where the TODO is still very large, but to arouse the interest for this software at all and to show what the program can do so far.
-- You need a complete new installation and rewriting of all plugins which use the CloudNetAPI from 2.X!
+  - CloudNet 3 is a completely new cloud system with a completely new concept and new technical approaches --that bring
+  many new possibilities.
+  - It is a BETA version where the TODO is still very large, but to arouse the interest for this software at all and to
+  show what the program can do so far.
+  - You need a complete new installation and rewriting of all plugins which use the CloudNetAPI from 2.X!
 
 </TabItem>
 

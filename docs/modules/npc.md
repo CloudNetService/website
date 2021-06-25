@@ -83,6 +83,7 @@ emoteIds ---------------- A list of LabyMod emote ids which will be played rando
 minEmoteDelayTicks ------ The minimum amount of time (in ticks) between the emote-play-sequences
 maxEmoteDelayTicks ------ The maximum amount of time (in ticks) between the emote-play-sequences
 onJoinEmoteIds ---------- A list of LabyMod emote ids which will be played randomly to a new joined player
+onKnockbackEmoteIds ----- A list of LabyMod emote ids which will be played randomly to a player that receives knockback from the npc
 playEmotesSynchronous --- If all NPCs should play the same emote
 ```
 For a list of all emote ids, see the [LabyMod developer docs](https://docs.labymod.net/pages/server/emote_api/).
@@ -96,6 +97,8 @@ The default configuration of the NPC Module looks like this:
       {
         "targetGroup": "Lobby",
         "infoLineDistance": 0.1,
+        "knockbackDistance": 0.7,
+        "knockbackStrength": 0.8,
         "inventorySize": 54,
         "startSlot": 10,
         "endSlot": 54,
@@ -199,6 +202,9 @@ The default configuration of the NPC Module looks like this:
             4,
             20
           ],
+          "onKnockbackEmoteIds": [
+            37
+          ],
           "minEmoteDelayTicks": 400,
           "maxEmoteDelayTicks": 600,
           "playEmotesSynchronous": false
@@ -229,6 +235,8 @@ The default configuration of the NPC Module for the 1.8 looks like this:
       {
         "targetGroup": "Lobby",
         "infoLineDistance": 0.1,
+        "knockbackDistance": 0.7,
+        "knockbackStrength": 0.8,
         "inventorySize": 54,
         "startSlot": 10,
         "endSlot": 54,
@@ -331,6 +339,9 @@ The default configuration of the NPC Module for the 1.8 looks like this:
           "onJoinEmoteIds": [
             4,
             20
+          ],
+          "onKnockbackEmoteIds": [
+            37
           ],
           "minEmoteDelayTicks": 400,
           "maxEmoteDelayTicks": 600,
