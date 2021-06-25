@@ -31,6 +31,7 @@ COMMAND:  - tasks task <name> set autoDeleteOnStop <autoDeleteOnStop>
 COMMAND:  - tasks task <name> set staticServices <staticServices>
 COMMAND:  - tasks task <name> set environment <MINECRAFT_SERVER, GLOWSTONE, NUKKIT, GO_MINT, BUNGEECORD, VELOCITY, WATERDOG>
 COMMAND:  - tasks task <name> set disableIpRewrite <value>
+COMMAND:  - tasks task <name> set javaCommand <value>
 COMMAND:  - tasks task <name> add node <uniqueId>
 COMMAND:  - tasks task <name> add group <name>
 COMMAND:  - tasks task <name> remove node <uniqueId>
@@ -132,6 +133,10 @@ We recommend the usage of this feature just in very special cases.
 For example, when you want to have several proxies for the Bedrock Edition.
 (Unfortunately, the Bedrock Edition does not support SRV-Records. Please contact us in that case for further assistance!)
 :::
+
+## tasks task set javaCommand {#tasks-task-set-javaCommand}
+**Usage:** `tasks task <name> set javaCommand <value>`
+This command sets the path to the Java installation with which services of this task are started.
 
 ## tasks task add node {#tasks-task-add-node}
 **Usage:** `tasks task <name> add node <uniqueId>`
