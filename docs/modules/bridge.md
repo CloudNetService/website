@@ -37,6 +37,59 @@ Example:
 
 ### bungeeFallbackConfigurations {#bungeefallbackconfigurations}
 This is a json array containing different fallback configurations for different proxy groups.
+
+A configuration for two proxy groups can look like this:
+```
+    "bungeeFallbackConfigurations":[
+      {
+        "targetGroup":"Proxy",
+        "defaultFallbackTask":"Lobby",
+        "fallbacks":[
+          {
+            "task":"Lobby",
+            "permission":null,
+            "availableOnGroups":[
+
+            ],
+            "forcedHost": null,
+            "priority":1
+          }
+        ]
+      },
+      {
+        "targetGroup":"Proxy2",
+        "defaultFallbackTask":"Lobby2",
+        "fallbacks":[
+          {
+            "task":"Lobby2",
+            "permission":null,
+            "availableOnGroups":[
+
+            ],
+            "forcedHost": null,
+            "priority":1
+          }
+        ]
+      }
+    ],
+```
+
+### bungeeFallbackConfigurations » targetGroup
+This defines for which [proxy group](../components/groups.md) the fallback configuration is.
+
+### bungeeFallbackConfigurations » defaultFallbackTask 
+This sets the default fallback [task](../components/tasks.md) for the current target proxy group.
+
+### bungeeFallbackConfigurations » fallbacks
+This is an array containing the different fallbacks that should be available on the [defined proxy group].
+
+### bungeeFallbackConfigurations » fallbacks » task
+This defines for which task the current fallback entry is.
+
+### bungeeFallbackConfigurations » fallbacks » permission
+Here you can set a permission which is required to be sent to this fallback (e.g. when using `/hub`).
+
+
 ### hubCommandNames {#hubcommandnames}
 Json array of alternative hub commands.
 ### logPlayerConnections {#logplayerconnections}
@@ -70,6 +123,7 @@ The default configuration of the Bridge Module looks like this:
             "availableOnGroups":[
 
             ],
+            "forcedHost": null,
             "priority":1
           }
         ]

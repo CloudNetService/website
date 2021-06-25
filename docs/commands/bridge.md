@@ -18,6 +18,7 @@ This is a basic overview about the `bridge` command.
 Please have a look below for any further information.
 ```
 COMMAND:  - bridge reload
+COMMAND:  - bridge create entry <targetGroup>
 COMMAND:  - bridge task <name> set requiredPermission <requiredPermission>
 ```
 
@@ -25,6 +26,12 @@ COMMAND:  - bridge task <name> set requiredPermission <requiredPermission>
 **Usage:** `bridge reload`
 
 This command reloads the configuration of the bridge module, to apply any changes made manually.
+
+## bridge create entry {#bridge-create-entry}
+**Usage:** `bridge create entry <targetGroup>`
+
+This command creates a new entry to manage the fallbacks for the specified [proxy targetGroup](./groups.md) in the [Bridge Configuration](../modules/bridge.md).  
+You do not need to use this command, but it can help you if you are not sure how to do it.
 
 ## bridge task set requiredPermission {#bridge-task-set-requiredpermission}
 **Usage:** `bridge task <name> set requiredPermission <requiredPermission>`

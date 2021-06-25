@@ -152,8 +152,21 @@ Example:
 ```
 
 ### properties {#properties}
-The properties can contain any json object which you can access trough the api.  
-By default, it contains only the [SmartConfig from the Smart Module](../modules/smart.md)
+The properties can contain any json object which you can access through the api.  
+It contains some default values provided by us, but you can extend it with the API!
+
+#### requiredPermission {#requiredpermission}
+This option sets a permission you need to be able to connect to the task.
+:::tip
+If you set it to `null` (which is also the default), you do not need any permission to join the task!
+:::
+Example:
+```json
+    "requiredPermission": "your.join.permission",
+```
+
+#### smartConfig {#smartconfig}
+Please take a look at the [Smart Module](../modules/smart.md) for more information.
 
 ## Sample Configuration {#sample-configuration}
 ```json
@@ -188,6 +201,7 @@ By default, it contains only the [SmartConfig from the Smart Module](../modules/
   ],
   "deployments": [],
   "properties": {
+    "requiredPermission": null,
     "smartConfig": {
       "enabled": false,
       "priority": 10,

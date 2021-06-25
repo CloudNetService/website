@@ -19,6 +19,7 @@ Please have a look below for any further information.
 ```
 COMMAND:  - syncproxy reload
 COMMAND:  - syncproxy list
+COMMAND:  - syncproxy create entry <targetGroup>
 COMMAND:  - syncproxy target <targetGroup> maxPlayers <value>
 COMMAND:  - syncproxy target <targetGroup> maxPlayers <enabled>
 COMMAND:  - syncproxy target <targetGroup> whitelist
@@ -36,6 +37,12 @@ This command reloads the [SyncProxy-Module](../modules/syncproxy.md) Configurati
 **Usage:** `synyproxy list`
 
 This command lists all configs for the different proxy groups.
+
+## syncproxy create entry {#syncproxy-create-entry}
+**Usage:** `syncproxy create entry <targetGroup>`
+
+This command creates a new entry for the Motd, Tablist, ... of the specified [proxy targetGroup](./groups.md) in the [SyncProxy Configuration](../modules/syncproxy.md).  
+You do not need to use this command, but it can help you if you are not sure how to do it.
 
 ## syncproxy target maxPlayers {#syncproxy-target-maxplayers}
 **Usage:** `syncproxy target <targetGroup> maxPlayers <value>`
