@@ -26,6 +26,83 @@ values={[
 </Tabs>
 --->
 
+## v3.4.0 - date to be set {#v340}
+
+````mdx-code-block
+<Tabs
+defaultValue="added"
+values={[
+{label: "Added", value: "added"},
+{label: "Fixed", value: "fixed"},
+{label: "Changed", value: "changed"},
+{label: "API", value: "api"},
+]}>
+````
+
+<TabItem value="added">
+
+- Added a “requiredPermission” property to tasks
+- Added support for Raspberry Pi and Apple M1
+- Added the French language
+- Added IPv6 support to the whole cloud
+- Added commands to manage the configs of the NPC, Bridge and Syncproxy-modules
+- Added forced hosts to the Bridge-module
+- Added server group specific fallbacks
+- Added a property to set a specific java version for a task
+- Added [Tuinity](https://github.com/Tuinity/Tuinity) to the template installer
+- Added knockback & Labymod emotes to the NPC-module
+- Added support for Labymod banners in the Labymod-module
+- Added support for Minecraft 1.17
+- Added a custom process timeout
+- Added start and stop messages for services on different nodes
+- Added a command to delete a player from the database
+
+</TabItem>
+<TabItem value="fixed">
+
+- Improved the sorting of the signs
+- Replaced some missing placeholders in the SyncProxy-module
+- Fixed the support for Java 16 and upcoming versions
+- Improve the command system's processing performance
+- Fixed clearing the properties of stopped services
+- Improved the permission system
+- Fixed NPC double interacts
+- Fixed synchronization problems in the cluster
+- Improved speed of channel messages
+
+</TabItem>
+<TabItem value="changed">
+
+- The cluster uses a head node to start the services
+- The whole Cloudflare module was rewritten
+- Removed the usage of java-io where capable
+- The login & logout strategy to prevent ghost players
+- Packets are now sent in chunks
+- Changed how task files are loaded
+- Changed how events are invoked to improve performance
+- Adjusted the default style of the tablist in the SyncProxy-module
+
+</TabItem>
+<TabItem value="api">
+
+- Added template modifications from services
+- Added a global PlayerExecutor to execute methods for every online player
+- Deprecated the ITaskScheduler and replaced it with a ScheduledExecutorService
+- Deprecated some TemplateStorage methods in the driver, use CloudNetDriver#getLocalTemplateStorage
+- Removed old deprecated & scheduled for removal methods from the driver
+- Added a PlayerProvider to the IPlayerManager to retrieve online players
+- Added some PlayerExecutor#connect methods to connect the player on a fallback, a specific group, specific task using a ServerSelectorType
+- Added an AdventureComponentMessenger to support the adventure text 4 API & deprecated the old VelocityComponentMessenger
+- Added API access to the CloudServiceFactories
+- Moved the NameTags from the CloudPerms-Module to the SimpleNameTags plugin and deprecated it in the CloudPerms-Module
+- Added CloudNetDriver#getNodeUniqueId to retrieve the ID of the node
+
+</TabItem>
+
+````mdx-code-block
+</Tabs>
+````
+
 ## v3.3.0 - 2020-05-16 {#v330---2020-05-16}
 
 ````mdx-code-block
