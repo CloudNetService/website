@@ -21,7 +21,7 @@ jobs:
       - name: Sync translations
         if: ${{ github.ref == 'refs/heads/development' }}
         run: yarn run crowdin:sync
-      - name: Sync translations
+      - name: Download translations
         if: ${{ github.ref == 'refs/heads/main' }}
         run: yarn run crowdin download
       - name: Build website
