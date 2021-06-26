@@ -19,8 +19,11 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile
       - name: Sync translations
-        if: ${{ github.ref == 'refs/heads/development' || github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/development' }}
         run: yarn run crowdin:sync
+      - name: Sync translations
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: yarn run crowdin download
       - name: Build website
         run: yarn build
       - name: Copy robots.txt to non-productive envs
