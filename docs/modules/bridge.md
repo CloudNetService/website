@@ -19,20 +19,20 @@ Please ensure that your Firewall is set up correctly if you disable it.
 Here you can add specific groups for which the [OnlyProxyProtection](#onlyproxyprotection) should be disabled.  
 Example:
 ```json
-    "excludedOnlyProxyWalkableGroups":[
+    "excludedOnlyProxyWalkableGroups": [
       "BauServer",
       "DevServer"
-],
+    ],
 ```
 
 ### excludedGroups {#excludedgroups}
 This is a json array containing groups on which the bridge will not be installed.  
 Example:
 ```json
-    "excludedGroups":[
+    "excludedGroups": [
       "BauServer",
       "DevServer"
-],
+    ],
 ```
 
 ### bungeeFallbackConfigurations {#bungeefallbackconfigurations}
@@ -89,6 +89,14 @@ This defines for which task the current fallback entry is.
 ### bungeeFallbackConfigurations » fallbacks » permission
 Here you can set a permission which is required to be sent to this fallback (e.g. when using `/hub`).
 
+### bungeeFallbackConfigurations » fallbacks » availableOnGroups
+With this option you can determine on which groups this fallback is available
+
+### bungeeFallbackConfigurations » fallbacks » forcedHost
+This option is used to set a forcedHost for this fallback
+
+### bungeeFallbackConfigurations » fallbacks » priority
+This option is used to set a priority for this fallback.
 
 ### hubCommandNames {#hubcommandnames}
 Json array of alternative hub commands.
