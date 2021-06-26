@@ -22,6 +22,7 @@ COMMAND:  - players online foreach | limit=50 | connect=Lobby-1 | "message=Messa
 COMMAND:  - players online | --force
 COMMAND:  - players registered | --force
 COMMAND:  - players player <name>
+COMMAND:  - players player <name> delete
 COMMAND:  - players player <name> kick [reason]
 COMMAND:  - players player <name> sendMessage <message> ...
 COMMAND:  - players player <name> connect <server>
@@ -70,6 +71,10 @@ Do not use the `--force` argument when you have a lot of registered players. It 
 **Usage:** `players player <name>`
 
 This command prints information about one specific registered player.
+
+## players player delete {#players-player-delete}
+**Usage:** `players player <name> delete`
+This command deletes the given player from the cloudnet database
 
 ## players player kick {#players-player-kick}
 **Usage:** `players player <name> kick [reason]`

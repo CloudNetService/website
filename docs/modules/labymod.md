@@ -98,6 +98,12 @@ This is the domain on which players will be connected when they click the ["Ask 
 ["Spectate"](#discordspectateenabled) Button in Discord.  
 After that they will be sent automatically to the specific server by the module.
 
+### permissionsConfig
+These are permissions that the LabyMod client uses to enable or (force) disable certain modifications
+
+### bannerConfig
+The URL from this config section is used to display a banner in the LabyMod client
+
 <br></br>
 
 ## DisplayTypes {#displaytypes}
@@ -130,7 +136,30 @@ The following DisplayTypes are available:
       "displayType": "SERVICE",
       "format": "§bCloud§fNet §8➢ §e%display%"
     },
-    "loginDomain": "mc.example.com"
+    "loginDomain": "mc.example.com",
+    "permissionConfig": {
+      "enabled": false,
+      "labyModPermissions": {
+        "BLOCKBUILD": true,
+        "CHAT": true,
+        "GUI_ALL": true,
+        "ANIMATIONS": true,
+        "REFILL_FIX": false,
+        "IMPROVED_LAVA": false,
+        "CROSSHAIR_SYNC": false,
+        "GUI_POTION_EFFECTS": true,
+        "SLOWDOWN": false,
+        "GUI_ARMOR_HUD": true,
+        "SATURATION_BAR": true,
+        "GUI_ITEM_HUD": true,
+        "TAGS": true,
+        "RANGE": false
+      }
+    },
+    "bannerConfig": {
+      "enabled": false,
+      "bannerUrl": "http://dl.cloudnetservice.eu/data/minecraft/CloudNet-LabyMod-Banner.png"
+    }
   }
 }
 ```
