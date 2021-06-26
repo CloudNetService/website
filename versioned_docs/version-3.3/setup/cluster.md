@@ -3,10 +3,10 @@ id: cluster
 title: Cluster
 ---
 
-## Requirements
+## Requirements {#requirements} {#requirements-requirements}
 - At least one running Node for the Cluster
 - A central database (e.g. MySQL, NOT the default H2-Database)
-## Setup
+## Setup {#setup} {#setup-setup}
 1. Start the new Node for the first time
 2. Answer the question `Is this node part of a cluster? (MultiRoot) >` during the setup process with `yes`
 3. Enter the name of the new node (e.g. `Node-2`)

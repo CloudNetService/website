@@ -24,27 +24,27 @@ COMMAND:  - paste tasks
 COMMAND:  - paste all
 ```
 
-## paste service
+## paste service {#paste-service}
 **Usage:** `paste service <name>`
 
 This command uploads the console output of the given service to the configured paste server.
 
-## paste node
+## paste node {#paste-node}
 **Usage:** `paste node`
 
 This command uploads the console output of the current node to the configured paste server.
 
-## paste modules
+## paste modules {#paste-modules}
 **Usage:** `paste modules`
 
 This command uploads a list of the modules and its configurations (on the current node) to the configured paste server.
 
-## paste tasks
+## paste tasks {#paste-tasks}
 **Usage:** `paste tasks`
 
 This command uploads all task configurations of the current node to the configured paste server.
 
-## paste all
+## paste all {#paste-all}
 **Usage:** `paste all`
 
 This command uploads all the information explained above to the configured paste server.

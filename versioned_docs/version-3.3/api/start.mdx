@@ -4,14 +4,17 @@ title: Getting started with the API
 sidebar_label: Getting started
 ---
 
+````mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import DependencyDownload from "./_dependencyDownload";
+````
 
-## Repositories
-### Releases
+## Repositories {#repositories}
+### Releases {#releases}
 Use this repository to work with the release version of the API (recommended)
 
+````mdx-code-block
 <Tabs
   groupId="repositories"
   defaultValue="maven"
@@ -45,10 +48,12 @@ Use this repository to work with the release version of the API (recommended)
 
   </TabItem>
   </Tabs>
+````
 
   ### Snapshots
   Use this repository to work with a snapshot version of the API (**Only** recommended for development!)
 
+````mdx-code-block
   <Tabs
   groupId="repositories"
   defaultValue="maven"
@@ -81,13 +86,15 @@ Use this repository to work with the release version of the API (recommended)
   ```
 
   </TabItem>
-</Tabs>
+  </Tabs>
+````
 
-## Dependencies
+## Dependencies {#dependencies}
 You have to replace `${VERSION}` with the version which you want to use. (e.g. `3.3.0-RELEASE` or `3.4.0-SNAPSHOT`)
 
-### cloudnet-driver
+### cloudnet-driver {#cloudnet-driver}
 This dependency includes the CloudNet-Driver API which can be used in plugins and modules.
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -164,9 +171,11 @@ This dependency includes the CloudNet-Driver API which can be used in plugins an
 
   </TabItem>
 </Tabs>
+````
 
-### cloudnet-wrapper-jvm
+### cloudnet-wrapper-jvm {#cloudnet-wrapper-jvm}
 This dependency includes the CloudNet-Wrapper API which can be used in plugins.
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -243,9 +252,11 @@ This dependency includes the CloudNet-Wrapper API which can be used in plugins.
 
   </TabItem>
 </Tabs>
+````
 
-### cloudnet-bridge
+### cloudnet-bridge {#cloudnet-bridge}
 This dependency includes the CloudNet-Bridge API which can be used in plugins and modules.
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -322,14 +333,16 @@ This dependency includes the CloudNet-Bridge API which can be used in plugins an
 
   </TabItem>
 </Tabs>
+````
 
-### cloudnet
+### cloudnet {#cloudnet}
 This dependency includes the CloudNet-Application API which can be used in modules.
 
 :::caution Warning
 This dependency **cannot** be used in plugins!
 :::
 
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -407,9 +420,11 @@ This dependency **cannot** be used in plugins!
 
   </TabItem>
 </Tabs>
+````
 
-### cloudnet-cloudperms
+### cloudnet-cloudperms {#cloudnet-cloudperms}
 This dependency includes the CloudNet-CloudPerms API which can be used in plugins and modules.
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -486,14 +501,16 @@ This dependency includes the CloudNet-CloudPerms API which can be used in plugin
 
   </TabItem>
 </Tabs>
+````
 
-### cloudnet-syncproxy
+### cloudnet-syncproxy {#cloudnet-syncproxy}
 This dependency includes the CloudNet-SyncProxy API which can be used in **proxy plugins** and modules.
 
 :::tip
 You can compile this dependency into your server plugin to be able to use it!
 :::
 
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -570,9 +587,11 @@ You can compile this dependency into your server plugin to be able to use it!
 
   </TabItem>
 </Tabs>
+````
 
-### cloudnet-signs
+### cloudnet-signs {#cloudnet-signs}
 This dependency includes the CloudNet-Signs Module which can be used in plugins and modules.
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -649,9 +668,11 @@ This dependency includes the CloudNet-Signs Module which can be used in plugins 
 
   </TabItem>
 </Tabs>
+````
 
-### cloudnet-npcs
+### cloudnet-npcs {#cloudnet-npcs}
 This dependency includes the CloudNet-NPC Module which can be used in plugins and modules.
+````mdx-code-block
 <Tabs
   groupId="dependencies"
   defaultValue="maven"
@@ -728,6 +749,7 @@ This dependency includes the CloudNet-NPC Module which can be used in plugins an
 
   </TabItem>
 </Tabs>
+````
 
-## Manual download
+## Manual download {#manual-download}
 <DependencyDownload/>

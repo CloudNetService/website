@@ -6,36 +6,62 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Icon from '@material-ui/core/Icon';
+import Translate from '@docusaurus/Translate';
 
 const features = [
     {
-        title: 'Free & OpenSource',
+        title: (
+            <Translate
+                id="homepage.feature.openSource.title">
+                Free & OpenSource
+            </Translate>
+        ),
         icon: 'code',
         description: (
-            <>
-                CloudNet is open source and free to use, and this will not change!
-                You can find all our projects in our <a href="https://github.com/CloudNetService/" target="_blank">GitHub organisation</a>
-            </>
+            <Translate
+                id="homepage.feature.openSource.description"
+                values={{githubLink: <a href="https://github.com/CloudNetService/" target="_blank"><Translate
+                    id="homepage.feature.openSource.githubLinkName">
+                    GitHub organisation
+                    </Translate></a>}}>
+                {
+                  "CloudNet is open source and free to use, and this will not change! You can find all our projects in our {githubLink}."
+                }
+            </Translate>
         ),
     },
     {
-        title: 'Support',
+        title: (
+          <Translate
+            id="homepage.feature.support.title">
+            Support
+          </Translate>),
         icon: 'people',
         description: (
-            <>
-                If you have any questions regarding CloudNet, you are welcome to join our <a href="https://discord.cloudnetservice.eu" target="_blank">Discord Server</a>.
-                You are able to get private support in a ticket or ask our big community there.
-            </>
+            <Translate
+                id="homepage.feature.support.description"
+                values={{discordLink: <a href="https://discord.cloudnetservice.eu" target="_blank"><Translate
+                    id="homepage.feature.support.discordLinkName">
+                    Discord Server
+                  </Translate></a>}}>
+                {
+                  "If you have any questions regarding CloudNet, you are welcome to join our {discordLink}. If you have any questions regarding CloudNet, you are welcome to join our"
+                }
+            </Translate>
         ),
     },
     {
-        title: 'Scalable',
+        title: (
+            <Translate id="homepage.feature.scalable.title">
+                Scalable
+            </Translate>
+        ),
         icon: 'trending_up',
         description: (
-            <>
-                CloudNet is horizontally and vertically scalable. This means you can distribute your players across different
-                virtual or dedicated servers to balance the performance.
-            </>
+            <Translate
+              id="homepage.feature.scalable.description">
+              CloudNet is horizontally and vertically scalable. This means you can distribute your players across different virtual or dedicated servers to balance the performance.
+            </Translate>
         ),
     },
 ];
@@ -72,7 +98,10 @@ function Home() {
                               styles.getStarted,
                             )}
                             to={useBaseUrl('docs/3.3/')}>
-                            Get Started
+                            <Translate
+                                id="homepage.getStartedButton">
+                                Get Started
+                            </Translate>
                           </Link>
                         </div>
                       </div>

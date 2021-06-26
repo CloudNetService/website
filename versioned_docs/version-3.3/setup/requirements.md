@@ -7,17 +7,17 @@ Before you install the following programs, run:
 ```
 sudo apt update && sudo apt upgrade
 ```
-## Hardware
-### Minimal
+## Hardware {#hardware}
+### Minimal {#minimal}
 128MB JVM Heap size  
 2GB DDR3 Memory  
 2 virtual cores
-### Recommended
+### Recommended {#recommended}
 512MB JVM Heap size  
 8GB DDR3 Memory  
 2-4 virtual cores
-## Software
-### Java
+## Software {#software}
+### Java {#java}
 The required Java version depends on your planned Spigot version. If you use a Spigot version below 1.9 you have to install Java 8.  
 So you can check if you have already installed Java and which version you have used.
 ```
@@ -38,7 +38,7 @@ To install Java 11, use the following command:
 ```
 sudo apt install default-jre
 ```
-### Screen
+### Screen {#screen}
 This way you can check if you already have Screen installed.
 ```
 screen -help
@@ -56,7 +56,7 @@ To install Screen, use the following command:
 ```
 sudo apt-get install screen
 ```
-### Sudo
+### Sudo {#sudo}
 This way you can check if you already have Sudo installed.
 ```
 sudo
@@ -74,7 +74,7 @@ To install Sudo, use the following command:
 ```
 apt-get install sudo
 ```
-### Curl
+### Curl {#curl}
 This way you can check if you already have Curl installed.
 ```
 curl
@@ -92,7 +92,7 @@ To install Curl, use the following command:
 ```
 sudo apt-get install curl
 ```
-### Unzip
+### Unzip {#unzip}
 This way you can check if you already have Unzip installed.
 ```
 unzip
