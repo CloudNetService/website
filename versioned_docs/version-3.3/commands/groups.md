@@ -109,9 +109,9 @@ This command removes the specified [template](../components/tasks.md#templates) 
 This command removes the specified [inclusion](../components/tasks.md#includes) from the group with the given `name`.
 
 ## groups group remove jvmOption {#groups-group-remove-jvmoption}
-**Usage:** `tasks task <name> remove jvmOption <value> ...`
+**Usage:** `groups group <name> remove jvmOption <value> ...`
 
-This command removes the specified [jvm option(s)](../components/tasks.md#jvmoptions) from the task with the given `name`.
+This command removes the specified [jvm option(s)](../components/tasks.md#jvmoptions) from the group with the given `name`.
 
 ## groups group remove processParameter {#groups-group-remove-processparameter}
 **Usage:** `groups group <name> remove processParameter <value> ...`
