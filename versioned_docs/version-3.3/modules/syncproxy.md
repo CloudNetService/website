@@ -30,7 +30,7 @@ This is the Proxy group to which the settings will be applied
 #### motds {#motds}
 This is a json array containing the different MOTDs which are randomly selected.
 
-:::tip
+:::tip Tip
 
 If you want to turn off MOTDs empty the array. This should look like this: `"motds": [],`
 
@@ -39,7 +39,7 @@ If you want to turn off MOTDs empty the array. This should look like this: `"mot
 #### maintenanceMotds {#maintenancemotds}
 This is a json array containing the different maintenance MOTDs which are randomly selected, if the SyncProxy maintenance is enabled.
 
-:::tip
+:::tip Tip
 
 If you want to turn off maintenance MOTDs empty the array. This should look like this: `"maintenanceMotds": [],`
 
@@ -48,7 +48,7 @@ If you want to turn off maintenance MOTDs empty the array. This should look like
 #### tablist {#tablist}
 It is a json array of the different animations that are displayed in the tablist one after the other.
 
-:::tip
+:::tip Tip
 
 If you want to turn off tablist empty the array. This should look like this: `"tabListConfigurations": [],`
 

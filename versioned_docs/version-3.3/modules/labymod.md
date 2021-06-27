@@ -23,7 +23,7 @@ Enables (or disables) the LabyMod Module (`true`/`false`)
 #### enabled {#enabled-1}
 Enables (or disabled) the custom rich presence (`true`/`false`)
 
-:::tip
+:::tip Tip
 
 If you disable the custom rich presence, LabyMod will show the default one:
 ```

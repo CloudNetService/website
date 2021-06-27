@@ -12,7 +12,7 @@ Defines the prefix of the ingame messages
 ### onlyProxyProtection {#onlyproxyprotection}
 Enables (or disables) the onlyProxyProtection (`true`/`false`)
 
-:::caution
+:::caution Caution
 
 Disabling the onlyProxyProtection is NOT recommended!  
 Please ensure that your Firewall is set up correctly if you disable it.

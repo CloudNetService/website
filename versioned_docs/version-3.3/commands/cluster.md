@@ -11,7 +11,7 @@ The `cluster` command is used to manage your cluster of CloudNet nodes.
 Permission: `cloudnet.command.cluster`  
 Aliases: `cluster`, `clu`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 

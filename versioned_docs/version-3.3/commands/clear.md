@@ -10,13 +10,13 @@ The `clear` command is used to clear the entire console to get a better overview
 Permission: `cloudnet.command.clear`  
 Aliases: `clear`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 
 :::
 
-:::note
+:::note Note
 
 Even when executing the command ingame, it will still clear the console of the node. **NOT** the ingame chat.
 

@@ -25,7 +25,7 @@ This defines which task should be handled first
 This will always keep the specified amount of services created in the `PREPARED` state so that they can directly be
 started without having to copy the templates (if directTemplatesAndInclusionsSetup is enabled)
 
-:::tip
+:::tip Tip
 
 This decreases the time needed until a new service is ready to join
 
@@ -34,7 +34,7 @@ This decreases the time needed until a new service is ready to join
 ### dynamicMemoryAllocation {#dynamicmemoryallocation}
 Enables (or disables) the dynamic memory allocation.
 
-:::tip
+:::tip Tip
 
 The node is allowed to remove up to the specified amount of memory in `dynamicMemoryAllocationRange`when the total
 memory usage of the node is more than 50%

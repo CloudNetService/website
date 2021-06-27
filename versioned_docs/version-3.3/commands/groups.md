@@ -10,7 +10,7 @@ The `groups` command is used to manage the configurations of all persistent grou
 Permission: `cloudnet.command.groups`  
 Aliases: `groups`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 
@@ -70,7 +70,7 @@ This command prints the configuration of the group with the given `name`.
 This command creates a new [deployment](../components/tasks.md#deployments) for the group with the given `name`.
 Example: `tasks task Lobby add deployment local:Lobby/default [spigot.jar;log.txt]`
 
-:::note
+:::note Note
 
 The excluded files can be omitted. In that case, all files are copied.
 

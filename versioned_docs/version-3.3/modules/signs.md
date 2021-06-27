@@ -40,7 +40,7 @@ The strength of the knockback when a players is staying directly in front of a s
 A JsonArray which can contain different sign layouts for certain tasks.  
 `task` defines for which task this custom layout is.
 
-:::tip
+:::tip Tip
 
 The layouts there have the same structure as the default layouts in the configuration
 

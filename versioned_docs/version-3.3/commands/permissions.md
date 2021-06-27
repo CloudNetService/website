@@ -10,7 +10,7 @@ The `permissions` command is used to manage the [Permissions Module](../modules/
 Permission: `cloudnet.command.permissions`  
 Aliases: `permissions`, `perms`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 
@@ -133,7 +133,7 @@ This command grants the given `user` the specified `permission`, limited to the 
 This command grants the given `user` the specified `permission` with the set `potency`
 for the amount of days given in the second last argument, limited to the [`targetGroup`](../components/groups.md)
 
-:::tip
+:::tip Tip
 
 If you want to explicitly revoke a permission, you have to add it with a negative `potency`.
 
@@ -237,7 +237,7 @@ This command grants the given `group` the specified `permission`, limited to the
 This command grants the given `group` the specified `permission` with the set `potency`
 for the amount of days given in the second last argument, limited to the [`targetGroup`](../components/groups.md)
 
-:::tip
+:::tip Tip
 
 If you want to explicitly revoke a permission, you have to add it with a negative `potency`.
 

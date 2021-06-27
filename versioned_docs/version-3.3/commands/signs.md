@@ -10,7 +10,7 @@ The `signs` command is used to manage the configuration of the [Signs Module](..
 Permission: `cloudnet.command.signs`  
 Aliases: `signs`, `signs`, `cloud-signs`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 

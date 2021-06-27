@@ -10,7 +10,7 @@ The `copy` command is used to copy a running service to a specific template.
 Permission: `cloudnet.command.copy`  
 Aliases: `copy`, `cp`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 

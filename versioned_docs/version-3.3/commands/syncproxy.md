@@ -10,7 +10,7 @@ The `syncproxy` command is used to manage the configuration of the [NPC Module](
 Permission: `cloudnet.command.syncproxy`  
 Aliases: `syncproxy`, `sp`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 

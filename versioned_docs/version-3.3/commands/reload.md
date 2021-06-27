@@ -10,7 +10,7 @@ The `reload` command is used to reload configurations, modules, the services reg
 Permission: `cloudnet.command.reload`  
 Aliases: `reload`, `rl`, `rel`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 

@@ -14,7 +14,7 @@ To get started with CloudNet installation, make sure you meet all the [**require
 6. Start the setup by executing the start file with `./start.sh`
 ## Setup {#setup}
 
-:::tip
+:::tip Tip
 
 *Use the following keys to switch the answer options:* <kbd>↑</kbd> / <kbd>↓</kbd>
 

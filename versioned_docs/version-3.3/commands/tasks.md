@@ -10,7 +10,7 @@ The `tasks` command is used to manage the configurations of all persistent tasks
 Permission: `cloudnet.command.tasks`  
 Aliases: `tasks`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 
@@ -166,7 +166,7 @@ This command removes the specified [group](../components/groups.md) from task wi
 This command creates a new [deployment](../components/tasks.md#deployments) for the task with the given `name`. 
 Example: `tasks task Lobby add deployment local:Lobby/default [spigot.jar;log.txt]`  
 
-:::note
+:::note Note
 
 The excluded files can be omitted. In that case, all files are copied.
 

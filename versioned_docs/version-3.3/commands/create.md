@@ -10,7 +10,7 @@ The `create` command is used to create one or more new services based on a task 
 Permission: `cloudnet.command.create`  
 Aliases: `create`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 

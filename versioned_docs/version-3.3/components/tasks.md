@@ -9,7 +9,7 @@ A task is a configuration from which [services](services) can be started.
 The configuration path for each task is `local/tasks/NAME.json`  
 After changing a configuration, you need to execute `tasks reload` in the console.  
 
-:::tip
+:::tip Tip
 
 We recommend managing the configurations with the [tasks command](../commands/tasks.md).
 In that case you do not need to keep an eye on the json syntax, and you do not need to reload the configurations after changing anything.
@@ -37,7 +37,7 @@ For example, when you want to have several proxies for the Bedrock Edition.
 ### maintenance {#maintenance}
 Enables or disables the maintenance mode services of this task (`true`/`false`)
 
-:::info
+:::info Info
 
 If the maintenance mode is enabled, services of this task can have a special sign layout and users need the permission `cloudnet.bridge.maintenance` to join.
 
