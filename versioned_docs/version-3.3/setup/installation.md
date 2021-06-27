@@ -15,7 +15,9 @@ To get started with CloudNet installation, make sure you meet all the [**require
 ## Setup {#setup}
 
 :::tip
+
 *Use the following keys to switch the answer options:* <kbd>↑</kbd> / <kbd>↓</kbd>
+
 :::
 
 1. Answer the question `Do you agree to the Mojang EULA (https://account.mojang.com/documents/minecraft_eula)?` with `yes`.
