@@ -27,7 +27,7 @@ COMMAND:  - players player <name> sendMessage <message> ...
 COMMAND:  - players player <name> connect <server>
 ```
 
-## players online foreach
+## players online foreach {#players-online-foreach}
 **Usage:** `players online foreach`
 
 You can use the command `players online foreach | <ARGUMENT>` to go through all players and execute a certain action with them.  
@@ -45,7 +45,7 @@ Possible arguments:
 You have to include the quotation marks wherever given in the example! This is needed to support whitespaces for sentences.
 :::
 
-## players online
+## players online {#players-online}
 **Usage:** `players online`
 
 This command prints information about all online players.  
@@ -55,7 +55,7 @@ By default, the amount of output is limited. You can bypass this by adding the a
 Do not use the `--force` argument when you have a lot of online players. It could lead to a memory leak!
 :::
 
-## players registered
+## players registered {#players-registered}
 **Usage:** `players registered`
 
 This command prints information about all registered players. This means every player who ever joined on your CloudNet network.  
@@ -66,18 +66,18 @@ Do not use the `--force` argument when you have a lot of registered players. It 
 :::
 
 
-## players player
+## players player {#players-player}
 **Usage:** `players player <name>`
 
 This command prints information about one specific registered player.
 
-## players player kick
+## players player kick {#players-player-kick}
 **Usage:** `players player <name> kick [reason]`
 
 This command kicks the player with the given name.  
 If you leave the reason out, the player is kicked without giving any reason.
 
-## players player sendMessage
+## players player sendMessage {#players-player-sendmessage}
 **Usage:** `players player <name> sendMessage <message>`
 
 This command sends a message to the player with te given name.  
@@ -86,7 +86,7 @@ This command sends a message to the player with te given name.
 You do not need to include quotation marks here, because the message is always the last argument.
 :::
 
-## players player connect
+## players player connect {#players-player-connect}
 **Usage:** `players player <name> connect <service>`
 
 This command sens the player with the given name to the specified service.

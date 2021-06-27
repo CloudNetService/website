@@ -23,22 +23,22 @@ COMMAND:  - screen toggle <local service name>
 COMMAND:  - screen write <command> ...
 ```
 
-## screen list
+## screen list {#screen-list}
 **Usage:** `screen list`
 
 This command lists the services for which you enabled the console output.
 
-## screen disableAll
+## screen disableAll {#screen-disableall}
 **Usage:** `screen disableAll`
 
 This command disables the output of all services.
 
-## screen toggle
+## screen toggle {#screen-toggle}
 **Usage:** `screen toggle <local service name>`
 
 This command enables or disables the printing of the console output for the specified (local) service.
 
-## screen write
+## screen write {#screen-write}
 **Usage:** `screen write <command>`
 
 This command executes the given command in the console of all enables screens.
