@@ -85,7 +85,7 @@ If you leave the reason out, the player is kicked without giving any reason.
 ## players player sendMessage {#players-player-sendmessage}
 **Usage:** `players player <name> sendMessage <message>`
 
-This command sends a message to the player with te given name.  
+This command sends a message to the player with the given name.  
 
 :::note 
 You do not need to include quotation marks here, because the message is always the last argument.
@@ -94,4 +94,4 @@ You do not need to include quotation marks here, because the message is always t
 ## players player connect {#players-player-connect}
 **Usage:** `players player <name> connect <service>`
 
-This command sens the player with the given name to the specified service.
+This command sends the player with the given name to the specified service.
