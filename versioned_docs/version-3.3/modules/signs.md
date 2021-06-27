@@ -4,7 +4,7 @@ title: Signs Module
 sidebar_label: Signs
 ---
 
-![CloudNet-Signs-Module-Example.png](img/CloudNet-Signs-Module-Example.png)  
+![CloudNet-Signs-Module-Example.png](/img/v3/modules/CloudNet-Signs-Module-Example.png)  
 The sign system has a sorted, animated live-updating sign system, depending on the order of occupation.
 The tags can even be targeted to specific groups with a template path limitation, which will then only show services
 with the specified template. Every service behind the signs themselves needs the [CloudNet Bridge module](bridge.md),
