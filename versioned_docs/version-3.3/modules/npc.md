@@ -5,7 +5,7 @@ sidebar_label: NPC
 ---
 
 The CloudNet NPC module allows spawning of fake-players for server selection.  
-![CloudNet-NPC-Module-Example.png](img/CloudNet-NPC-Module-Example.png)  
+![CloudNet-NPC-Module-Example.png](/img/v3/modules/CloudNet-NPC-Module-Example.png)  
 Every NPC provides server connect methods either trough an inventory or through direct connect. NPCs can be managed with the `/cloudnpc` command.
 
 ## NPC properties {#npc-properties}
@@ -30,12 +30,16 @@ Placeholders for the InfoLine:
 ```
 
 ## NPC Inventory {#npc-inventory}
+
 :::caution Warning
+
 The inventory contains 1.13+ items in the default configuration!  
 If you do not change them, they will not be visible on versions below that.  
 You can also use our [Sample Configuration for 1.8 to 1.12](#sample-configuration-18-to-112).
+
 :::
-![CloudNet-NPC-Module-Inventory-Example.png](img/CloudNet-NPC-Module-Inventory-Example.png)  
+
+![CloudNet-NPC-Module-Inventory-Example.png](/img/v3/modules/CloudNet-NPC-Module-Inventory-Example.png)  
 Placeholders for items in the inventory:
 ```
 %task% ----------------------- The name of the task of the server

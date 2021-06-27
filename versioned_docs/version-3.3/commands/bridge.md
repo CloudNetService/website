@@ -10,8 +10,10 @@ The `paste` command is used to manage the configuration of the [Bridge-Module](.
 Permission: `cloudnet.command.bridge`  
 Aliases: `bridge`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `bridge` command.  

@@ -4,7 +4,7 @@ title: Signs Module
 sidebar_label: Signs
 ---
 
-![CloudNet-Signs-Module-Example.png](img/CloudNet-Signs-Module-Example.png)  
+![CloudNet-Signs-Module-Example.png](/img/v3/modules/CloudNet-Signs-Module-Example.png)  
 The sign system has a sorted, animated live-updating sign system, depending on the order of occupation.
 The tags can even be targeted to specific groups with a template path limitation, which will then only show services
 with the specified template. Every service behind the signs themselves needs the [CloudNet Bridge module](bridge.md),
@@ -20,8 +20,11 @@ This is a JsonArray containing different SignLayout configurations for each Task
 
 #### targetGroup {#targetgroup}
 Defines the target group of this SignLayout configuration (e.g. `Lobby`)
+
 :::tip Info
+
 This is the group on which the signs are located
+
 :::
 
 #### switchToSearchingWhenServiceIsFull {#switchtosearchingwhenserviceisfull}
@@ -36,8 +39,11 @@ The strength of the knockback when a players is staying directly in front of a s
 #### taskLayouts {#tasklayouts}
 A JsonArray which can contain different sign layouts for certain tasks.  
 `task` defines for which task this custom layout is.
-:::tip
+
+:::tip Tip
+
 The layouts there have the same structure as the default layouts in the configuration
+
 :::
 
 #### defaultOnlineLayout {#defaultonlinelayout}

@@ -13,9 +13,13 @@ To get started with CloudNet installation, make sure you meet all the [**require
 5. Give the start file permissions with `chmod +x start.sh`.
 6. Start the setup by executing the start file with `./start.sh`
 ## Setup {#setup}
-:::tip
+
+:::tip Tip
+
 *Use the following keys to switch the answer options:* <kbd>↑</kbd> / <kbd>↓</kbd>
+
 :::
+
 1. Answer the question `Do you agree to the Mojang EULA (https://account.mojang.com/documents/minecraft_eula)?` with `yes`.
 2. Select your server IP address with port for the cloud. The port is used by the cloud and not by other applications like BungeeCord (e.g. `0.0.0.0:1410`).
 3. Select your server IP address with port for the web server (e.g. `0.0.0.0:2812`).

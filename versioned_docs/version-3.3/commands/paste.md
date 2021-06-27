@@ -10,8 +10,10 @@ The `paste` command is used to upload the full service console output to the con
 Permission: `cloudnet.command.paste`  
 Aliases: `paste`, `haste`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `paste` command.  

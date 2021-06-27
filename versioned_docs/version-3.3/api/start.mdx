@@ -7,7 +7,7 @@ sidebar_label: Getting started
 ````mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import DependencyDownload from "./_dependencyDownload";
+import DependencyDownload from "@site/src/js/_dependencyDownload";
 ````
 
 ## Repositories {#repositories}
@@ -50,8 +50,8 @@ Use this repository to work with the release version of the API (recommended)
   </Tabs>
 ````
 
-  ### Snapshots
-  Use this repository to work with a snapshot version of the API (**Only** recommended for development!)
+### Snapshots {#snapshots}
+Use this repository to work with a snapshot version of the API (**Only** recommended for development!)
 
 ````mdx-code-block
   <Tabs
@@ -339,7 +339,9 @@ This dependency includes the CloudNet-Bridge API which can be used in plugins an
 This dependency includes the CloudNet-Application API which can be used in modules.
 
 :::caution Warning
+
 This dependency **cannot** be used in plugins!
+
 :::
 
 ````mdx-code-block
@@ -506,8 +508,10 @@ This dependency includes the CloudNet-CloudPerms API which can be used in plugin
 ### cloudnet-syncproxy {#cloudnet-syncproxy}
 This dependency includes the CloudNet-SyncProxy API which can be used in **proxy plugins** and modules.
 
-:::tip
+:::tip Tip
+
 You can compile this dependency into your server plugin to be able to use it!
+
 :::
 
 ````mdx-code-block

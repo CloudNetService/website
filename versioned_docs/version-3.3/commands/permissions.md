@@ -10,8 +10,10 @@ The `permissions` command is used to manage the [Permissions Module](../modules/
 Permission: `cloudnet.command.permissions`  
 Aliases: `permissions`, `perms`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `permissions` command.  
@@ -131,8 +133,10 @@ This command grants the given `user` the specified `permission`, limited to the 
 This command grants the given `user` the specified `permission` with the set `potency`
 for the amount of days given in the second last argument, limited to the [`targetGroup`](../components/groups.md)
 
-:::tip
+:::tip Tip
+
 If you want to explicitly revoke a permission, you have to add it with a negative `potency`.
+
 :::
 
 ## permissions user remove permission {#permissions-user-remove-permission}
@@ -141,8 +145,10 @@ If you want to explicitly revoke a permission, you have to add it with a negativ
 This command removes the granted `permission` from the given `user`
 
 :::caution Warning
+
 This does **not** work for permissions set for a specific [`targetGroup`](../components/groups.md)!  
 Please see below for more information.
+
 :::
 
 ** Usage 2:** `permissions user <user> remove permission <permission> <targetGroup>`
@@ -231,8 +237,10 @@ This command grants the given `group` the specified `permission`, limited to the
 This command grants the given `group` the specified `permission` with the set `potency`
 for the amount of days given in the second last argument, limited to the [`targetGroup`](../components/groups.md)
 
-:::tip
+:::tip Tip
+
 If you want to explicitly revoke a permission, you have to add it with a negative `potency`.
+
 :::
 
 ## permissions user remove permission {#permissions-user-remove-permission-1}
@@ -241,8 +249,10 @@ If you want to explicitly revoke a permission, you have to add it with a negativ
 This command removes the granted `permission` from the given `group`
 
 :::caution Warning
+
 This does **not** work for permissions set for a specific [`targetGroup`](../components/groups.md)!  
 Please see below for more information.
+
 :::
 
 ** Usage 2:** `permissions group <group> remove permission <permission> <targetGroup>`
