@@ -11,9 +11,12 @@ The bridge module also contains "only proxy join", which prevents users from byp
 Defines the prefix of the ingame messages
 ### onlyProxyProtection {#onlyproxyprotection}
 Enables (or disables) the onlyProxyProtection (`true`/`false`)
+
 :::caution
+
 Disabling the onlyProxyProtection is NOT recommended!  
 Please ensure that your Firewall is set up correctly if you disable it.
+
 :::
 ### excludedOnlyProxyWalkableGroups {#excludedonlyproxywalkablegroups}
 Here you can add specific groups for which the [OnlyProxyProtection](#onlyproxyprotection) should be disabled.  
@@ -43,9 +46,13 @@ Json array of alternative hub commands.
 Enabled (or disables) the logging of the player connections in the console (`true`/`false`)
 ### messages {#messages}
 A set of the ingame messages sent by the Bridge Module
+
 :::tip Info
+
 To disable a message clear the content of the string
+
 :::
+
 ## Sample Configuration {#sample-configuration}
 The default configuration of the Bridge Module looks like this:
 ```json

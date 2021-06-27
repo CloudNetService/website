@@ -12,7 +12,9 @@ Permission: `cloudnet.command.players`
 Aliases: `players`, `player`, `pl`
 
 :::info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `players` command.  
@@ -42,7 +44,9 @@ Possible arguments:
 - `name=derrop` -> Limit the action(s) to the given player name
 
 :::tip
+
 You have to include the quotation marks wherever given in the example! This is needed to support whitespaces for sentences.
+
 :::
 
 ## players online {#players-online}
@@ -52,7 +56,9 @@ This command prints information about all online players.
 By default, the amount of output is limited. You can bypass this by adding the argument `| --force` to the command.
 
 :::caution
+
 Do not use the `--force` argument when you have a lot of online players. It could lead to a memory leak!
+
 :::
 
 ## players registered {#players-registered}
@@ -62,7 +68,9 @@ This command prints information about all registered players. This means every p
 By default, the amount of output is limited. You can bypass this by adding the argument `| --force` to the command.
 
 :::caution
+
 Do not use the `--force` argument when you have a lot of registered players. It could lead to a memory leak!
+
 :::
 
 
@@ -83,7 +91,9 @@ If you leave the reason out, the player is kicked without giving any reason.
 This command sends a message to the player with te given name.  
 
 :::note 
+
 You do not need to include quotation marks here, because the message is always the last argument.
+
 :::
 
 ## players player connect {#players-player-connect}

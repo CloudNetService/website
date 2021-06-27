@@ -22,12 +22,15 @@ Enables (or disables) the LabyMod Module (`true`/`false`)
 ### displayRPG {#displayrpg}
 #### enabled {#enabled-1}
 Enables (or disabled) the custom rich presence (`true`/`false`)
+
 :::tip
+
 If you disable the custom rich presence, LabyMod will show the default one:
 ```
 DOMAIN
 Ingame
 ```
+
 :::
 
 #### displayType {#displaytype}
@@ -70,8 +73,11 @@ Example:
       "Community"
     ]
 ```
+
 :::tip Info
+
 This option is ignored when `discordSpectateEnabled` is set to `false`
+
 :::
 
 <br></br>

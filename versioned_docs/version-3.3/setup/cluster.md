@@ -16,13 +16,19 @@ title: Cluster
 7. Add the new node on every existing node of the Cluster with the `clu add <Name> <Host>` command (e.g. `clu add Node-2 127.0.0.1`)
 
 :::tip Correct
+
 INFO: The connection to the node [uniqueId=Node-2] was successfully established!
+
 :::
+
 The connecion has successfully been established and the new Node is added to the cluster.
 You now might want to add the Node to a few tasks and push everything (Tasks Configs, Templates, ...) to the new Node by executing `clu push all` on any previously existing node.
 
 :::danger Error
+
 WARNING: Authorization unfortunately failed to a node in the network
+
 :::
+
 The connection to at least one of the existing nodes in the cluster failed.
 Please ensure that you used the correct ClusterID in Step 4 and that you added the new node to every existing node as described in Step 7.

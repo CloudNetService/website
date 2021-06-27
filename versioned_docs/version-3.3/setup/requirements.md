@@ -24,13 +24,19 @@ So you can check if you have already installed Java and which version you have u
 java -version
 ```
 Output:
+
 :::tip Correct
+
 openjdk version "11.0.9.1" 2020-11-04  
 OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.9.1+1)  
 OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.9.1+1, mixed mode)
+
 :::
+
 :::danger Error
+
 -bash: java -version: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Java.  
@@ -44,11 +50,17 @@ This way you can check if you already have Screen installed.
 screen -help
 ```
 Output:
+
 :::tip Correct
+
 Use: screen [-opts] [cmd [args]] or: screen -r [host.tty]
+
 :::
+
 :::danger Error
+
 bash: screen: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Screen.  
@@ -62,11 +74,17 @@ This way you can check if you already have Sudo installed.
 sudo
 ```
 Output:
+
 :::tip Correct
+
 usage: sudo -h | -K | -k | -V
+
 :::
+
 :::danger Error
+
 bash: sudo: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Sudo.  
@@ -80,11 +98,17 @@ This way you can check if you already have Curl installed.
 curl
 ```
 Output:
+
 :::tip Correct
+
 curl: try 'curl --help' or 'curl --manual' for more information
+
 :::
+
 :::danger Error
+
 bash: curl: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Curl.  
@@ -98,12 +122,19 @@ This way you can check if you already have Unzip installed.
 unzip
 ```
 Output:
+
 :::tip Correct
+
 UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
 :::
+
 :::danger Error
+
 bash: unzip: Command not found.
+
 :::
+
 If the output is "Command not found", then you need to install Unzip.  
 To install Unzip, use the following command:
 ```

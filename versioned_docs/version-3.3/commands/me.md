@@ -11,5 +11,7 @@ Permission: `cloudnet.command.me`
 Aliases: `me`, `cloud`, `cloudnet`
 
 :::info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::

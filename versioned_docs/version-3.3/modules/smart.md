@@ -24,18 +24,27 @@ This defines which task should be handled first
 ### preparedServices {#preparedservices}
 This will always keep the specified amount of services created in the `PREPARED` state so that they can directly be
 started without having to copy the templates (if directTemplatesAndInclusionsSetup is enabled)
+
 :::tip
+
 This decreases the time needed until a new service is ready to join
+
 :::
 
 ### dynamicMemoryAllocation {#dynamicmemoryallocation}
 Enables (or disables) the dynamic memory allocation.
+
 :::tip
+
 The node is allowed to remove up to the specified amount of memory in `dynamicMemoryAllocationRange`when the total
 memory usage of the node is more than 50%
+
 :::
+
 :::caution Warning
+
 We DO NOT recommend using this feature!
+
 :::
 
 ### dynamicMemoryAllocationRange {#dynamicmemoryallocationrange}
@@ -45,8 +54,11 @@ Please read also the further explanation **dynamicMemoryAllocation**
 ### percentOfPlayersToCheckShouldAutoStopTheServiceInFuture {#percentofplayerstocheckshouldautostoptheserviceinfuture}
 This will check if the specified percentage of players is online in the service, if not it starts a
 countdown (specified in `autoStopTimeByUnusedServiceInSeconds`) and stops the service when the countdown reaches 0.
+
 :::tip Info
+
 You can disable this feature by setting the value to `-1`.
+
 :::
 
 ### autoStopTimeByUnusedServiceInSeconds {#autostoptimebyunusedserviceinseconds}
@@ -57,8 +69,11 @@ If the percentage of players on a service reaches this value, a new service is b
 
 ### forAnewInstanceDelayTimeInSeconds {#foranewinstancedelaytimeinseconds}
 This is the (minimal) delay between every service created by the **percentOfPlayersForANewServiceByInstance** option.
+
 :::caution Warning
+
 We do not recommend using this option. Instead, we recommend using the **minNonFullServices** option.
+
 :::
 
 ### minNonFullServices {#minnonfullservices}
@@ -75,8 +90,11 @@ The possible options for this feature are:
 
 ### maxServiceCount {#maxservicecount}
 This will prevent the creation of new services when the specified amount is reached
+
 :::tip Info
+
 The value `-1` disables this option.
+
 :::
 
 ## Sample configuration {#sample-configuration}

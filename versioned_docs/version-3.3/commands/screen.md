@@ -11,7 +11,9 @@ Permission: `cloudnet.command.screen`
 Aliases: `screen`, `scr`, `console`
 
 :::info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `screen` command.  

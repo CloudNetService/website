@@ -11,7 +11,9 @@ Permission: `cloudnet.command.tasks`
 Aliases: `tasks`
 
 :::info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `tasks` command.  
@@ -54,7 +56,9 @@ COMMAND:  - tasks task <name> clear jvmOptions
 This command is used to start an interactive setup for a new task.
 
 :::caution Warning
+
 This specific command can only be used in the node console, since it starts an interactive setup which is not possible ingame!
+
 :::
 
 ## tasks reload {#tasks-reload}
@@ -128,9 +132,11 @@ This command sets the specified [environment](../components/tasks.md#environment
 This command disables (`true`) or enables (`false`) the [ip rewrite](../components/tasks.md#disableiprewrite) of the task.
 
 :::Caution Warning
+
 We recommend the usage of this feature just in very special cases.  
 For example, when you want to have several proxies for the Bedrock Edition.
 (Unfortunately, the Bedrock Edition does not support SRV-Records. Please contact us in that case for further assistance!)
+
 :::
 
 ## tasks task add node {#tasks-task-add-node}
@@ -161,7 +167,9 @@ This command creates a new [deployment](../components/tasks.md#deployments) for 
 Example: `tasks task Lobby add deployment local:Lobby/default [spigot.jar;log.txt]`  
 
 :::note
+
 The excluded files can be omitted. In that case, all files are copied.
+
 :::
 
 ## tasks task add template {#tasks-task-add-template}

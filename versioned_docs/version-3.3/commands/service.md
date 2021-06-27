@@ -11,7 +11,9 @@ Permission: `cloudnet.command.service`
 Aliases: `paste`, `haste`
 
 :::info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `service` command.  
@@ -90,8 +92,11 @@ This command deploys the files of the service with the given `name` to the added
 **Usage:** `service <name> restart`
 
 This command restarts the service with the given `name`, **without deleting the files**.
+
 :::tip
+
 You can use that instead of the `/reload` command, which is not supported by the cloud!
+
 :::
 
 ## service command {#service-command}

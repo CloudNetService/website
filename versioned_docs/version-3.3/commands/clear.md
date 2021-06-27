@@ -11,9 +11,13 @@ Permission: `cloudnet.command.clear`
 Aliases: `clear`
 
 :::info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 :::note
+
 Even when executing the command ingame, it will still clear the console of the node. **NOT** the ingame chat.
+
 :::

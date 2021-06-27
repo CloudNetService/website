@@ -20,8 +20,11 @@ This is a JsonArray containing different SignLayout configurations for each Task
 
 #### targetGroup {#targetgroup}
 Defines the target group of this SignLayout configuration (e.g. `Lobby`)
+
 :::tip Info
+
 This is the group on which the signs are located
+
 :::
 
 #### switchToSearchingWhenServiceIsFull {#switchtosearchingwhenserviceisfull}
@@ -36,8 +39,11 @@ The strength of the knockback when a players is staying directly in front of a s
 #### taskLayouts {#tasklayouts}
 A JsonArray which can contain different sign layouts for certain tasks.  
 `task` defines for which task this custom layout is.
+
 :::tip
+
 The layouts there have the same structure as the default layouts in the configuration
+
 :::
 
 #### defaultOnlineLayout {#defaultonlinelayout}
