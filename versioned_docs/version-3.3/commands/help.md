@@ -17,6 +17,7 @@ This command can be used as a command in the node console or as a command ingame
 :::
 
 ## help {#help}
+
 **Usage:** `help`
 
 This command shows all commands and their description.

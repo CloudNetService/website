@@ -17,6 +17,7 @@ This command can be used as a command in the node console or as a command ingame
 :::
 
 ## exit {#exit}
+
 **Usage:** `exit`
 
 This command gracefully shuts down the current CloudNet instance.

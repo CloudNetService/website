@@ -1,52 +1,77 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from '../css/styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "../css/styles.module.css";
 import ReactSelect from "react-select";
 
 function DependencyDownload() {
-  const [dependencyName, setDependencyName] = React.useState(dependencies[0].name)
-  const [versionName, setVersionName] = React.useState(dependencies[0].currentVersion)
-  const [versions, setVersions] = React.useState(getVersions(dependencies[0]))
+  const [dependencyName, setDependencyName] = React.useState(
+    dependencies[0].name
+  );
+  const [versionName, setVersionName] = React.useState(
+    dependencies[0].currentVersion
+  );
+  const [versions, setVersions] = React.useState(getVersions(dependencies[0]));
   const [downloadURL, setDownloadURL] = React.useState(() => {
-    let defaultDependency = dependencies[0]
-    let defaultVersion = defaultDependency.versions.find(version => version.version === defaultDependency.currentVersion)
-    return getDownloadURL(defaultVersion)
-  })
+    let defaultDependency = dependencies[0];
+    let defaultVersion = defaultDependency.versions.find(
+      (version) => version.version === defaultDependency.currentVersion
+    );
+    return getDownloadURL(defaultVersion);
+  });
   let versionsRef = React.createRef();
 
   function getVersions(dependency) {
-    return dependency.versions.map(version => {
-      return {value: version.version, label: version.version}
-    })
+    return dependency.versions.map((version) => {
+      return { value: version.version, label: version.version };
+    });
   }
 
   function getDownloadURL(version) {
-    let templateURL = releaseTypes.find(releaseType => releaseType.name === version.releaseType).url
+    let templateURL = releaseTypes.find(
+      (releaseType) => releaseType.name === version.releaseType
+    ).url;
     if (!templateURL) {
-      console.error(`ReleaseType ${version.releaseType} of ${version.name}(${version.version}) does not exist!`)
-      return ""
+      console.error(
+        `ReleaseType ${version.releaseType} of ${version.name}(${version.version}) does not exist!`
+      );
+      return "";
     }
-    return templateURL.replace(/%groupId%/g, version.groupId).replace(/%artifactId%/g, version.artifactId).replace(/%version%/g, version.version)
+    return templateURL
+      .replace(/%groupId%/g, version.groupId)
+      .replace(/%artifactId%/g, version.artifactId)
+      .replace(/%version%/g, version.version);
   }
 
   function updateDownloadURL(dependency, version) {
-    let selectedDependency = dependencies.find(localDependency => localDependency.name === dependency)
-    let selectedVersion = selectedDependency.versions.find(localVersion => localVersion.version === version);
-    setDownloadURL(getDownloadURL(selectedVersion))
+    let selectedDependency = dependencies.find(
+      (localDependency) => localDependency.name === dependency
+    );
+    let selectedVersion = selectedDependency.versions.find(
+      (localVersion) => localVersion.version === version
+    );
+    setDownloadURL(getDownloadURL(selectedVersion));
   }
 
   function handleDependencyChange(newValue) {
-    let selectedDependency = dependencies.find(dependency => dependency.name === newValue.value)
-    setDependencyName(selectedDependency.name)
-    setVersions(getVersions(selectedDependency))
-    setVersionName(selectedDependency.currentVersion)
-    versionsRef.select.setValue({value: selectedDependency.currentVersion, label: selectedDependency.currentVersion})
-    updateDownloadURL(selectedDependency.name, selectedDependency.currentVersion)
+    let selectedDependency = dependencies.find(
+      (dependency) => dependency.name === newValue.value
+    );
+    setDependencyName(selectedDependency.name);
+    setVersions(getVersions(selectedDependency));
+    setVersionName(selectedDependency.currentVersion);
+    versionsRef.select.setValue({
+      value: selectedDependency.currentVersion,
+      label: selectedDependency.currentVersion,
+    });
+    updateDownloadURL(
+      selectedDependency.name,
+      selectedDependency.currentVersion
+    );
   }
 
   function handleVersionChange(newValue) {
     setVersionName(newValue.value);
-    updateDownloadURL(dependencyName, newValue.value)
+    updateDownloadURL(dependencyName, newValue.value);
   }
 
   const customTheme = (theme) => ({
@@ -67,42 +92,52 @@ function DependencyDownload() {
       neutral60: "var(--ifm-color-emphasis-600)",
       neutral70: "var(--ifm-color-emphasis-700)",
       neutral80: "var(--ifm-color-emphasis-800)",
-      neutral90: "var(--ifm-color-emphasis-900)"
-    }
-  })
+      neutral90: "var(--ifm-color-emphasis-900)",
+    },
+  });
 
   return (
     <div>
-        <div>
-          <h4>Dependency</h4>
-          <ReactSelect
-            options={dependencies.map(dependency => {return {value: dependency.name, label: dependency.name}})}
-            defaultValue={{value: dependencyName, label: dependencyName}}
-            onChange={handleDependencyChange}
-            className={clsx(styles.select)}
-            theme={customTheme}
-          />
-        </div>
-        <div>
-          <h4>Version</h4>
-          <ReactSelect
-            ref={ref => {
-              versionsRef = ref
-            }}
-            options={versions}
-            defaultValue={{value: versionName, label: versionName}}
-            onChange={handleVersionChange}
-            className={clsx(styles.select)}
-            theme={customTheme}
-          />
-        </div>
-        <div>
-          <a target="_blank" className={clsx('button button--outline button--secondary button--mg', styles.downloadButton)}
-             href={downloadURL} id="dependency-download" rel="noopener noreferrer"
-            key={downloadURL}
-          >Download</a>
-        </div>
-
+      <div>
+        <h4>Dependency</h4>
+        <ReactSelect
+          options={dependencies.map((dependency) => {
+            return { value: dependency.name, label: dependency.name };
+          })}
+          defaultValue={{ value: dependencyName, label: dependencyName }}
+          onChange={handleDependencyChange}
+          className={clsx(styles.select)}
+          theme={customTheme}
+        />
+      </div>
+      <div>
+        <h4>Version</h4>
+        <ReactSelect
+          ref={(ref) => {
+            versionsRef = ref;
+          }}
+          options={versions}
+          defaultValue={{ value: versionName, label: versionName }}
+          onChange={handleVersionChange}
+          className={clsx(styles.select)}
+          theme={customTheme}
+        />
+      </div>
+      <div>
+        <a
+          target="_blank"
+          className={clsx(
+            "button button--outline button--secondary button--mg",
+            styles.downloadButton
+          )}
+          href={downloadURL}
+          id="dependency-download"
+          rel="noopener noreferrer"
+          key={downloadURL}
+        >
+          Download
+        </a>
+      </div>
     </div>
   );
 }
@@ -118,21 +153,21 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-driver",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-driver",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-driver",
-        releaseType: "snapshot"
-      }
-    ]
+        releaseType: "snapshot",
+      },
+    ],
   },
   {
     name: "cloudnet-wrapper-jvm",
@@ -142,21 +177,21 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-wrapper-jvm",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-wrapper-jvm",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-wrapper-jvm",
-        releaseType: "snapshot"
-      }
-    ]
+        releaseType: "snapshot",
+      },
+    ],
   },
   {
     name: "cloudnet-bridge",
@@ -166,21 +201,21 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-bridge",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-bridge",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-bridge",
-        releaseType: "snapshot"
-      }
-    ]
+        releaseType: "snapshot",
+      },
+    ],
   },
   {
     name: "cloudnet",
@@ -190,21 +225,21 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet",
-        releaseType: "snapshot"
-      }
-    ]
+        releaseType: "snapshot",
+      },
+    ],
   },
   {
     name: "cloudnet-cloudperms",
@@ -214,21 +249,21 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-cloudperms",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-cloudperms",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-cloudperms",
-        releaseType: "snapshot"
-      }
-    ]
+        releaseType: "snapshot",
+      },
+    ],
   },
   {
     name: "cloudnet-syncproxy",
@@ -238,21 +273,21 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-syncproxy",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-syncproxy",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-syncproxy",
-        releaseType: "snapshot"
-      }
-    ]
+        releaseType: "snapshot",
+      },
+    ],
   },
   {
     name: "cloudnet-signs",
@@ -262,21 +297,21 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-signs",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-signs",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-signs",
-        releaseType: "snapshot"
-      }
-    ]
+        releaseType: "snapshot",
+      },
+    ],
   },
   {
     name: "cloudnet-npcs",
@@ -286,30 +321,30 @@ const dependencies = [
         version: "3.3.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-npcs",
-        releaseType: "snapshot"
+        releaseType: "snapshot",
       },
       {
         version: "3.3.0-RELEASE",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-npcs",
-        releaseType: "release"
+        releaseType: "release",
       },
       {
         version: "3.4.0-SNAPSHOT",
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-npcs",
-        releaseType: "snapshot"
-      }
-    ]
-  }
-]
+        releaseType: "snapshot",
+      },
+    ],
+  },
+];
 const releaseTypes = [
   {
     name: "release",
-    url: "https://repo.cloudnetservice.eu/repository/releases/%groupId%/%artifactId%/%version%/%artifactId%-%version%.jar"
+    url: "https://repo.cloudnetservice.eu/repository/releases/%groupId%/%artifactId%/%version%/%artifactId%-%version%.jar",
   },
   {
     name: "snapshot",
-    url: "https://repo.cloudnetservice.eu/repository/snapshots/%groupId%/%artifactId%/%version%/%artifactId%-%version%.jar"
-  }
-]
+    url: "https://repo.cloudnetservice.eu/repository/snapshots/%groupId%/%artifactId%/%version%/%artifactId%-%version%.jar",
+  },
+];

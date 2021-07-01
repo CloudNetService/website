@@ -10,8 +10,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 0,100% 0,100% calc(100% - 4vw),0 100%);
-  clip-path: polygon(0 0,100% 0,100% calc(100% - 4vw),0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
 }
 
 @media screen and (max-width: 966px) {
@@ -25,7 +25,7 @@
   margin: auto;
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 999px) {
   .heroImage {
     display: none;
   }

@@ -3,10 +3,10 @@ id: changelog
 title: Changelog
 ---
 
-````mdx-code-block
+```mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-````
+```
 
 <!--- Default
 <Tabs
@@ -28,7 +28,7 @@ values={[
 
 ## v3.3.0 - 2020-05-16 {#v330---2020-05-16}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
@@ -38,7 +38,7 @@ values={[
 {label: "Removed", value: "removed"},
 {label: "API", value: "api"},
 ]}>
-````
+```
 
 <TabItem value="added">
 
@@ -79,6 +79,7 @@ values={[
 <TabItem value="api">
 
 **Please adjust your plugins and modules, deprecated methods will be removed in a future release.**
+
 - Deprecated some Singletons (e.g. AbstractSignManagement, BridgePlayerManager), should now be accessed via the `CloudNetDriver#getServicesRegistry`. See the cloudnet-examples module for help.
 - Deprecated CloudPermissionsManagement#getInstance, should now be accessed via CloudNetDriver#getPermissionManagement
 - Deprecated property methods in class ServiceInfoSnapshotUtil, properties can now be accessed via `ServiceInfoSnapshot#getProperty(ServiceProperty)`
@@ -89,19 +90,19 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.2.2 - 2020-01-16 {#v322---2020-01-16}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="fixed"
 values={[
 {label: "Fixed", value: "fixed"},
 ]}>
-````
+```
 
 <TabItem value="fixed">
 
@@ -109,19 +110,19 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.2.1 - 2019-12-29 {#v321---2019-12-29}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="fixed"
 values={[
 {label: "Fixed", value: "fixed"},
 ]}>
-````
+```
 
 <TabItem value="fixed">
 
@@ -131,13 +132,13 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.2.0 - 2019-12-25 {#v320---2019-12-25}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
@@ -146,7 +147,7 @@ values={[
 {label: "Changed", value: "changed"},
 {label: "Removed", value: "removed"},
 ]}>
-````
+```
 
 <TabItem value="added">
 
@@ -180,13 +181,13 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.1.0 - 2019-11-02 {#v310---2019-11-02}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
@@ -195,7 +196,7 @@ values={[
 {label: "Changed", value: "changed"},
 {label: "Removed", value: "removed"},
 ]}>
-````
+```
 
 <TabItem value="added">
 
@@ -237,19 +238,19 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.0.0 - 2019-05-21 {#v300---2019-05-21}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="changed"
 values={[
 {label: "Changed", value: "changed"},
 ]}>
-````
+```
 
 <TabItem value="changed">
 
@@ -259,20 +260,20 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.0.0 PRE-3 - 2019-03-10 {#v300-pre-3---2019-03-10}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
 {label: "Added", value: "added"},
 {label: "Changed", value: "changed"},
 ]}>
-````
+```
 
 <TabItem value="added">
 
@@ -292,20 +293,20 @@ values={[
 <TabItem value="removed">Removed</TabItem>
 <TabItem value="api">API</TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.0.0 PRE-2 - 2019-02-10 {#v300-pre-2---2019-02-10}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
 {label: "Added", value: "added"},
 {label: "Changed", value: "changed"},
 ]}>
-````
+```
 
 <TabItem value="added">
 
@@ -325,20 +326,21 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.0.0 PRE-1 - 2019-02-03 {#v300-pre-1---2019-02-03}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
 {label: "Added", value: "added"},
 {label: "Changed", value: "changed"},
 ]}>
-````
+```
+
 <TabItem value="added">
 
 - Added a Permissions-System module, which supports the following PluginAPIs: => Bukkit, Velocity, ProxProx, GoMint, Nukkit, BungeeCord
@@ -358,19 +360,19 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
 
 ## v3.0.0 BETA - 2018-12-08 {#v300-beta---2018-12-08}
 
-````mdx-code-block
+```mdx-code-block
 <Tabs
 defaultValue="changed"
 values={[
 {label: "Changed", value: "changed"},
 ]}>
-````
+```
 
 <TabItem value="changed">
 
@@ -380,6 +382,6 @@ values={[
 
 </TabItem>
 
-````mdx-code-block
+```mdx-code-block
 </Tabs>
-````
+```
