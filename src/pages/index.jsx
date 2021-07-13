@@ -78,7 +78,7 @@ const features = [
   },
 ];
 
-function Feature(icon, title, description) {
+function Feature({ icon, title, description }) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
@@ -89,6 +89,12 @@ function Feature(icon, title, description) {
     </div>
   );
 }
+
+Feature.propTypes = {
+  icon: undefined,
+  title: undefined,
+  description: undefined,
+};
 
 function Home() {
   const context = useDocusaurusContext();
