@@ -64,7 +64,11 @@ function Home() {
           und Onlineprofile:{" "}
         </p>
         <p>
-          <a href="https://twitter.com/CloudNetService" target="_blank">
+          <a
+            href="https://twitter.com/CloudNetService"
+            target="_blank"
+            rel="noreferrer"
+          >
             https://twitter.com/CloudNetService
           </a>
         </p>

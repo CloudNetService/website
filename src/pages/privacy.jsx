@@ -67,7 +67,7 @@ function Home() {
           <a
             href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
             target="_blank"
-            rel="nofollow noopener"
+            rel="nofollow noopener noreferrer"
           >
             https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
           </a>
@@ -160,7 +160,7 @@ function Home() {
             <a
               href="https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen"
               target="_blank"
-              rel="nofollow noopener"
+              rel="nofollow noopener noreferrer"
             >
               https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen
             </a>
@@ -170,7 +170,7 @@ function Home() {
             <a
               href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies"
               target="_blank"
-              rel="nofollow noopener"
+              rel="nofollow noopener noreferrer"
             >
               https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies
             </a>
@@ -180,7 +180,7 @@ function Home() {
             <a
               href="https://support.google.com/accounts/answer/61416?hl=de"
               target="_blank"
-              rel="nofollow noopener"
+              rel="nofollow noopener noreferrer"
             >
               https://support.google.com/accounts/answer/61416?hl=de
             </a>
@@ -190,7 +190,7 @@ function Home() {
             <a
               href="https://www.opera.com/de/help"
               target="_blank"
-              rel="nofollow noopener"
+              rel="nofollow noopener noreferrer"
             >
               https://www.opera.com/de/help
             </a>
@@ -200,7 +200,7 @@ function Home() {
             <a
               href="https://support.apple.com/kb/PH17191?locale=de_DE&viewlocale=de_DE"
               target="_blank"
-              rel="nofollow noopener"
+              rel="nofollow noopener noreferrer"
             >
               https://support.apple.com/kb/PH17191?locale=de_DE&viewlocale=de_DE
             </a>
@@ -286,7 +286,7 @@ function Home() {
           des Anbieters, Dort erhalten Sie auch weitere Informationen zu Ihren
           diesbezüglichen Rechten und Einstellungsmöglichkeiten zum Schutze
           Ihrer Privatsphäre (
-          <a href="https://policies.google.com/privacy">
+          <a href="https://policies.google.com/privacy" rel="noreferrer">
             https://policies.google.com/privacy
           </a>
           ).{" "}
@@ -369,7 +369,7 @@ function Home() {
             <a
               href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               externe Datenschutzbeauftragte
             </a>{" "}

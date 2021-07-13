@@ -21,7 +21,11 @@ const features = [
         id="homepage.feature.openSource.description"
         values={{
           githubLink: (
-            <a href="https://github.com/CloudNetService/" target="_blank">
+            <a
+              href="https://github.com/CloudNetService/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Translate id="homepage.feature.openSource.githubLinkName">
                 GitHub organisation
               </Translate>
@@ -43,7 +47,11 @@ const features = [
         id="homepage.feature.support.description"
         values={{
           discordLink: (
-            <a href="https://discord.cloudnetservice.eu" target="_blank">
+            <a
+              href="https://discord.cloudnetservice.eu"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Translate id="homepage.feature.support.discordLinkName">
                 Discord Server
               </Translate>
@@ -70,7 +78,7 @@ const features = [
   },
 ];
 
-function Feature({ icon, title, description }) {
+function Feature(icon, title, description) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
