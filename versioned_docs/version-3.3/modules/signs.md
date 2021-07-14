@@ -13,12 +13,15 @@ Otherwise, the signs will only show the server in the starting phase.
 The signs can be managed using the `/cloudsign` command, which is available on Bukkit or Nukkit servers.
 
 ## Configuration {#configuration}
+
 The configuration file is located under the following path: `modules/CloudNet-Signs/config.json`
 
 ### configurations {#configurations}
+
 This is a JsonArray containing different SignLayout configurations for each Task on which signs will be used.
 
 #### targetGroup {#targetgroup}
+
 Defines the target group of this SignLayout configuration (e.g. `Lobby`)
 
 :::tip Info
@@ -28,15 +31,19 @@ This is the group on which the signs are located
 :::
 
 #### switchToSearchingWhenServiceIsFull {#switchtosearchingwhenserviceisfull}
+
 Whether services should disappear from the signs when they are full (`true`/`false`).
 
 #### knockbackDistance {#knockbackdistance}
+
 The distance of the knockback when a players is staying directly in front of a sign.
 
 #### knockbackStrength {#knockbackstrength}
+
 The strength of the knockback when a players is staying directly in front of a sign.
 
 #### taskLayouts {#tasklayouts}
+
 A JsonArray which can contain different sign layouts for certain tasks.  
 `task` defines for which task this custom layout is.
 
@@ -47,20 +54,25 @@ The layouts there have the same structure as the default layouts in the configur
 :::
 
 #### defaultOnlineLayout {#defaultonlinelayout}
+
 The default layout for online services.
 
 #### defaultEmptyLayout {#defaultemptylayout}
+
 The default layout for empty services.
 
 #### defaultFullLayout {#defaultfulllayout}
+
 The default layout for full services.
 
 #### startingLayouts {#startinglayouts}
+
 Contains an array of `signLayouts` through which can be iterated  
 Will be shown when a service is starting  
 The speed can be addressed by changing the `animationsPerSecond` option
 
 #### searchLayouts {#searchlayouts}
+
 Contains an array of `signLayouts` through which can be iterated  
 Will be shown when a no service is available for this sign  
 The speed can be addressed by changing the `animationsPerSecond` option
@@ -68,7 +80,9 @@ The speed can be addressed by changing the `animationsPerSecond` option
 <br></br>
 
 ## Placeholders {#placeholders}
+
 These are all placeholders that can be used in the SignLayout:
+
 ```
 %task% --------------------- The name of the task of the server on the sign
 %task_id% ------------------ The id of the service (example: Lobby-1 -> 1)
@@ -93,7 +107,9 @@ These are all placeholders that can be used in the SignLayout:
 ```
 
 ## Sample Configuration {#sample-configuration}
+
 The default configuration of the Sign Module looks like this:
+
 ```json
 {
   "config": {

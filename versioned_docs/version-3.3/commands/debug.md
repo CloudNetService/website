@@ -17,6 +17,7 @@ This command can be used as a command in the node console or as a command ingame
 :::
 
 ## debug {#debug}
+
 **Usage:** `debug`
 
 Toggles (enables or disables) the global debug mode, to print useful information.
