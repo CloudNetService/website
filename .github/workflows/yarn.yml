@@ -22,7 +22,7 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
-          eslint_extensions: js,jsx,md
+          eslint_extensions: js,jsx,md,mdx
           prettier: true
           prettier_extensions: js,jsx,css,md,mdx
           neutral_check_on_warning: true
