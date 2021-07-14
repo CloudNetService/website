@@ -5,11 +5,13 @@ sidebar_label: NPC
 ---
 
 The CloudNet NPC module allows spawning of fake-players for server selection.  
-![CloudNet-NPC-Module-Example.png](img/CloudNet-NPC-Module-Example.png)  
+![CloudNet-NPC-Module-Example.png](/img/v3/modules/CloudNet-NPC-Module-Example.png)  
 Every NPC provides server connect methods either trough an inventory or through direct connect. NPCs can be managed with the `/cloudnpc` command.
 
-## NPC properties
+## NPC properties {#npc-properties}
+
 Every NPC consists of the following properties, which can either be set on creation, or can be edited with the `/cloudnpc edit` command.
+
 ```
 targetGroup ------------- The group services must have to make joining over the NPC possible
 skinOwnerName ----------- The name of the minecraft profile the NPCs' textures will be fetched from (this is only done once, the skin won't change)
@@ -21,7 +23,9 @@ rightClickAction -------- The action which will be executed when a player right-
 leftClickAction --------- The action which will be executed when a player left-clicks the NPC
 Available actions are OPEN_INVENTORY, DIRECT_CONNECT_HIGHEST_PLAYERS, DIRECT_CONNECT_LOWEST_PLAYERS, DIRECT_CONNECT_RANDOM and NOTHING
 ```
+
 Placeholders for the InfoLine:
+
 ```
 %group% | %g% -------------- The targetGroup of the NPC
 %online_players% | %o_p& --- The total amount of players which are only on services of the NPC targetGroup
@@ -29,14 +33,19 @@ Placeholders for the InfoLine:
 %online_servers% | %o_s% --- The amount of servers of the NPC targetGroup which are online
 ```
 
-## NPC Inventory
+## NPC Inventory {#npc-inventory}
+
 :::caution Warning
+
 The inventory contains 1.13+ items in the default configuration!  
 If you do not change them, they will not be visible on versions below that.  
 You can also use our [Sample Configuration for 1.8 to 1.12](#sample-configuration-18-to-112).
+
 :::
-![CloudNet-NPC-Module-Inventory-Example.png](img/CloudNet-NPC-Module-Inventory-Example.png)  
+
+![CloudNet-NPC-Module-Inventory-Example.png](/img/v3/modules/CloudNet-NPC-Module-Inventory-Example.png)  
 Placeholders for items in the inventory:
+
 ```
 %task% ----------------------- The name of the task of the server
 %task_id% -------------------- The id of the service (example: Lobby-1 -> 1)
@@ -60,8 +69,10 @@ Placeholders for items in the inventory:
 %whitelist% ------------------ "Enabled" or "Disabled" - Spigots whitelist
 ```
 
-## LabyMod emotes
+## LabyMod emotes {#labymod-emotes}
+
 The module does also offer the possibility to play emotes on the NPCs for LabyMod users. This can be configured in the config of the NPC module.
+
 ```json
         "labyModEmotes": {
           "emoteIds": [
@@ -78,6 +89,7 @@ The module does also offer the possibility to play emotes on the NPCs for LabyMo
           "playEmotesSynchronous": false
         }
 ```
+
 ```
 emoteIds ---------------- A list of LabyMod emote ids which will be played randomly
 minEmoteDelayTicks ------ The minimum amount of time (in ticks) between the emote-play-sequences
@@ -85,10 +97,13 @@ maxEmoteDelayTicks ------ The maximum amount of time (in ticks) between the emot
 onJoinEmoteIds ---------- A list of LabyMod emote ids which will be played randomly to a new joined player
 playEmotesSynchronous --- If all NPCs should play the same emote
 ```
+
 For a list of all emote ids, see the [LabyMod developer docs](https://docs.labymod.net/pages/server/labymod/emote_api/).
 
-## Sample Configuration
+## Sample Configuration {#sample-configuration}
+
 The default configuration of the NPC Module looks like this:
+
 ```json
 {
   "config": {
@@ -190,15 +205,8 @@ The default configuration of the NPC Module looks like this:
           }
         },
         "labyModEmotes": {
-          "emoteIds": [
-            2,
-            3,
-            49
-          ],
-          "onJoinEmoteIds": [
-            4,
-            20
-          ],
+          "emoteIds": [2, 3, 49],
+          "onJoinEmoteIds": [4, 20],
           "minEmoteDelayTicks": 400,
           "maxEmoteDelayTicks": 600,
           "playEmotesSynchronous": false
@@ -220,8 +228,11 @@ The default configuration of the NPC Module looks like this:
   }
 }
 ```
-## Sample Configuration 1.8 to 1.12
+
+## Sample Configuration 1.8 to 1.12 {#sample-configuration-18-to-112}
+
 The default configuration of the NPC Module for the 1.8 looks like this:
+
 ```json
 {
   "config": {
@@ -323,15 +334,8 @@ The default configuration of the NPC Module for the 1.8 looks like this:
           }
         },
         "labyModEmotes": {
-          "emoteIds": [
-            2,
-            3,
-            49
-          ],
-          "onJoinEmoteIds": [
-            4,
-            20
-          ],
+          "emoteIds": [2, 3, 49],
+          "onJoinEmoteIds": [4, 20],
           "minEmoteDelayTicks": 400,
           "maxEmoteDelayTicks": 600,
           "playEmotesSynchronous": false

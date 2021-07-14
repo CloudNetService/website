@@ -10,11 +10,14 @@ The `debug` command is used to toggle the global debug mode.
 Permission: `cloudnet.command.debug`  
 Aliases: `debug`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
-## debug
+## debug {#debug}
+
 **Usage:** `debug`
 
 Toggles (enables or disables) the global debug mode, to print useful information.

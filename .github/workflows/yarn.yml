@@ -1,31 +1,54 @@
 name: Website Yarn Build
 
-on: [ create, push, pull_request, workflow_dispatch ]
+on: [create, push, pull_request, workflow_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ '14', '16' ]
-    name: Node ${{ matrix.node }}
+    name: CloudNet Website Build
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Node ${{ matrix.node }}
+      - name: Set up Node 14
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 14
           check-latest: true
       - name: Install yarn
         uses: bahmutov/npm-install@v1
         with:
           install-command: yarn --frozen-lockfile
+      - name: Check codestyle
+        uses: wearerequired/lint-action@v1
+        with:
+          eslint: true
+          eslint_extensions: js,jsx,md,mdx
+          prettier: true
+          prettier_extensions: js,jsx,css,md,mdx
+          neutral_check_on_warning: true
+      - name: Sync translations
+        env:
+          CROWDIN_PROJECT_ID: 4
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        if: ${{ github.ref == 'refs/heads/development' }}
+        run: yarn run crowdin:sync
+      - name: Download translations
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: yarn run crowdin download
       - name: Build website
         run: yarn build
+      - name: Copy robots.txt to non-productive envs
+        if: ${{ github.ref != 'refs/heads/main' }}
+        uses: canastro/copy-file-action@master
+        with:
+          source: "template/robots.txt"
+          target: "build/robots.txt"
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         if: success()
         with:
-          name: cloudnetservice-website-node${{ matrix.node }}-${{ github.sha }}
+          name: cloudnetservice-website-node14-${{ github.sha }}
           path: build/

@@ -5,56 +5,79 @@ sidebar_label: SyncProxy
 ---
 
 The SyncProxy module manages the Motd, and the tab list header and footer.
-![CloudNet-SyncProxy-Module-Tab-Example.png](img/CloudNet-SyncProxy-Module-Tab-Example.png)  
-![CloudNet-SyncProxy-Module-Motd-Example.png](img/CloudNet-SyncProxy-Module-Motd-Example.png)
+![CloudNet-SyncProxy-Module-Tab-Example.png](/img/v3/modules/CloudNet-SyncProxy-Module-Tab-Example.png)  
+![CloudNet-SyncProxy-Module-Motd-Example.png](/img/v3/modules/CloudNet-SyncProxy-Module-Motd-Example.png)
 
-## Maintenance
+## Maintenance {#maintenance}
+
 The module also has maintenance mode with a whitelist or a permission.  
-![CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png](img/CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png)
+![CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png](/img/v3/modules/CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png)
+
 :::caution Warning
+
 Due to missing features in BungeeCord, the permission only works in combination with our [CloudPerms Module](cloudperms.md)!
+
 :::
 
-## Configuration
+## Configuration {#configuration}
+
 The configuration file is located under the following path: `modules/CloudNet-SyncProxy/config.json`
 
-### loginConfigurations
+### loginConfigurations {#loginconfigurations}
+
 This is a json array containing a loginConfiguration for each Proxy group (`targetGroup`).
 
-#### targetGroup
+#### targetGroup {#targetgroup}
+
 This is the Proxy group to which the settings will be applied
 
-#### motds
+#### motds {#motds}
+
 This is a json array containing the different MOTDs which are randomly selected.
-:::tip
+
+:::tip Tip
+
 If you want to turn off MOTDs empty the array. This should look like this: `"motds": [],`
+
 :::
 
-#### maintenanceMotds
+#### maintenanceMotds {#maintenancemotds}
+
 This is a json array containing the different maintenance MOTDs which are randomly selected, if the SyncProxy maintenance is enabled.
-:::tip
+
+:::tip Tip
+
 If you want to turn off maintenance MOTDs empty the array. This should look like this: `"maintenanceMotds": [],`
+
 :::
 
-#### tablist
+#### tablist {#tablist}
+
 It is a json array of the different animations that are displayed in the tablist one after the other.
-:::tip
+
+:::tip Tip
+
 If you want to turn off tablist empty the array. This should look like this: `"tabListConfigurations": [],`
+
 :::
 
 <br></br>
 
-### tabListConfigurations
+### tabListConfigurations {#tablistconfigurations}
+
 This is a json array containing a tabListConfiguration (header/footer) for each Proxy group (`targetGroup`)
 
-#### targetGroup
+#### targetGroup {#targetgroup-1}
+
 This is the Proxy group to which the settings will be applied.
 
-#### entries
+#### entries {#entries}
+
 This is a json array containing entries for the header & footer.  
 To create an animation you have to add multiple entries.
 
-## Tablist placeholder
+## Tablist placeholder {#tablist-placeholder}
+
 ```
 %proxy% ---------------------- The name of the proxy the player is connected to
 %proxy_uniqueId% ------------- The UUID of the proxy the player is connected to
@@ -72,7 +95,8 @@ To create an animation you have to add multiple entries.
 %color% ---------------------- The color of the players highest permission group (Only with the CloudPerms module)
 ```
 
-## MOTD placeholder
+## MOTD placeholder {#motd-placeholder}
+
 ```
 %proxy% ---------------------- The name of the proxy the MOTD has been sent from
 %proxy_uniqueId% ------------- The uniqueId of the proxy the MOTD has been sent from
@@ -82,8 +106,10 @@ To create an animation you have to add multiple entries.
 %max_players% ---------------- The current amount of max players on the network
 ```
 
-## Sample Configuration
+## Sample Configuration {#sample-configuration}
+
 The default configuration of the SyncProxy Module looks like this:
+
 ```json
 {
   "config": {

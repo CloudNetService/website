@@ -3,10 +3,14 @@ id: changelog
 title: Changelog
 ---
 
+```mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+```
 
-<!--- Default
+## v3.3.0 - 2020-05-16 {#v330---2020-05-16}
+
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
@@ -16,25 +20,9 @@ values={[
 {label: "Removed", value: "removed"},
 {label: "API", value: "api"},
 ]}>
-<TabItem value="added">Added</TabItem>
-<TabItem value="fixed">Fixed</TabItem>
-<TabItem value="changed">Changed</TabItem>
-<TabItem value="removed">Removed</TabItem>
-<TabItem value="api">API</TabItem>
-</Tabs>
---->
 
-## v3.3.0 - 2020-05-16
-<Tabs
-defaultValue="added"
-values={[
-{label: "Added", value: "added"},
-{label: "Fixed", value: "fixed"},
-{label: "Changed", value: "changed"},
-{label: "Removed", value: "removed"},
-{label: "API", value: "api"},
-]}>
 <TabItem value="added">
+```
 
 - Add new CloudSetup
 - Add Global Groups
@@ -44,16 +32,20 @@ values={[
 - Added a new option to the Smart module - keep a specified amount of empty services of a task online
 - Added support for negative potency on permissions on Bukkit servers to CPerms
 
+```mdx-code-block
 </TabItem>
 <TabItem value="fixed">
+```
 
 - Fixed fallbacks
 - Fixed OnlyProxyJoin
 - Fixed data transfer between different Operating Systems
 - Fixed permission checks in LoginEvent
 
+```mdx-code-block
 </TabItem>
 <TabItem value="changed">
+```
 
 - Improved command system
 - Split tasks-command to tasks and groups command
@@ -64,15 +56,20 @@ values={[
 - Reworked SyncProxy module
 - Reduced cloud heap usage
 
+```mdx-code-block
 </TabItem>
 <TabItem value="removed">
+```
 
 - Removed GoMint and ProxProx support
 
+```mdx-code-block
 </TabItem>
 <TabItem value="api">
+```
 
 **Please adjust your plugins and modules, deprecated methods will be removed in a future release.**
+
 - Deprecated some Singletons (e.g. AbstractSignManagement, BridgePlayerManager), should now be accessed via the `CloudNetDriver#getServicesRegistry`. See the cloudnet-examples module for help.
 - Deprecated CloudPermissionsManagement#getInstance, should now be accessed via CloudNetDriver#getPermissionManagement
 - Deprecated property methods in class ServiceInfoSnapshotUtil, properties can now be accessed via `ServiceInfoSnapshot#getProperty(ServiceProperty)`
@@ -81,38 +78,57 @@ values={[
 - Added CloudSignInteractEvents for Bukkit and Nukkit
 - Added NodeLocalBridgePlayerProxyLoginRequestEvent
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.2.2 - 2020-01-16
+</Tabs>
+```
+
+## v3.2.2 - 2020-01-16 {#v322---2020-01-16}
+
+```mdx-code-block
 <Tabs
 defaultValue="fixed"
 values={[
 {label: "Fixed", value: "fixed"},
 ]}>
+
 <TabItem value="fixed">
+```
 
 - Fixed dependency downloading from maven central repository
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.2.1 - 2019-12-29
+</Tabs>
+```
+
+## v3.2.1 - 2019-12-29 {#v321---2019-12-29}
+
+```mdx-code-block
 <Tabs
 defaultValue="fixed"
 values={[
 {label: "Fixed", value: "fixed"},
 ]}>
+
 <TabItem value="fixed">
+```
 
 - Fixed the issue that the online count was wrong when a player disconnects from a server
 - Fixed an issue that the smart module checked for all services (prepared, starting, ...) for the auto stop, which caused problems when using the preparedServices entry in the smart config
 - Fixed wrong hostAddress on first node setup
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.2.0 - 2019-12-25
+</Tabs>
+```
+
+## v3.2.0 - 2019-12-25 {#v320---2019-12-25}
+
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
@@ -121,7 +137,9 @@ values={[
 {label: "Changed", value: "changed"},
 {label: "Removed", value: "removed"},
 ]}>
+
 <TabItem value="added">
+```
 
 - Add Vault and permission pack support for Bukkit CloudPerms
 - Add new template installer
@@ -133,28 +151,39 @@ values={[
 - Add paste sub-commands
 - Add tab completion for /cloud
 
+```mdx-code-block
 </TabItem>
 <TabItem value="fixed">
+```
 
 - Fix CloudSigns for Bukkit
 - Fix effect of permission `cloudnet.syncproxy.maintenance`
 - Fix spongeforge plugins
 - Fix overriding cluster synchronizations, add additional cluster push commands
 
+```mdx-code-block
 </TabItem>
 <TabItem value="changed">
+```
 
 - Little bug fixes and adjustments
 
+```mdx-code-block
 </TabItem>
 <TabItem value="removed">
+```
 
 - Fixed an issue which prevented the MySQL Connection to close.
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.1.0 - 2019-11-02
+</Tabs>
+```
+
+## v3.1.0 - 2019-11-02 {#v310---2019-11-02}
+
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
@@ -163,7 +192,9 @@ values={[
 {label: "Changed", value: "changed"},
 {label: "Removed", value: "removed"},
 ]}>
+
 <TabItem value="added">
+```
 
 - Add an option to delete files after stop to the task configuration
 - Add an option to select whether a template should be copied to a static service on every start
@@ -179,88 +210,121 @@ values={[
 - Add signKnockback for the signs
 - Add chat format for Bukkit
 
+```mdx-code-block
 </TabItem>
 <TabItem value="fixed">
+```
 
 - Fixed fallbacks
 - Fixed OnlyProxyJoin
 - Fixed data transfer between different Operating Systems
 - Fixed permission checks in LoginEvent
 
+```mdx-code-block
 </TabItem>
 <TabItem value="changed">
+```
 
 - A lot of bug fixes
 - Limit version support to only 1.8.8+ instead of 1.5+
 - Put the smart config into the task configuration
 - Split functions of CloudNetDriver, CloudNet and Wrapper to feature-specific interfaces and classes
 
+```mdx-code-block
 </TabItem>
 <TabItem value="removed">
+```
 
 - Remove support for plain CraftBukkit
 - Remove the tasks.json and give every task a separated file
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.0.0 - 2019-05-21
+</Tabs>
+```
+
+## v3.0.0 - 2019-05-21 {#v300---2019-05-21}
+
+```mdx-code-block
 <Tabs
 defaultValue="changed"
 values={[
 {label: "Changed", value: "changed"},
 ]}>
+
 <TabItem value="changed">
+```
 
 - supported now Minecraft Server and Bukkit/Spigot 1.14.1
 - updated Javadocs
 - Many bug fixes
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.0.0 PRE-3 - 2019-03-10
+</Tabs>
+```
+
+## v3.0.0 PRE-3 - 2019-03-10 {#v300-pre-3---2019-03-10}
+
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
 {label: "Added", value: "added"},
 {label: "Changed", value: "changed"},
 ]}>
+
 <TabItem value="added">
+```
 
 - Added REST module
 - Added PlayerAPI
 - Added "players" command in console
 - Added PasteServer support (https://github.com/juliarn/PasteServer)
 
+```mdx-code-block
 </TabItem>
 <TabItem value="changed">
+```
 
 - Updated Java documentation
 - Performance improvements
 - Bug fixes
 
+```mdx-code-block
 </TabItem>
-<TabItem value="removed">Removed</TabItem>
-<TabItem value="api">API</TabItem>
-</Tabs>
 
-## v3.0.0 PRE-2 - 2019-02-10
+<TabItem value="removed">Removed</TabItem>
+
+<TabItem value="api">API</TabItem>
+
+</Tabs>
+```
+
+## v3.0.0 PRE-2 - 2019-02-10 {#v300-pre-2---2019-02-10}
+
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
 {label: "Added", value: "added"},
 {label: "Changed", value: "changed"},
 ]}>
+
 <TabItem value="added">
+```
 
 - Added Report Module "paste" command for paste the cached console log
 - Added MySQL-Database Module connection configurations and ssl support
 - Added Netty transport native support for KQueue and Epoll
 - Added auto updater for modules from one version
 
+```mdx-code-block
 </TabItem>
 <TabItem value="changed">
+```
 
 - Updated the recommended setup version
 - Updated modules that works with the API
@@ -268,24 +332,33 @@ values={[
 - Performance updates
 - Bug fixes
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.0.0 PRE-1 - 2019-02-03
+</Tabs>
+```
+
+## v3.0.0 PRE-1 - 2019-02-03 {#v300-pre-1---2019-02-03}
+
+```mdx-code-block
 <Tabs
 defaultValue="added"
 values={[
 {label: "Added", value: "added"},
 {label: "Changed", value: "changed"},
 ]}>
-<TabItem value="added">
 
-- Added a Permissions-System module, which supports the following PluginAPIs: => Bukkit, Velocity, ProxProx, GoMint, Nukkit, BungeeCord
+<TabItem value="added">
+```
+
+- Added a Permissions-System module, which supports the following PluginAPIs: =&gt; Bukkit, Velocity, ProxProx, GoMint, Nukkit, BungeeCord
 - Added Auto updater (Test auto updater, must be enabled manual)
 - Added "SimpleNameTags" Plugin for permissions system
 
+```mdx-code-block
 </TabItem>
 <TabItem value="changed">
+```
 
 - New Easy Setup - CloudNet can installed under 1 minute with 5 Tasks and Groups and a sample network
 - Rewritten the permissions system
@@ -295,20 +368,30 @@ values={[
 - Set base Bukkit Version from 1.4.7 to 1.5.2
 - Updated REST API
 
+```mdx-code-block
 </TabItem>
-</Tabs>
 
-## v3.0.0 BETA - 2018-12-08
+</Tabs>
+```
+
+## v3.0.0 BETA - 2018-12-08 {#v300-beta---2018-12-08}
+
+```mdx-code-block
 <Tabs
 defaultValue="changed"
 values={[
 {label: "Changed", value: "changed"},
 ]}>
+
 <TabItem value="changed">
+```
 
 - CloudNet 3 is a completely new cloud system with a completely new concept and new technical approaches --that bring many new possibilities.
 - It is a BETA version where the TODO is still very large, but to arouse the interest for this software at all and to show what the program can do so far.
 - You need a complete new installation and rewriting of all plugins which use the CloudNetAPI from 2.X!
 
+```mdx-code-block
 </TabItem>
+
 </Tabs>
+```
