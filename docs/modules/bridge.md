@@ -86,35 +86,35 @@ A configuration for two proxy groups can look like this:
     ],
 ```
 
-### bungeeFallbackConfigurations » targetGroup
+### bungeeFallbackConfigurations » targetGroup {#bungeefallbackconfigurations-»-targetgroup}
 
 This defines for which [proxy group](../components/groups.md) the fallback configuration is.
 
-### bungeeFallbackConfigurations » defaultFallbackTask
+### bungeeFallbackConfigurations » defaultFallbackTask {#bungeefallbackconfigurations-»-defaultfallbacktask}
 
 This sets the default fallback [task](../components/tasks.md) for the current target proxy group.
 
-### bungeeFallbackConfigurations » fallbacks
+### bungeeFallbackConfigurations » fallbacks {#bungeefallbackconfigurations-»-fallbacks}
 
 This is an array containing the different fallbacks that should be available on the [defined proxy group].
 
-### bungeeFallbackConfigurations » fallbacks » task
+### bungeeFallbackConfigurations » fallbacks » task {#bungeefallbackconfigurations-»-fallbacks-»-task}
 
 This defines for which task the current fallback entry is.
 
-### bungeeFallbackConfigurations » fallbacks » permission
+### bungeeFallbackConfigurations » fallbacks » permission {#bungeefallbackconfigurations-»-fallbacks-»-permission}
 
 Here you can set a permission which is required to be sent to this fallback (e.g. when using `/hub`).
 
-### bungeeFallbackConfigurations » fallbacks » availableOnGroups
+### bungeeFallbackConfigurations » fallbacks » availableOnGroups {#bungeefallbackconfigurations-»-fallbacks-»-availableongroups}
 
 With this option you can determine on which groups this fallback is available
 
-### bungeeFallbackConfigurations » fallbacks » forcedHost
+### bungeeFallbackConfigurations » fallbacks » forcedHost {#bungeefallbackconfigurations-»-fallbacks-»-forcedhost}
 
 This option is used to set a forcedHost for this fallback
 
-### bungeeFallbackConfigurations » fallbacks » priority
+### bungeeFallbackConfigurations » fallbacks » priority {#bungeefallbackconfigurations-»-fallbacks-»-priority}
 
 This option is used to set a priority for this fallback.
 

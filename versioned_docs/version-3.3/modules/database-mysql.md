@@ -23,27 +23,27 @@ If you don't change this option, CloudNet will persist on H2 even if you put you
 
 This is a JsonArray of database addresses. You do not need to add an element if you do not have a MySQL cluster.
 
-#### useSsl
+#### useSsl {#usessl}
 
 Whether the module should use ssl to encrypt the connection to the database server
 
-#### database
+#### database {#database}
 
 This is the database that the module uses to create the individual tables
 
-#### host
+#### host {#host}
 
 The ip address the database server is bound on
 
-#### port
+#### port {#port}
 
 The port your database server is listening to
 
-### username
+### username {#username}
 
 This is the username which is used by this module to connect to your database server
 
-### password
+### password {#password}
 
 This is the password which is used by this module to connect to your database server
 

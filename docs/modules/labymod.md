@@ -121,11 +121,11 @@ This is the domain on which players will be connected when they click the ["Ask 
 ["Spectate"](#discordspectateenabled) Button in Discord.  
 After that they will be sent automatically to the specific server by the module.
 
-### permissionsConfig
+### permissionsConfig {#permissionsconfig}
 
 These are permissions that the LabyMod client uses to enable or (force) disable certain modifications
 
-### bannerConfig
+### bannerConfig {#bannerconfig}
 
 The URL from this config section is used to display a banner in the LabyMod client
 
