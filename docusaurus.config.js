@@ -112,7 +112,7 @@ module.exports = {
           versions: {
             current: {
               label: "CloudNet v3.4 🚧",
-              path: "next"
+              path: "next",
             },
             3.3: {
               label: "CloudNet v3",

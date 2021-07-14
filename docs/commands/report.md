@@ -17,18 +17,21 @@ This command can be used as a command in the node console or as a command ingame
 
 This is a basic overview about the `report` command.  
 Please have a look below for any further information.
+
 ```
 COMMAND:  - report cloud
 COMMAND:  - report heap
 ```
 
 ## report cloud {#report-cloud}
+
 **Usage:** `report cloud`
 
 This command creates a file with a lot of information about your cloud instances.
-This includes the latest log lines, information on the threads used by the cloud, your nodes, your task configuration and more.  
+This includes the latest log lines, information on the threads used by the cloud, your nodes, your task configuration and more.
 
 ## report heap {#report-heap}
+
 **Usage:** `report heap`
 
 This command creates a heap dump of your Java Virtual Machine.

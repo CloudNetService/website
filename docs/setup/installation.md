@@ -4,18 +4,24 @@ title: Installation
 ---
 
 ## Requirements {#requirements}
+
 To get started with CloudNet installation, make sure you meet all the [**requirements**](requirements.md).
+
 ## Installation {#installation}
+
 1. Start your SSH client and connect to your server.
 2. Navigate to your directory with `cd ../PATH/` (e.g. `cd ../home/`) and create a folder for CloudNet with `mkdir NAME` (e.g. `mkdir cloudnet`). Navigate to the newly created folder with `cd NAME/` (e.g. `cd cloudnet/`).
 3. Download CloudNet with `curl -O https://github.com/CloudNetService/CloudNet-v3/releases/latest/download/CloudNet.zip CloudNet.zip`.
 4. Unzip the downloaded zip with `unzip CloudNet.zip`.
 5. Give the start file permissions with `chmod +x start.sh`.
 6. Start the setup by executing the start file with `./start.sh`
+
 ## Setup {#setup}
+
 :::tip
-*Use the following keys to switch the answer options:* <kbd>↑</kbd> / <kbd>↓</kbd>
+_Use the following keys to switch the answer options:_ <kbd>↑</kbd> / <kbd>↓</kbd>
 :::
+
 1. Answer the question `Do you agree to the Mojang EULA (https://account.mojang.com/documents/minecraft_eula)?` with `yes`.
 2. Select your server IP address with port for the cloud. The port is used by the cloud and not by other applications like BungeeCord (e.g. `0.0.0.0:1410`).
 3. Select your server IP address with port for the web server (e.g. `0.0.0.0:2812`).

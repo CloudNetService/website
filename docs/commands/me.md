@@ -2,7 +2,7 @@
 id: me
 title: Me Command
 sidebar_label: Me
-description:  Displays all important information about this process and the JVM.
+description: Displays all important information about this process and the JVM.
 ---
 
 The `me` command is used to display all important information about the cloud process and the JVM.

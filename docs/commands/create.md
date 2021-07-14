@@ -16,6 +16,7 @@ This command can be used as a command in the node console or as a command ingame
 
 This is a basic overview about the `create` command.  
 Please have a look below for any further information.
+
 ```
 COMMAND:  - create by <task> <count>
 COMMAND:  - create new <name> <MINECRAFT_SERVER, GLOWSTONE, NUKKIT, GO_MINT, BUNGEECORD, VELOCITY, WATERDOG> <count>
@@ -35,15 +36,18 @@ COMMAND: - --start
 ```
 
 ## create by {#create-by}
+
 **Usage:** `create by <task> <amount>`
 
 This command creates a specified `amount` of new [services](../components/services.md) based on the specified `task`.
 
 ## create new {#create-new}
+
 **Usage:** `create new <name> <MINECRAFT_SERVER, GLOWSTONE, NUKKIT, GO_MINT, BUNGEECORD, VELOCITY, WATERDOG> <amount>`
 
 This command creates a specified `amount` independent service based on the `name` and type provided.  
 You can add the following parameters to your command:
+
 - `task=<name>` - to set the name of the task which configurations should be included
 - `node=[Node-1;Node-2]` - to set the nodes on which the services are [allowed to start](../components/tasks.md#associatednodes)
 - `autoDeleteOnStop=<true : false>` - to enable (`true`) or disable (`false`) the
