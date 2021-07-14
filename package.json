@@ -18,11 +18,11 @@
     "test": "yarn run test:lint && yarn run test:style"
   },
   "dependencies": {
-    "@crowdin/cli": "^3.6.2",
-    "@docusaurus/core": "^2.0.0-beta.2",
-    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.2",
-    "@docusaurus/preset-classic": "^2.0.0-beta.2",
-    "@material-ui/core": "^4.11.4",
+    "@crowdin/cli": "^3.6.4",
+    "@docusaurus/core": "^2.0.0-beta.3",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.3",
+    "@docusaurus/preset-classic": "^2.0.0-beta.3",
+    "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
     "material-design-icons": "^3.0.1",
@@ -31,12 +31,12 @@
     "react-select": "^4.3.1"
   },
   "devDependencies": {
-    "@types/eslint": "7.2.13",
+    "@types/eslint": "7.28.0",
     "@types/eslint-config-prettier": "6.11.0",
-    "@types/prettier": "2.3.0",
-    "eslint": "^7.29.0",
+    "@types/prettier": "2.3.2",
+    "eslint": "^7.30.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-mdx": "^1.13.0",
+    "eslint-plugin-mdx": "^1.14.1",
     "eslint-plugin-react": "^7.24.0",
     "prettier": "2.3.2"
   }
