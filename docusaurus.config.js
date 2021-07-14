@@ -115,7 +115,7 @@ module.exports = {
               path: "next",
             },
             3.3: {
-              label: "CloudNet v3",
+              label: "CloudNet v3.3",
               path: "3.3",
             },
             /*"2.2": {
