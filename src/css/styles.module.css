@@ -1,12 +1,12 @@
 a.downloadButton {
-    background-color: var(--ifm-color-primary-light);
+  background-color: var(--ifm-color-primary-light);
 }
 
 a.downloadButton:hover {
-    background-color: transparent;
-    color: var(--ifm-font-color-base);
+  background-color: transparent;
+  color: var(--ifm-font-color-base);
 }
 
 .select {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }

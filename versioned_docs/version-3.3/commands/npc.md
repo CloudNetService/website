@@ -18,17 +18,20 @@ This command can be used as a command in the node console or as a command ingame
 
 This is a basic overview about the `npc` command.  
 Please have a look below for any further information.
+
 ```
 COMMAND:  - npc create entry <targetGroup>
 COMMAND:  - npc reload
 ```
 
 ## npc create entry {#npc-create-entry}
+
 **Usage:** `npc create entry <targetGroup>`
 
 This command creates a new entry for the given [target group](../components/groups.md) in the
 [NPC Configuration](../modules/npc.md).
 
 ## npc reload {#npc-reload}
+
 **Usage:** `npc reload`
 This command reloads the [NPC-Module](../modules/npc.md) Configuration and applies any changes.

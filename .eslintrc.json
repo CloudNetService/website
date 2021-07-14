@@ -1,0 +1,30 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:mdx/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [".mdx", ".md"],
+      "parser": "eslint-mdx",
+      "extends": "plugin:mdx/recommended"
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "mdx/code-blocks": true
+  },
+  "plugins": [],
+  "rules": {}
+}

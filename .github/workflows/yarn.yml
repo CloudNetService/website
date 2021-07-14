@@ -1,6 +1,6 @@
 name: Website Yarn Build
 
-on: [ create, push, pull_request, workflow_dispatch ]
+on: [create, push, pull_request, workflow_dispatch]
 
 jobs:
   build:
@@ -18,6 +18,14 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           install-command: yarn --frozen-lockfile
+      - name: Check codestyle
+        uses: wearerequired/lint-action@v1
+        with:
+          eslint: true
+          eslint_extensions: js,jsx,md,mdx
+          prettier: true
+          prettier_extensions: js,jsx,css,md,mdx
+          neutral_check_on_warning: true
       - name: Sync translations
         env:
           CROWDIN_PROJECT_ID: 4

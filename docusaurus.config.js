@@ -1,117 +1,118 @@
 module.exports = {
-  title: 'CloudNetService',
-  tagline: 'The CloudNet Network Environment Technology',
-  url: 'https://cloudnetservice.eu',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'cloudnetservice', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  title: "CloudNetService",
+  tagline: "The CloudNet Network Environment Technology",
+  url: "https://cloudnetservice.eu",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "cloudnetservice", // Usually your GitHub org/user name.
+  projectName: "website", // Usually your repo name.
   stylesheets: [],
   scripts: [],
   themeConfig: {
     navbar: {
-      title: 'CloudNetService',
+      title: "CloudNetService",
       logo: {
-        alt: 'CloudNetService Logo',
-        src: 'img/logo.svg',
+        alt: "CloudNetService Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: 'docs/3.3/',
-          activeBasePath: 'docs',
-          label: 'Documentation',
-          position: 'left',
+          to: "docs/3.3/",
+          activeBasePath: "docs",
+          label: "Documentation",
+          position: "left",
         },
         {
-          to: 'blog/',
-          activeBasePath: 'blog',
-          label: 'Blog',
-          position: 'left',
+          to: "blog/",
+          activeBasePath: "blog",
+          label: "Blog",
+          position: "left",
         },
         {
-          type: 'docsVersionDropdown',
-          position: 'right',
+          type: "docsVersionDropdown",
+          position: "right",
         },
         {
-          type: 'localeDropdown',
-          position: 'right',
+          type: "localeDropdown",
+          position: "right",
         },
         {
-          href: 'https://github.com/cloudnetservice/',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/cloudnetservice/",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Documentation',
+          title: "Documentation",
           items: [
             {
-              label: 'CloudNet v3',
-              to: 'docs/3.3/',
+              label: "CloudNet v3",
+              to: "docs/3.3/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.cloudnetservice.eu',
+              label: "Discord",
+              href: "https://discord.cloudnetservice.eu",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/CloudNetService',
+              label: "Twitter",
+              href: "https://twitter.com/CloudNetService",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/CloudNetService',
+              label: "GitHub",
+              href: "https://github.com/CloudNetService",
             },
             {
-              label: 'SpigotMC',
-              href: 'https://www.spigotmc.org/resources/cloudnet-v3-the-cloud-network-environment-technology.42059/'
-            }
+              label: "SpigotMC",
+              href: "https://www.spigotmc.org/resources/cloudnet-v3-the-cloud-network-environment-technology.42059/",
+            },
           ],
         },
         {
-          title: 'Legal',
+          title: "Legal",
           items: [
             {
-              label: 'Imprint',
-              to: 'imprint'
+              label: "Imprint",
+              to: "imprint",
             },
             {
-              label: 'Data Privacy',
-              to: 'privacy'
-            }
-          ]
-        }
+              label: "Data Privacy",
+              to: "privacy",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} CloudNetService. Built with Docusaurus.`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/cloudnetservice/website/edit/development/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl:
+            "https://github.com/cloudnetservice/website/edit/development/",
           includeCurrentVersion: false,
           versions: {
-            "3.3": {
-              "label": "CloudNet v3",
-              "path": "3.3"
+            3.3: {
+              label: "CloudNet v3",
+              path: "3.3",
             },
             /*"2.2": {
               "label": "CloudNet v2",
@@ -124,38 +125,38 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl:
-              'https://github.com/cloudnetservice/website/edit/development/blog/',
+            "https://github.com/cloudnetservice/website/edit/development/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'de'],
+    defaultLocale: "en",
+    locales: ["en", "de"],
     localeConfigs: {
       en: {
-        label: 'English',
+        label: "English",
       },
       de: {
-        label: 'Deutsch'
-      }
-    }
+        label: "Deutsch",
+      },
+    },
   },
   plugins: [
     [
-      '@docusaurus/plugin-client-redirects',
+      "@docusaurus/plugin-client-redirects",
       {
-        fromExtensions: ['html'],
+        fromExtensions: ["html"],
         redirects: [
           {
-            to: '/docs/3.3/',
-            from: '/docs/'
-          }
-        ]
+            to: "/docs/3.3/",
+            from: "/docs/",
+          },
+        ],
       },
     ],
-  ]
+  ],
 };

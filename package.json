@@ -12,7 +12,10 @@
     "clear": "docusaurus clear",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
+    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
+    "test:lint": "eslint . --ext js,jsx,md,mdx",
+    "test:style": "prettier --check .",
+    "test": "yarn run test:lint && yarn run test:style"
   },
   "dependencies": {
     "@crowdin/cli": "^3.6.2",
@@ -26,5 +29,15 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-select": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "7.2.13",
+    "@types/eslint-config-prettier": "6.11.0",
+    "@types/prettier": "2.3.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-mdx": "^1.13.0",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "2.3.2"
   }
 }
