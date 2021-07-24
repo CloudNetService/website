@@ -42,7 +42,7 @@ Otherwise, you can replace the `launcher.jar` with the [3.4.0 build](https://clo
 
 ## New SpigotMC design {#new-spigotmc-design}
 
-There has been a complete design overhaul of our [SpigotMC page](https://www.spigotmc.org/resources/cloudnet-v3-the-cloud-network-environment-technology.42059/)!  
+There has been a complete design overhaul of our [SpigotMC page](https://www.spigotmc.org/resources/42059/)!  
 Please have a look at it and share your thoughts with us. We hope you like it.
 
 ## Notice for Snapshot users {#snapshot-users}
@@ -85,7 +85,7 @@ We hope you will enjoy this big update!
 
 - Support for **Minecraft 1.17**, IPv6 and [much more](#changes) has been added.
 - You can [update](#updating) by restarting the Cloud, if you have `auto-update` enabled.
-- We have a [new look](#new-spigotmc-design) for our [SpigotMC page](https://www.spigotmc.org/resources/cloudnet-v3-the-cloud-network-environment-technology.42059/)!
+- We have a [new look](#new-spigotmc-design) for our [SpigotMC page](https://www.spigotmc.org/resources/42059/)!
 - Snapshot users should consider [disabling snapshots](#snapshot-users).
 - We [changed a lot in the API](#api), please check your code and replace any deprecated methods with the replacements referred in the documentation!
 - The performance has been drastically improved. Especially with the [cluster](#cluster-issues)
