@@ -11,8 +11,11 @@ The FTP module adds a new TemplateStorage to CloudNet. Using this module, you ca
 ### type {#type}
 
 This sets the type of the storage. It can be `FTP`, `FTPS` or `SFTP`.
+
 :::tip Info
+
 The most common type is `SFTP`, this connection works with the default SSH-Server on most servers.
+
 :::
 
 ### address {#address}

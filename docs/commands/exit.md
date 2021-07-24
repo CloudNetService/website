@@ -10,8 +10,10 @@ The `exit` command is used to stop the cloud program and all managed subprocesse
 Permission: `cloudnet.command.exit`  
 Aliases: `exit`, `shutdown`, `stop`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 ## exit {#exit}
@@ -19,6 +21,9 @@ This command can be used as a command in the node console or as a command ingame
 **Usage:** `exit`
 
 This command gracefully shuts down the current CloudNet instance.
-:::note
+
+:::note Note
+
 You have to repeat the command within 10 seconds, to prevent any fault shutdown
+
 :::

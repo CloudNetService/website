@@ -11,7 +11,7 @@ It is useful especially when a player is connected through a different proxy, be
 Permission: `cloudnet.command.players`  
 Aliases: `players`, `player`, `pl`
 
-:::info
+:::info Info
 
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
 
@@ -47,7 +47,7 @@ Possible arguments:
 - `--showName` -> Print the name of each player in the console
 - `name=derrop` -> Limit the action(s) to the given player name
 
-:::tip
+:::tip Tip
 
 You have to include the quotation marks wherever given in the example! This is needed to support whitespaces for sentences.
 
@@ -60,7 +60,7 @@ You have to include the quotation marks wherever given in the example! This is n
 This command prints information about all online players.  
 By default, the amount of output is limited. You can bypass this by adding the argument `| --force` to the command.
 
-:::caution
+:::caution Caution
 
 Do not use the `--force` argument when you have a lot of online players. It could lead to a memory leak!
 
@@ -73,7 +73,7 @@ Do not use the `--force` argument when you have a lot of online players. It coul
 This command prints information about all registered players. This means every player who ever joined on your CloudNet network.  
 By default, the amount of output is limited. You can bypass this by adding the argument `| --force` to the command.
 
-:::caution
+:::caution Caution
 
 Do not use the `--force` argument when you have a lot of registered players. It could lead to a memory leak!
 
@@ -103,7 +103,7 @@ If you leave the reason out, the player is kicked without giving any reason.
 
 This command sends a message to the player with the given name.
 
-:::note
+:::note Note
 
 You do not need to include quotation marks here, because the message is always the last argument.
 

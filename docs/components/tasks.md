@@ -9,9 +9,12 @@ A task is a configuration from which [services](services) can be started.
 
 The configuration path for each task is `local/tasks/NAME.json`  
 After changing a configuration, you need to execute `tasks reload` in the console.  
-:::tip
+
+:::tip Tip
+
 We recommend managing the configurations with the [tasks command](../commands/tasks.md).
 In that case you do not need to keep an eye on the json syntax, and you do not need to reload the configurations after changing anything.
+
 :::
 
 ### name {#name}
@@ -26,10 +29,13 @@ By default, CloudNet only provides the "jvm" runtime, you can add your own with 
 ### disableIpRewrite {#disableiprewrite}
 
 Enables or disables the ip rewrite for services of this task (`true`/`false`)
+
 :::caution Warning
+
 We recommend the usage of this feature just in very special cases.  
 For example, when you want to have several proxies for the Bedrock Edition.
 (Unfortunately, the Bedrock Edition does not support SRV-Records. Please contact us in that case for further assistance!)
+
 :::
 
 ### javaCommand {#javacommand}
@@ -39,16 +45,22 @@ The path to the Java installation with which services of this task are started.
 ### maintenance {#maintenance}
 
 Enables or disables the maintenance mode services of this task (`true`/`false`)
-:::info
+
+:::info Info
+
 If the maintenance mode is enabled, services of this task can have a special sign layout and users need the permission `cloudnet.bridge.maintenance` to join.
+
 :::
 
 ### autoDeleteOnStop {#autodeleteonstop}
 
 This enables or disables the automatic deletion of service files after they have been stopped. (`true`/`false`)  
+
 :::caution Warning
+
 Do NOT use this feature to keep persistent data of services like CityBuild.
 Please use [static services](#staticservices) instead!
+
 :::
 
 ### staticServices {#staticservices}
@@ -188,9 +200,13 @@ It contains some default values provided by us, but you can extend it with the A
 #### requiredPermission {#requiredpermission}
 
 This option sets a permission you need to be able to connect to the task.
-:::tip
+
+:::tip Tip
+
 If you set it to `null` (which is also the default), you do not need any permission to join the task!
+
 :::
+
 Example:
 
 ```json

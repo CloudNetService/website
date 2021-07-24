@@ -10,8 +10,10 @@ The `template` command is used to manage [Templates](../components/templates.md)
 Permission: `cloudnet.command.template`  
 Aliases: `template`, `t`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `template` command.  

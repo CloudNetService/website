@@ -18,7 +18,8 @@ To get started with CloudNet installation, make sure you meet all the [**require
 
 ## Setup {#setup}
 
-:::tip
+:::tip Tip
+
 _Use the following keys to switch between the options:_ <kbd>↑</kbd> / <kbd>↓</kbd>
 :::
 

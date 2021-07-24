@@ -10,8 +10,10 @@ The `groups` command is used to manage the configurations of all persistent grou
 Permission: `cloudnet.command.groups`  
 Aliases: `groups`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `groups` command.  

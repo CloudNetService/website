@@ -28,7 +28,9 @@ Enables (or disables) the LabyMod Module (`true`/`false`)
 #### enabled {#enabled-1}
 
 Enables (or disabled) the custom rich presence (`true`/`false`)
-:::tip
+
+:::tip Tip
+
 If you disable the custom rich presence, LabyMod will show the default one:
 
 ```
@@ -89,7 +91,9 @@ Example:
 ```
 
 :::tip Info
+
 This option is ignored when `discordSpectateEnabled` is set to `false`
+
 :::
 
 <br></br>

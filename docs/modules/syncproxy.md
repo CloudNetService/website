@@ -12,8 +12,11 @@ The SyncProxy module manages the Motd, and the tab list header and footer.
 
 The module also has maintenance mode which prevents users from joining if they are not on the [whitelist](../commands/syncproxy.md#syncproxy-target-whitelist) or do not have the required permission (`cloudnet.syncproxy.maintenance`).  
 ![CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png](img/CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png)
+
 :::caution Warning
+
 Due to missing features in BungeeCord, the permission only works in combination with our [CloudPerms Module](cloudperms.md)!
+
 :::
 
 ## Configuration {#configuration}
@@ -31,22 +34,31 @@ This is the Proxy group to which the settings will be applied
 #### motds {#motds}
 
 This is a json array containing the different MOTDs which are randomly selected.
-:::tip
+
+:::tip Tip
+
 If you want to turn off MOTDs empty the array. This should look like this: `"motds": [],`
+
 :::
 
 #### maintenanceMotds {#maintenancemotds}
 
 This is a json array containing the different maintenance MOTDs which are randomly selected, if the SyncProxy maintenance is enabled.
-:::tip
+
+:::tip Tip
+
 If you want to turn off maintenance MOTDs empty the array. This should look like this: `"maintenanceMotds": [],`
+
 :::
 
 #### tablist {#tablist}
 
 It is a json array of the different animations that are displayed in the tablist one after the other.
-:::tip
+
+:::tip Tip
+
 If you want to turn off tablist empty the array. This should look like this: `"tabListConfigurations": [],`
+
 :::
 
 <br></br>

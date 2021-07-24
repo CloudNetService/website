@@ -10,8 +10,10 @@ The `npc` command is used to manage the configuration of the [NPC Module](../mod
 Permission: `cloudnet.command.npcs`  
 Aliases: `npc`, `npcs`, `cloud-npc`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `npc` command.  

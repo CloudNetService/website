@@ -11,8 +11,10 @@ It might be requested by our [support team](../index.md#support) to assist you w
 Permission: `cloudnet.command.report`  
 Aliases: `report`, `reports`
 
-:::info
+:::info Info
+
 This command can be used as a command in the node console or as a command ingame with the prefix `/cloud`
+
 :::
 
 This is a basic overview about the `report` command.  

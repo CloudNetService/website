@@ -11,19 +11,46 @@ Without any modules, CloudNet will only store PermissionData in this database. T
 
 ### database {#database}
 
-This parameter does not need to be changed. It's value has to be put in the `local/registry` file at the `database_provider` key to activate the MySQL-Database.
+This parameter does not need to be changed. It's value (`mysql`) has to be put in the `local/registry` file at the `database_provider` key to activate the MySQL-Database.
+
 :::caution Warning
+
 If you don't change this option, CloudNet will persist on H2 even if you put your correct credentials into the config.
+
 :::
 
 ### addresses {#addresses}
 
 This is a JsonArray of database addresses. You do not need to add an element if you do not have a MySQL cluster.
+
+#### useSsl {#usessl}
+
+Whether the module should use ssl to encrypt the connection to the database server
+
+#### database {#database}
+
+This is the database that the module uses to create the individual tables
+
+#### host {#host}
+
+The ip address the database server is bound on
+
+#### port {#port}
+
+The port your database server is listening to
+
+### username {#username}
+
+This is the username which is used by this module to connect to your database server
+
+### password {#password}
+
+This is the password which is used by this module to connect to your database server
+
 :::caution Warning
+
 `useSsl`, `connectionPoolSize`, `connectionTimeout` & `validationTimeout` should not be changed if you do not know what they are doing!
-:::
-:::tip Info
-All other keys should be self explaining :)
+
 :::
 
 ## Sample Configuration {#sample-configuration}

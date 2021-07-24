@@ -16,9 +16,12 @@ Defines the prefix of the ingame messages
 ### onlyProxyProtection {#onlyproxyprotection}
 
 Enables (or disables) the onlyProxyProtection (`true`/`false`)
-:::caution
+
+:::caution Caution
+
 Disabling the onlyProxyProtection is NOT recommended!  
 Please ensure that your Firewall is set up correctly if you disable it.
+
 :::
 
 ### excludedOnlyProxyWalkableGroups {#excludedonlyproxywalkablegroups}
@@ -129,8 +132,11 @@ Enabled (or disables) the logging of the player connections in the console (`tru
 ### messages {#messages}
 
 A set of the ingame messages sent by the Bridge Module
+
 :::tip Info
+
 To disable a message clear the content of the string
+
 :::
 
 ## Sample Configuration {#sample-configuration}

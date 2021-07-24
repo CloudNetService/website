@@ -36,13 +36,19 @@ java -version
 ```
 
 Output:
+
 :::tip Correct
+
 openjdk version "11.0.9.1" 2020-11-04  
 OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.9.1+1)  
 OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.9.1+1, mixed mode)
+
 :::
+
 :::danger Error
+
 -bash: java -version: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Java.  
@@ -61,11 +67,17 @@ screen -help
 ```
 
 Output:
+
 :::tip Correct
+
 Use: screen [-opts] [cmd [args]] or: screen -r [host.tty]
+
 :::
+
 :::danger Error
+
 bash: screen: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Screen.  
@@ -84,11 +96,17 @@ sudo
 ```
 
 Output:
+
 :::tip Correct
+
 usage: sudo -h | -K | -k | -V
+
 :::
+
 :::danger Error
+
 bash: sudo: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Sudo.  
@@ -107,14 +125,20 @@ wget
 ```
 
 Output:
+
 :::tip Correct
+
 wget: missing URL
 Usage: wget [OPTION]... [URL]...
 
 Try `wget --help' for more options.
+
 :::
+
 :::danger Error
+
 bash: wget: Command not found.
+
 :::
 
 If the output is "Command not found", then you need to install Wget.  
@@ -133,11 +157,17 @@ unzip
 ```
 
 Output:
+
 :::tip Correct
+
 UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
 :::
+
 :::danger Error
+
 bash: unzip: Command not found.
+
 :::
 If the output is "Command not found", then you need to install Unzip.  
 To install Unzip, use the following command:
