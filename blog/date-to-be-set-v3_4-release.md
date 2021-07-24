@@ -57,6 +57,17 @@ To give an idea: We know that CloudNet worked well with 6 nodes in the cluster a
 
 A very special thank you to the networks which worked closely with us to resolve the issues and test the fixes!
 
+## Notice for Snapshot users {#snapshot-users}
+If you are using the Snapshot of CloudNet v3 for the improved stability of the 3.4 version, you should consider disabling snapshots!
+(You can do that by turning `use-snapshots` to `false` in the `launcher.cnl` file.)  
+**We will continue working on CloudNet v3 in the development branch, so you would risk getting potentially unstable or broken builds.**
+
+## Updating {#updating}
+You can update the Cloud simply by restarting it, if you have set `auto-update` to `true` in the `launcher.cnl` file.
+Otherwise, you can replace the `launcher.jar` with the [3.4.0 build](https://cloudnetservice.eu/cloudnet/version/release/3.4.0/CloudNet.zip) from our download server.
+
+**Please be aware that Nodes running on v3.3 are able to connect to v3.4 nodes! Therefore, you need to update all your nodes at the same time.**
+
 ## Conclusion {#conclusion}
 
 We hope you will enjoy this big update!
@@ -68,3 +79,5 @@ We hope you will enjoy this big update!
 - We [changed a lot in the API](#api), please check your code and replace any deprecated methods with the replacements referred in the documentation!
 - Support for **Minecraft 1.17** and IPv6 has been added.
 - The performance has been drastically improved. Especially with the [cluster](#cluster-issues)
+- Snapshot users should consider [disabling snapshots](#snapshot-users).
+- You can [update](#updating) by restarting the Cloud, if you have `auto-update` enabled.
