@@ -24,7 +24,7 @@ INFO: The connection to the node [uniqueId=Node-2] was successfully established!
 
 :::
 
-The connecion has successfully been established and the new Node is added to the cluster.
+The connection has successfully been established and the new Node is added to the cluster.
 You now might want to add the Node to a few tasks and push everything (Tasks Configs, Templates, ...) to the new Node by executing `clu push all` on any previously existing node.
 
 :::danger Error

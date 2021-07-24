@@ -10,7 +10,8 @@ The SyncProxy module manages the Motd, and the tab list header and footer.
 
 ## Maintenance {#maintenance}
 
-The module also has maintenance mode with a whitelist or a permission.  
+The module also has maintenance mode which prevents users from joining if they are not on the
+[whitelist](../commands/syncproxy.md#syncproxy-target-whitelist) or do not have the required permission (`cloudnet.syncproxy.maintenance`).  
 ![CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png](/img/v3/modules/CloudNet-SyncProxy-Module-Maintenance-Motd-Example.png)
 
 :::caution Warning
