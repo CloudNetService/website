@@ -9,8 +9,8 @@ tags: [cloudnet-v3]
 ---
 
 We are proudly presenting a new release version of CloudNet v3!  
-It has been a while since we released the 3.3 update. Quite a long time, the last release was on 05/16/2020
-Since then quite a lot has changed in the system.
+It has been a while since we released the 3.3 update. Quite a long time, the last release was on 05/16/2020,
+since then quite a lot has changed in the system.
 
 <!--truncate-->
 
@@ -48,7 +48,7 @@ We were not able to test the CloudSystem in a large scale with more than three n
 A user has reached out to us having troubles with multiple servers having the same id (such as "Lobby-1" on different nodes or even the same).  
 Before the version 3.4, we tried to let the nodes decide themselves if they needed to start a new server.
 Unfortunately, this did not work well, and we identified it to be the cause of the issues.  
-Therefore, we implement a Head-Node system. Once the nodes connect to each other, they exchange their time of boot and
+Therefore, we implemented a Head-Node system. Once the nodes connect to each other, they exchange their time of boot and
 use this to determine the current Head-Node.  
 If the Head-Node disconnects, every other Node knows which one will be the next Head-Node, and the Cluster will just continue where was before.
 
