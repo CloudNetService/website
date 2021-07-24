@@ -22,9 +22,9 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
-          eslint_extensions: js,jsx,md,mdx
+          eslint_extensions: js,jsx,md,mdx,ts,tsx
           prettier: true
-          prettier_extensions: js,jsx,css,md,mdx
+          prettier_extensions: js,jsx,css,md,mdx,ts,tsx
           neutral_check_on_warning: true
       - name: Sync translations
         env:

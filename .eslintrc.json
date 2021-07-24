@@ -13,6 +13,11 @@
       "files": [".mdx", ".md"],
       "parser": "eslint-mdx",
       "extends": "plugin:mdx/recommended"
+    },
+    {
+      "files": [".tsx", ".ts"],
+      "parser": "eslint-mdx",
+      "extends": "plugin:@typescript-eslint/recommended"
     }
   ],
   "parserOptions": {
@@ -25,6 +30,6 @@
     },
     "mdx/code-blocks": true
   },
-  "plugins": [],
+  "plugins": ["@typescript-eslint", "react"],
   "rules": {}
 }
