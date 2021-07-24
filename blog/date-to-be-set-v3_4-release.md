@@ -33,7 +33,7 @@ The dependency information can be found [here](#)
 - Performance improvements in many places and all bugs that are known to date have been fixed.
 - IPv6 is now supported everywhere.
 - A possibility to set the default JVM flags for all services has been added in the node configuration file.
-- In the node config you can now set a custom time to wait until a service is hard killed.
+- The time until a service will be force stopped can now be defined in the node config.
 - All tasks can now be started with a separate JVM command, for example to use Java 8 for lobbies and Java 16 for proxies.
 - All tasks can now have a specific permission needed to enter it.
 - Services are no longer managed by all nodes, one node takes over the leader role in the cluster (so-called "head node") and ensures that services are started/stopped.
@@ -50,7 +50,7 @@ Before the version 3.4, we tried to let the nodes decide themselves if they need
 Unfortunately, this did not work well, and we identified it to be the cause of the issues.  
 Therefore, we implemented a Head-Node system. Once the nodes connect to each other, they exchange their time of boot and
 use this to determine the current Head-Node.  
-If the Head-Node disconnects, every other Node knows which one will be the next Head-Node, and the Cluster will just continue where was before.
+If the Head-Node disconnects, every other Node knows which one will be the next Head-Node, and the Cluster will just continue where it was before.
 
 After fixing the cluster issues, we heard of a few large networks not having any further problems.  
 To give an idea: We know that CloudNet worked well with 6 nodes in the cluster and more than 600 players connected at the same time!
