@@ -54,7 +54,7 @@ This command creates a new group with the given `name`.
 
 **Usage:** `groups reload`
 
-This command the local group configuration, to apply any changes made manually.
+This command reloads the local group configuration, to apply any changes made manually.
 
 ## groups list {#groups-list}
 

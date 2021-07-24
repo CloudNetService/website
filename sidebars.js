@@ -77,7 +77,7 @@ module.exports = {
         },
         {
           type: "doc",
-          id: "modules/npc",
+          id: "modules/npcs",
         },
         {
           type: "doc",

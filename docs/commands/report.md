@@ -2,11 +2,11 @@
 id: report
 title: Report Command
 sidebar_label: Report
-description: Creates a file with all important data for a report or for develop modules for CloudNet.
+description: Creates a file with all important data for support purposes or for developing CloudNet modules.
 ---
 
 The `report` command is a useful command to gather information about the Cloud.
-It might be requested my our [support team](../index.md#support), when you contact them with a problem.
+It might be requested by our [support team](../index.md#support) to assist you with your support enquiry.
 
 Permission: `cloudnet.command.report`  
 Aliases: `report`, `reports`

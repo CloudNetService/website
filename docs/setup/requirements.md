@@ -3,7 +3,7 @@ id: requirements
 title: Requirements
 ---
 
-You need **Java**, **Screen**, **Sudo**, **Curl** and **Unzip** for the default [**installation**](./installation) of this software.<br></br>
+You need **Java**, **Screen**, **Sudo**, **Wget** and **Unzip** for the default [**installation**](./installation) of this software.<br></br>
 Before you install the following programs, run:
 
 ```
@@ -29,7 +29,7 @@ sudo apt update && sudo apt upgrade
 ### Java {#java}
 
 The required Java version depends on your planned Spigot version. If you use a Spigot version below 1.9 you have to install Java 8.  
-So you can check if you have already installed Java and which version you have used.
+Use the following command to display the installed Java version.
 
 ```
 java -version
@@ -98,27 +98,30 @@ To install Sudo, use the following command:
 apt-get install sudo
 ```
 
-### Curl {#curl}
+### Wget {#wget}
 
-This way you can check if you already have Curl installed.
+This way you can check if you already have Wget installed.
 
 ```
-curl
+wget
 ```
 
 Output:
 :::tip Correct
-curl: try 'curl --help' or 'curl --manual' for more information
+wget: missing URL
+Usage: wget [OPTION]... [URL]...
+
+Try `wget --help' for more options.
 :::
 :::danger Error
-bash: curl: Command not found.
+bash: wget: Command not found.
 :::
 
-If the output is "Command not found", then you need to install Curl.  
-To install Curl, use the following command:
+If the output is "Command not found", then you need to install Wget.  
+To install Wget, use the following command:
 
 ```
-sudo apt-get install curl
+sudo apt-get install wget
 ```
 
 ### Unzip {#unzip}

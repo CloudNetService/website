@@ -1,7 +1,7 @@
 ---
-id: npc
-title: NPC Module
-sidebar_label: NPC
+id: npcs
+title: NPCs Module
+sidebar_label: NPCs
 ---
 
 The CloudNet NPC module allows spawning of fake-players for server selection.  

@@ -5,7 +5,7 @@ sidebar_label: NPC
 description: For simple administration of the NPCs module.
 ---
 
-The `npc` command is used to manage the configuration of the [NPC Module](../modules/npc.md).
+The `npc` command is used to manage the configuration of the [NPC Module](../modules/npcs.md).
 
 Permission: `cloudnet.command.npcs`  
 Aliases: `npc`, `npcs`, `cloud-npc`
@@ -27,9 +27,9 @@ COMMAND:  - npc reload
 **Usage:** `npc create entry <targetGroup>`
 
 This command creates a new entry for the given [target group](../components/groups.md) in the
-[NPC Configuration](../modules/npc.md).
+[NPC Configuration](../modules/npcs.md).
 
 ## npc reload {#npc-reload}
 
 **Usage:** `npc reload`
-This command reloads the [NPC-Module](../modules/npc.md) Configuration and applies any changes.
+This command reloads the [NPC-Module](../modules/npcs.md) Configuration and applies any changes.

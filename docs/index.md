@@ -12,7 +12,7 @@ You can use it for your small, upcoming network or in a cluster for hundreds of 
 ## Features {#features}
 
 - [Cluster](setup/cluster.md) ready - to distribute your players across different virtual or dedicated servers
-- Join servers with the [NPC-Server-Selectors](modules/npc.md) or [SignSystem](modules/signs.md)
+- Join servers with the [NPC-Server-Selectors](modules/npcs.md) or [SignSystem](modules/signs.md)
 - Integrated [Permissions System](modules/cloudperms.md)
 - [Multi MOTD Support](modules/syncproxy.md) - Create cool animated MOTDs
 - [MultiProxy Support](modules/syncproxy.md) - Balance your players on different proxies
