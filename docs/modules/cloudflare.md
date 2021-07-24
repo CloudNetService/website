@@ -6,7 +6,7 @@ sidebar_label: Cloudflare
 
 The Cloudflare module allows automatic creation of DNS Records in [Cloudflare](https://cloudflare.com/).  
 These can be made for any type of services - from BungeeCord to vanilla servers. It can handle multiple domains.  
-To enable it, you need a domain with NameServers by Cloudflare. The module needs your `E-Mail, the Global API Key and the zoneId` OR `a Cloudflare API Token`. Everything can be found or created in the Cloudflare dashboard.  
+To enable it, you need a domain with NameServers by Cloudflare. The module needs your `E-Mail, the Global API Key and the zoneId` OR `a Cloudflare API Token`. Everything can be found or created in the Cloudflare dashboard.
 
 :::caution Warning
 

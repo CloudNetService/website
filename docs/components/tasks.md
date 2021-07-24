@@ -8,7 +8,7 @@ A task is a configuration from which [services](services) can be started.
 ## Configuration {#configuration}
 
 The configuration path for each task is `local/tasks/NAME.json`  
-After changing a configuration, you need to execute `tasks reload` in the console.  
+After changing a configuration, you need to execute `tasks reload` in the console.
 
 :::tip Tip
 
@@ -54,7 +54,7 @@ If the maintenance mode is enabled, services of this task can have a special sig
 
 ### autoDeleteOnStop {#autodeleteonstop}
 
-This enables or disables the automatic deletion of service files after they have been stopped. (`true`/`false`)  
+This enables or disables the automatic deletion of service files after they have been stopped. (`true`/`false`)
 
 :::caution Warning
 
