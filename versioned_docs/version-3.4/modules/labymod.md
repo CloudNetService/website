@@ -7,7 +7,7 @@ sidebar_label: LabyMod
 ## What does the "LabyMod module"? {#what-does-the-labymod-module}
 
 - It shows to your LabyMod friends whenever someone plays on your server:  
-  ![CloudNet-LabyMod-Module-Example.png](img/CloudNet-LabyMod-Module-Example.png)
+  ![CloudNet-LabyMod-Module-Example.png](/img/v3/modules/CloudNet-LabyMod-Module-Example.png)
 - It adds support for your Discord friends to join/spectate through your rich presence
 
 ## Where can I get it? {#where-can-i-get-it}
@@ -101,7 +101,7 @@ This option is ignored when `discordSpectateEnabled` is set to `false`
 ### gameModeSwitchMessages {#gamemodeswitchmessages}
 
 In this section you can configure the gamemode swith message:  
-![CloudNet-LabyMod-Module-Example.png](img/CloudNet-LabyMod-Module-Example.png)
+![CloudNet-LabyMod-Module-Example.png](/img/v3/modules/CloudNet-LabyMod-Module-Example.png)
 
 #### enabled {#enabled-3}
 

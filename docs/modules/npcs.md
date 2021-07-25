@@ -5,7 +5,7 @@ sidebar_label: NPCs
 ---
 
 The CloudNet NPC module allows spawning of fake-players for server selection.  
-![CloudNet-NPC-Module-Example.png](img/CloudNet-NPC-Module-Example.png)  
+![CloudNet-NPC-Module-Example.png](/img/v3/modules/CloudNet-NPC-Module-Example.png)  
 Every NPC provides server connect methods either trough an inventory or through direct connect. NPCs can be managed with the `/cloudnpc` command.
 
 ## NPC properties {#npc-properties}
@@ -43,7 +43,7 @@ You can also use our [Sample Configuration for 1.8 to 1.12](#sample-configuratio
 
 :::
 
-![CloudNet-NPC-Module-Inventory-Example.png](img/CloudNet-NPC-Module-Inventory-Example.png)  
+![CloudNet-NPC-Module-Inventory-Example.png](/img/v3/modules/CloudNet-NPC-Module-Inventory-Example.png)  
 Placeholders for items in the inventory:
 
 ```
