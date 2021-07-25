@@ -19,7 +19,7 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/3.3/",
+          to: "docs/3.4/",
           activeBasePath: "docs",
           label: "Documentation",
           position: "left",
@@ -53,7 +53,7 @@ module.exports = {
           items: [
             {
               label: "CloudNet v3",
-              to: "docs/3.3/",
+              to: "docs/3.4/",
             },
           ],
         },
@@ -108,10 +108,18 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
             "https://github.com/cloudnetservice/website/edit/development/",
-          includeCurrentVersion: false,
+          includeCurrentVersion: true,
           versions: {
+            current: {
+              label: "CloudNet v3.5 🚧",
+              path: "next",
+            },
+            3.4: {
+              label: "CloudNet v3.4",
+              path: "3.4",
+            },
             3.3: {
-              label: "CloudNet v3",
+              label: "CloudNet v3.3",
               path: "3.3",
             },
             /*"2.2": {
@@ -119,7 +127,7 @@ module.exports = {
               "path": "2.2"
             }*/
           },
-          lastVersion: "3.3",
+          lastVersion: "3.4",
           showLastUpdateTime: true,
         },
         blog: {
