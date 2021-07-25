@@ -84,8 +84,8 @@ We hope you will enjoy this big update!
 ## TL;DR {#tldr}
 
 - Support for **Minecraft 1.17**, IPv6 and [much more](#changes) has been added.
-- You should [update](#updating) manually by replacing the `launcher.jar` with the one from the [3.4.0 build](https://cloudnetservice.eu/cloudnet/version/release/3.4.0/CloudNet.zip)
+- You should [update](#updating) manually by replacing the `launcher.jar` with the one from the [3.4.0 build](https://cloudnetservice.eu/cloudnet/version/release/3.4.0/CloudNet.zip).
 - We have a [new look](#new-spigotmc-design) for our [SpigotMC page](https://www.spigotmc.org/resources/cloudnet-v3-the-cloud-network-environment-technology.42059/)!
 - Snapshot users should consider [disabling snapshots](#snapshot-users).
 - We [changed a lot in the API](#api), please check your code and replace any deprecated methods with the replacements referred in the documentation!
-- The performance has been drastically improved. Especially with the [cluster](#cluster-issues)
+- The performance has been drastically improved. Especially with the [cluster](#cluster-issues).
