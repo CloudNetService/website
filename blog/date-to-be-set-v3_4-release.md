@@ -58,7 +58,7 @@ Many of the API methods that were in 3.3 for a long time (some since 3.0) have b
 Please read the documentation, for each method the replacement has been added, nothing was removed just like that.
 Methods that were annotated as ScheduledForRemoval for 3.4 were removed.
 
-The dependency information can be found [here](#)
+The dependency information can be found [here](#).
 
 ## About the cluster issues {#cluster-issues}
 
