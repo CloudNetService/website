@@ -35,8 +35,8 @@ You can find a more detailed changelog [here](#)
 
 ## Updating {#updating}
 
-You can update the Cloud simply by restarting it, if you have set `auto-update` to `true` in the `launcher.cnl` file.
-Otherwise, you can replace the `launcher.jar` with the [3.4.0 build](https://cloudnetservice.eu/cloudnet/version/release/3.4.0/CloudNet.zip) from our download server.
+For this update, it is recommended to update replacing the `launcher.jar` with the one from the [3.4.0 build](https://cloudnetservice.eu/cloudnet/version/release/3.4.0/CloudNet.zip) from our download server.
+Using `auto-update` would still work (if you have set it to `true` in the `launcher.cnl` file), but the LabyMod Module would not be updated properly.
 
 **Please be aware that Nodes running on v3.3 are not able to connect to v3.4 nodes! Therefore, you need to update all your nodes at the same time.**
 
@@ -84,7 +84,7 @@ We hope you will enjoy this big update!
 ## TL;DR {#tldr}
 
 - Support for **Minecraft 1.17**, IPv6 and [much more](#changes) has been added.
-- You can [update](#updating) by restarting the Cloud, if you have `auto-update` enabled.
+- You should [update](#updating) manually by replacing the `launcher.jar` with the one from the [3.4.0 build](https://cloudnetservice.eu/cloudnet/version/release/3.4.0/CloudNet.zip)
 - We have a [new look](#new-spigotmc-design) for our [SpigotMC page](https://www.spigotmc.org/resources/cloudnet-v3-the-cloud-network-environment-technology.42059/)!
 - Snapshot users should consider [disabling snapshots](#snapshot-users).
 - We [changed a lot in the API](#api), please check your code and replace any deprecated methods with the replacements referred in the documentation!
