@@ -55,7 +55,7 @@ If you are using the Snapshot of CloudNet v3 for the improved stability of the 3
 
 A small word about the API is important, too.  
 Many of the API methods that were in 3.3 for a long time (some since 3.0) have been replaced and marked as deprecated.
-Please read the documentation, for each method the replacement has been added, nothing was removed just like that.
+Please read the documentation! We added information about the replacement for every new deprecated method, nothing was removed without prior notice (deprecation) before.
 Methods that were annotated as ScheduledForRemoval for 3.4 were removed.
 
 The dependency information can be found [here](#).
