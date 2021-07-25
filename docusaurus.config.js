@@ -53,7 +53,7 @@ module.exports = {
           items: [
             {
               label: "CloudNet v3",
-              to: "docs/3.3/",
+              to: "docs/3.4/",
             },
           ],
         },
@@ -111,8 +111,12 @@ module.exports = {
           includeCurrentVersion: true,
           versions: {
             current: {
-              label: "CloudNet v3.4 🚧",
+              label: "CloudNet v3.5 🚧",
               path: "next",
+            },
+            3.4: {
+              label: "CloudNet v3.4",
+              path: "3.4",
             },
             3.3: {
               label: "CloudNet v3.3",
@@ -123,7 +127,7 @@ module.exports = {
               "path": "2.2"
             }*/
           },
-          lastVersion: "3.3",
+          lastVersion: "3.4",
           showLastUpdateTime: true,
         },
         blog: {
