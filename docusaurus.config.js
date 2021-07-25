@@ -160,7 +160,7 @@ module.exports = {
         fromExtensions: ["html"],
         redirects: [
           {
-            to: "/docs/3.3/",
+            to: "/docs/3.4/",
             from: "/docs/",
           },
         ],
