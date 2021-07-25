@@ -38,7 +38,7 @@ You can find a more detailed changelog [here](#)
 You can update the Cloud simply by restarting it, if you have set `auto-update` to `true` in the `launcher.cnl` file.
 Otherwise, you can replace the `launcher.jar` with the [3.4.0 build](https://cloudnetservice.eu/cloudnet/version/release/3.4.0/CloudNet.zip) from our download server.
 
-**Please be aware that Nodes running on v3.3 are able to connect to v3.4 nodes! Therefore, you need to update all your nodes at the same time.**
+**Please be aware that Nodes running on v3.3 are not able to connect to v3.4 nodes! Therefore, you need to update all your nodes at the same time.**
 
 ## New SpigotMC design {#new-spigotmc-design}
 
