@@ -35,3 +35,8 @@ A special thank-you goes to all the contributors of the CloudNet v3 Projects:
 <a href="https://github.com/CloudNetService/CloudNet-v3/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=CloudNetService/CloudNet-v3" alt="Contributors"/>
 </a>
+
+Also thanks to the contributors of our Website:
+<a href="https://github.com/CloudNetService/website/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=CloudNetService/website" alt="Contributors"/>
+</a>
