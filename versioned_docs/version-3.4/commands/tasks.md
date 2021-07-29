@@ -147,7 +147,7 @@ This command sets the specified [environment](../components/tasks.md#environment
 
 This command disables (`true`) or enables (`false`) the [ip rewrite](../components/tasks.md#disableiprewrite) of the task.
 
-::: Caution Warning
+:::caution Warning
 
 We recommend the usage of this feature just in very special cases.  
 For example, when you want to have several proxies for the Bedrock Edition.
