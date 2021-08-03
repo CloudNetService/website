@@ -29,6 +29,7 @@ By default, CloudNet only provides the "jvm" runtime, you can add your own with 
 ### disableIpRewrite {#disableiprewrite}
 
 Enables or disables the ip rewrite for services of this task (`true`/`false`)
+If this option is turned off, the port and IP in the server software configuration will not be changed by CloudNet
 
 :::caution Warning
 

@@ -5,7 +5,7 @@ sidebar_label: SyncProxy
 description: For simple administration of the SyncProxy module.
 ---
 
-The `syncproxy` command is used to manage the configuration of the [NPC Module](../modules/npcs.md).
+The `syncproxy` command is used to manage the configuration of the [SyncProxy Module](../modules/syncproxy.md).
 
 Permission: `cloudnet.command.syncproxy`  
 Aliases: `syncproxy`, `sp`
