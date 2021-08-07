@@ -1,6 +1,6 @@
 name: Website Yarn Build
 
-on: [create, push, pull_request, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
@@ -20,12 +20,16 @@ jobs:
           install-command: yarn --frozen-lockfile
       - name: Check codestyle
         uses: wearerequired/lint-action@v1
+        if: ${{ github.repository == 'CloudNetService/website' }}
         with:
           eslint: true
           eslint_extensions: js,jsx,md,mdx,ts,tsx
           prettier: true
           prettier_extensions: js,jsx,css,md,mdx,ts,tsx
           neutral_check_on_warning: true
+      - name: Check codestyle on external repositories
+        if: ${{ github.repository != 'CloudNetService/website' }}
+        run: yarn test
       - name: Sync translations
         env:
           CROWDIN_PROJECT_ID: 4
