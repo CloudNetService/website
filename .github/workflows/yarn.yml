@@ -47,7 +47,7 @@ jobs:
           source: "template/dev/robots.txt"
           target: "build/robots.txt"
       - name: Copy robots.txt to productive envs
-        if: ${{ github.ref = 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         uses: canastro/copy-file-action@master
         with:
           source: "template/prod/robots.txt"
