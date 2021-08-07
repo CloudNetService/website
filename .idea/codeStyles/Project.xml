@@ -6,6 +6,7 @@
         <option name="TAB_SIZE" value="2" />
       </value>
     </option>
+    <option name="LINE_SEPARATOR" value="&#10;" />
     <codeStyleSettings language="JavaScript">
       <indentOptions>
         <option name="INDENT_SIZE" value="2" />

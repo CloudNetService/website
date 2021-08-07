@@ -9,6 +9,9 @@ import Translate from "@docusaurus/Translate";
 import styles from "./styles.module.css";
 
 type FeatureProps = {
+  // Strange false positive, eslint does not recognise that React is using this prop as key
+  // eslint-disable-next-line react/no-unused-prop-types
+  reference: string;
   title: any;
   icon: string;
   description: any;
@@ -16,6 +19,7 @@ type FeatureProps = {
 
 const features: FeatureProps[] = [
   {
+    reference: "opensource",
     title: (
       <Translate id="homepage.feature.openSource.title">
         Free & OpenSource
@@ -46,6 +50,7 @@ const features: FeatureProps[] = [
     ),
   },
   {
+    reference: "support",
     title: <Translate id="homepage.feature.support.title">Support</Translate>,
     icon: "people",
     description: (
@@ -72,6 +77,7 @@ const features: FeatureProps[] = [
     ),
   },
   {
+    reference: "scalable",
     title: <Translate id="homepage.feature.scalable.title">Scalable</Translate>,
     icon: "trending_up",
     description: (
@@ -135,11 +141,13 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map((props: FeatureProps) => (
+                {features.map((featureProps: FeatureProps) => (
                   <Feature
-                    icon={props.icon}
-                    title={props.title}
-                    description={props.description}
+                    key={featureProps.reference}
+                    title={featureProps.title}
+                    description={featureProps.description}
+                    icon={featureProps.icon}
+                    reference={featureProps.reference}
                   />
                 ))}
               </div>
