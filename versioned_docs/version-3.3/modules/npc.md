@@ -1,7 +1,7 @@
 ---
 id: npc
-title: NPC Module
-sidebar_label: NPC
+title: NPCs Module
+sidebar_label: NPCs
 ---
 
 The CloudNet NPC module allows spawning of fake-players for server selection.  
@@ -98,7 +98,7 @@ onJoinEmoteIds ---------- A list of LabyMod emote ids which will be played rando
 playEmotesSynchronous --- If all NPCs should play the same emote
 ```
 
-For a list of all emote ids, see the [LabyMod developer docs](https://docs.labymod.net/pages/server/labymod/emote_api/).
+For a list of all emote ids, see the [LabyMod developer docs](https://docs.labymod.net/pages/server/labymod/emote_api/#example-emote-ids).
 
 ## Sample Configuration {#sample-configuration}
 

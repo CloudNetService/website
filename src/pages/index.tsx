@@ -116,7 +116,7 @@ function Home() {
                     "button button--outline button--secondary button--lg",
                     styles.getStarted
                   )}
-                  to={useBaseUrl("docs/3.3/")}
+                  to={useBaseUrl("docs/3.4/")}
                 >
                   <Translate id="homepage.getStartedButton">
                     Get Started

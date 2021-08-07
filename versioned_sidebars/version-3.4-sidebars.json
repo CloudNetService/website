@@ -1,0 +1,211 @@
+{
+  "version-3.4/docs": [
+    {
+      "type": "doc",
+      "id": "version-3.4/index"
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Setup",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.4/setup/requirements"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/setup/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/setup/cluster"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Components",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.4/components/services"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/components/tasks"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/components/groups"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/components/templates"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/components/template-storages"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Modules",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/bridge"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/cloudflare"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/cloudperms"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/database-mysql"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/labymod"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/npcs"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/report"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/signs"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/smart"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/storage-ftp"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/modules/syncproxy"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Commands",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/cluster"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/clear"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/copy"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/create"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/debug"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/exit"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/groups"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/help"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/me"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/npc"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/paste"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/permissions"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/players"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/reload"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/report"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/screen"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/service"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/signs"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/syncproxy"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/tasks"
+        },
+        {
+          "type": "doc",
+          "id": "version-3.4/commands/template"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "CloudNet API",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3.4/api/start"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "version-3.4/changelog"
+    }
+  ]
+}

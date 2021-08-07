@@ -182,7 +182,7 @@ type Dependency = {
 const dependencies: Dependency[] = [
   {
     name: "cloudnet-driver",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -201,12 +201,18 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-driver",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-driver",
+        releaseType: "release",
       },
     ],
   },
   {
     name: "cloudnet-wrapper-jvm",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -225,12 +231,18 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-wrapper-jvm",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-wrapper-jvm",
+        releaseType: "release",
       },
     ],
   },
   {
     name: "cloudnet-bridge",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -249,12 +261,18 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-bridge",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-bridge",
+        releaseType: "release",
       },
     ],
   },
   {
     name: "cloudnet",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -273,12 +291,18 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet",
+        releaseType: "release",
       },
     ],
   },
   {
     name: "cloudnet-cloudperms",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -297,12 +321,18 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-cloudperms",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-cloudperms",
+        releaseType: "release",
       },
     ],
   },
   {
     name: "cloudnet-syncproxy",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -321,12 +351,18 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-syncproxy",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-syncproxy",
+        releaseType: "release",
       },
     ],
   },
   {
     name: "cloudnet-signs",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -345,12 +381,18 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-signs",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-signs",
+        releaseType: "release",
       },
     ],
   },
   {
     name: "cloudnet-npcs",
-    currentVersion: "3.3.0-RELEASE",
+    currentVersion: "3.4.0-RELEASE",
     versions: [
       {
         version: "3.3.0-SNAPSHOT",
@@ -369,6 +411,12 @@ const dependencies: Dependency[] = [
         groupId: "de/dytanic/cloudnet",
         artifactId: "cloudnet-npcs",
         releaseType: "snapshot",
+      },
+      {
+        version: "3.4.0-RELEASE",
+        groupId: "de/dytanic/cloudnet",
+        artifactId: "cloudnet-npcs",
+        releaseType: "release",
       },
     ],
   },
