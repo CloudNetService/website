@@ -4,9 +4,9 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
 import Icon from "@material-ui/core/Icon";
 import Translate from "@docusaurus/Translate";
+import styles from "./styles.module.css";
 
 type FeatureProps = {
   title: any;
@@ -101,7 +101,7 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`CloudNET - The Cloud Network Environment Technology`}
+      title="CloudNET - The Cloud Network Environment Technology"
       description="A modern application that can dynamically and easily deploy Minecraft oriented software."
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
@@ -135,8 +135,12 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                {features.map((props: FeatureProps) => (
+                  <Feature
+                    icon={props.icon}
+                    title={props.title}
+                    description={props.description}
+                  />
                 ))}
               </div>
             </div>

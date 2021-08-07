@@ -122,10 +122,10 @@ module.exports = {
               label: "CloudNet v3.3",
               path: "3.3",
             },
-            /*"2.2": {
+            /* "2.2": {
               "label": "CloudNet v2",
               "path": "2.2"
-            }*/
+            } */
           },
           lastVersion: "3.4",
           showLastUpdateTime: true,
