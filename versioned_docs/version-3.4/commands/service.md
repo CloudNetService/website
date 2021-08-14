@@ -2,7 +2,7 @@
 id: service
 title: Service Command
 sidebar_label: Service
-description: Manages all services on the local node and in the cluster
+description: Manages all services in the cluster
 ---
 
 The `service` command is used to manage all local services that are provided.
