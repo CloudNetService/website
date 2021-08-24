@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /cloudnet/
+Disallow: /repositories/
+Disallow: /data/
