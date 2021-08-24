@@ -62,4 +62,4 @@ This command creates a template with the server type.
 
 **Usage:** `template copy <storage:prefix/name (sourceTemplate)> <storage:prefix/name (targetTemplate)>`
 
-This command copies the given `sourceTemplate` to the given `targetTemplate`.
+This command copies the given source template (`sourceTemplate`) to the given target template (`targetTemplate`).
