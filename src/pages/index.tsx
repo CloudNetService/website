@@ -4,11 +4,14 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
 import Icon from "@material-ui/core/Icon";
 import Translate from "@docusaurus/Translate";
+import styles from "./styles.module.css";
 
 type FeatureProps = {
+  // Strange false positive, eslint does not recognise that React is using this prop as key
+  // eslint-disable-next-line react/no-unused-prop-types
+  reference: string;
   title: any;
   icon: string;
   description: any;
@@ -16,6 +19,7 @@ type FeatureProps = {
 
 const features: FeatureProps[] = [
   {
+    reference: "opensource",
     title: (
       <Translate id="homepage.feature.openSource.title">
         Free & OpenSource
@@ -46,6 +50,7 @@ const features: FeatureProps[] = [
     ),
   },
   {
+    reference: "support",
     title: <Translate id="homepage.feature.support.title">Support</Translate>,
     icon: "people",
     description: (
@@ -72,6 +77,7 @@ const features: FeatureProps[] = [
     ),
   },
   {
+    reference: "scalable",
     title: <Translate id="homepage.feature.scalable.title">Scalable</Translate>,
     icon: "trending_up",
     description: (
@@ -101,7 +107,7 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`CloudNET - The Cloud Network Environment Technology`}
+      title="CloudNET - The Cloud Network Environment Technology"
       description="A modern application that can dynamically and easily deploy Minecraft oriented software."
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
@@ -135,8 +141,14 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                {features.map((featureProps: FeatureProps) => (
+                  <Feature
+                    key={featureProps.reference}
+                    title={featureProps.title}
+                    description={featureProps.description}
+                    icon={featureProps.icon}
+                    reference={featureProps.reference}
+                  />
                 ))}
               </div>
             </div>

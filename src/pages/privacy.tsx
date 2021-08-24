@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 function Home() {
   return (
-    <Layout title={`Datenschutzerklärung`}>
+    <Layout title="Datenschutzerklärung">
       <main className={clsx("container", styles.legalText)}>
         <h1>Datenschutzerklärung</h1>
         <p>

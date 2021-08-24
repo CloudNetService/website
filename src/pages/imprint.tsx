@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 function Home() {
   return (
-    <Layout title={`Impressum`}>
+    <Layout title="Impressum">
       <main className={clsx("container", styles.legalText)}>
         <h1>Impressum</h1>
         <h2>Angaben gemäß § 5 TMG</h2>
