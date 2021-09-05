@@ -14,9 +14,9 @@ function Home() {
           <br />
           c/o nexserv GmbH
           <br />
-          Dießemer Bruch 112c
+          Kapellenstraße 22
           <br />
-          47805 Krefeld
+          82008 Unterhaching
           <br />
           Deutschland
         </p>
@@ -35,9 +35,9 @@ function Home() {
           <br />
           c/o nexserv GmbH
           <br />
-          Dießemer Bruch 112c
+          Kapellenstraße 22
           <br />
-          47805 Krefeld
+          82008 Unterhaching
           <br />
           Deutschland
         </p>
