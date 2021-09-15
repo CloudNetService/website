@@ -3,7 +3,7 @@ id: groups
 title: Groups
 ---
 
-Groups are intended to summarize [tasks](tasks.md). Each service belongs to one task, and tasks can be grouped using groups
+Groups are intended to summarize [tasks](tasks.md). Each service belongs to one task, and tasks can be combined using groups
 They can add extra settings such as templates to a service. They can be managed with the [groups command](../commands/groups.md).
 
 As an example, there is a group called "Lobby", the tasks "Lobby" and "PremiumLobby".
