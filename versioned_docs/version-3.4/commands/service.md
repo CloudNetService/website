@@ -2,7 +2,7 @@
 id: service
 title: Service Command
 sidebar_label: Service
-description: Manages all local services that are provided.
+description: Manages all services in the cluster
 ---
 
 The `service` command is used to manage all local services that are provided.
@@ -82,15 +82,15 @@ This command deletes the service with the given `name`.
 
 **Usage:** `service <name> includeInclusions`
 
-This command downloads all [inclusions](../components/tasks.md#includes) which does not have been downloaded yet.  
-This is useful when adding new inclusions when it already exists to the service.
+This command downloads all [inclusions](../components/tasks.md#includes) that have not yet been downloaded.  
+It is useful if new inclusions are added or updated, and they need to be updated for the service
 
 ## service includeTemplates {#service-includetemplates}
 
 **Usage:** `service <name> includeTemplates`
 
-This command downloads all [templates](../components/tasks.md#templates) which does not have been downloaded yet.  
-This is useful when adding new inclusions when it already exists to the service.
+This command downloads all [templates](../components/tasks.md#templates) that have not yet been downloaded.  
+It is useful if new templates are added or updated, and they need to be updated for the service
 
 ## service deployResources {#service-deployresources}
 

@@ -6,7 +6,7 @@ description: Creates a file with all important data for support purposes or for 
 ---
 
 The `report` command is a useful command to gather information about the Cloud.
-It might be requested by our [support team](../index.md#support) to assist you with your support enquiry.
+This information can be requested in the [support](../index.md#support), so that better help can be provided.
 
 Permission: `cloudnet.command.report`  
 Aliases: `report`, `reports`
