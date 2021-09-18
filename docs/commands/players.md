@@ -96,6 +96,8 @@ This command deletes the given player from the cloudnet database
 
 This command kicks the player with the given name.  
 If you leave the reason out, the player is kicked without giving any reason.
+If the `--force` argument is provided the player will not only get kicked from the entire network but also removed from
+all caches. This might be helpful if a player gets disconnected because of `You are already connected to this network`.
 
 ## players player sendMessage {#players-player-sendmessage}
 
