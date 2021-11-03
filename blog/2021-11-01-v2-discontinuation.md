@@ -15,7 +15,7 @@ Since then, many things have changed. For example, we introduced the new modular
 CloudNet v3 offers more possibilities for extension with modules, a failover cluster system for distributing load across multiple machines and much more.
 Therefore we decided to end the development of CloudNet v2.
 
-### Migrating to CloudNet v3
+### Migrating to CloudNet v3 {#migrating-to-cloudnet-v3}
 
 We do know that some users face difficulties understanding the CloudNet v3 system, therefore we would like to point out that we will assist you with the move in our new v2 migration support category!
 One of our team members has developed a [migration utility](https://github.com/derrop/CloudNetTransformer/releases/latest) which does the heavy lifting of the migration for you.
