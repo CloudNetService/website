@@ -39,7 +39,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/cloudnetservice/",
+          href: "https://github.com/CloudNetService/",
           label: "GitHub",
           position: "right",
         },
@@ -107,7 +107,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            "https://github.com/cloudnetservice/website/edit/development/",
+            "https://github.com/CloudNetService/website/edit/development/",
           includeCurrentVersion: true,
           versions: {
             current: {
@@ -122,10 +122,6 @@ module.exports = {
               label: "CloudNet v3.3",
               path: "3.3",
             },
-            /*"2.2": {
-              "label": "CloudNet v2",
-              "path": "2.2"
-            }*/
           },
           lastVersion: "3.4",
           showLastUpdateTime: true,
@@ -133,7 +129,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl:
-            "https://github.com/cloudnetservice/website/edit/development/blog/",
+            "https://github.com/CloudNetService/website/edit/development/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
