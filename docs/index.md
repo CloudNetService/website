@@ -25,6 +25,13 @@ Join our [Discord Server](https://discord.cloudnetservice.eu) to get support thr
 or in the community support channel.  
 You can also create an [Issue on GitHub](https://github.com/CloudNetService/CloudNet-v3/issues/new/choose) if you need help.
 
+## Quick Start {#quick-Start}
+
+1. Start your SSH client and connect to your server.
+2. Navigate to your installation directory `cd [PATH]` (e.g. `cd /home/[USERDIR]`) and create a folder for CloudNet with `mkdir [NAME]` (e.g. `mkdir cloudnet`). Navigate to the newly created folder with `cd [NAME]` (e.g. `cd cloudnet/`).
+3. Execute folling command `curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash`
+4. Start the setup by executing the start file with `./start.sh`
+
 ## Contribute {#contribute}
 
 We are pleased about every contribution made. Feel free to open a Pull-Request for any changes you would like to make.  
