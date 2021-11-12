@@ -19,6 +19,7 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile
       - name: Check codestyle
+        if: ${{ github.event_name = 'push' }}
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
