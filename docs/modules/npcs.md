@@ -28,8 +28,8 @@ Placeholders for the InfoLine:
 
 ```
 %group% | %g% -------------- The targetGroup of the NPC
-%online_players% | %o_p& --- The total amount of players which are only on services of the NPC targetGroup
-%max_players% | %m_p& ------ The total amount of max players from all services of the NPC targetGroup
+%online_players% | %o_p% --- The total amount of players which are only on services of the NPC targetGroup
+%max_players% | %m_p% ------ The total amount of max players from all services of the NPC targetGroup
 %online_servers% | %o_s% --- The amount of servers of the NPC targetGroup which are online
 ```
 
