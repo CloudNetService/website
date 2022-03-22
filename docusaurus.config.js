@@ -31,6 +31,11 @@ module.exports = {
           position: "left",
         },
         {
+          href: "https://cloudnetservice.eu/cloudnet/docs/",
+          label: "JavaDocs",
+          position: "left",
+        },
+        {
           type: "docsVersionDropdown",
           position: "right",
         },
