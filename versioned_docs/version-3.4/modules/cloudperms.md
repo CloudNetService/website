@@ -4,18 +4,18 @@ title: CloudPerms Module
 sidebar_label: CloudPerms
 ---
 
-The CloudPerms module provides access in Minecraft to the internal Permission Management of CloudNet just like any other permission plugin. The permissions can be managed using the `permissions` command in the Cloud.
+Das CloudPerms-Modul von CloudNet bietet in Minecraft wie jedes andere Permissions-Plugin Zugriff auf die interne Permissionsverwaltung. Die Rechte können mit dem Befehl `permissions` in der Cloud verwaltet werden.
 
 ## Configuration {#configuration}
 
 ### enabled {#enabled}
 
-Enables (or disables) the CloudNet Permissions System (`true`/`false`)
+Aktiviert (oder deaktiviert) das CloudNet Permissions System (`true`/`false`)
 
 ### excludedGroups {#excludedgroups}
 
-This is a JsonArray containing the names of the groups on which the Permission System should be disabled.
-Example:
+Dies ist ein JsonArray, das die Namen der groups enthält, für die das Permissionssystem deaktiviert werden soll.
+Beispiel:
 
 ```json
   "excludedGroups": [
@@ -26,7 +26,7 @@ Example:
 
 ## Sample Configuration {#sample-configuration}
 
-The default configuration of the CloudPerms Module looks like this:
+Die Standardkonfiguration des CloudPerms-Moduls sieht folgendermaßen aus:
 
 ```json
 {
