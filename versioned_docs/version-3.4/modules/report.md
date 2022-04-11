@@ -4,37 +4,37 @@ title: Report Module
 sidebar_label: Report
 ---
 
-The Report Module provides the following tools:
+Das Reportmodul bietet die folgenden Tools:
 
-- to create records of crashed servers
-- upload logs of servers automatically to a PasteServer
+- um Reports über abgestürzte Server zu erstellen
+- Logs von Servern automatisch auf einen PasteServer hochladen
 
 ## Configuration {#configuration}
 
-The configuration file is located under the following path: `modules/CloudNet-Report/config.json`
+Die Konfigurationsdatei befindet sich unter folgendem Pfad: `modules/CloudNet-Report/config.json`
 
 ### savingRecords {#savingrecords}
 
-Enables (or disables) the records of crashing servers (`true`/`false`)
+Aktiviert (oder deaktiviert) die Aufzeichnungen von Serverabstürzen (`true`/`false`)
 
 ### recordDestinationDirectory {#recorddestinationdirectory}
 
-The directory in which the records should be saved
+Der Pfad, in dem die Records gespeichert werden sollen
 
 ### pasteServerType {#pasteservertype}
 
-The currently only supported type is `HASTE`
-This supports every PasteServer which supports the Hastebin API, for example the [PasteServer](https://github.com/juliarn/PasteServer#api)  
-This PasteServer includes additionally the opportunity to delete the document again with a `deleteSecret`.  
-The Cloud will tell you this secret if available.
+Der derzeit einzige unterstützte Typ ist `HASTE`
+Dies unterstützt jeden PasteServer, der die Hastebin-API unterstützt, zum Beispiel den [PasteServer](https://github.com/juliarn/PasteServer#api)
+Dieser PasteServer beinhaltet zusätzlich die Möglichkeit, das Dokument mit einem `deleteSecret` wieder zu löschen.
+Die Cloud teilt dir dieses Geheimnis mit, falls verfügbar.
 
 ### pasteServerUrl {#pasteserverurl}
 
-This defines the BaseURL of the PasteServer which should be used.
+Dies definiert die BaseURL des PasteServers, der verwendet werden soll.
 
 ## Sample Configuration {#sample-configuration}
 
-The default configuration of the Report Module looks like this:
+Die Standardkonfiguration des Reportmoduls sieht folgendermaßen aus:
 
 ```json
 {
