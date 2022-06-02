@@ -97,7 +97,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CloudNetService. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CloudNetService.`,
     },
   },
   presets: [
