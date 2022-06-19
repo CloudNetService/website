@@ -1,0 +1,17 @@
+byroadrunner:
+  name: byRoadrunner
+  title: CloudNetService Management
+  url: https://github.com/byRoadrunner
+  image_url: https://github.com/byRoadrunner.png
+
+sarsum:
+  name: Sarsum
+  title: CloudNetService Management
+  url: https://github.com/Sarsum
+  image_url: https://github.com/Sarsum.png
+
+klaro:
+  name: derklaro
+  title: CloudNetService Developer
+  url: https://github.com/derklaro
+  image_url: https://github.com/derklaro.png
