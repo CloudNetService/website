@@ -11,7 +11,7 @@ To get started with CloudNet installation, make sure you meet all the [**require
 
 1. Start your SSH client and connect to your server.
 2. Navigate to your installation directory `cd [PATH]` (e.g. `cd /home/[USERDIR]`) and create a folder for CloudNet with `mkdir [NAME]` (e.g. `mkdir cloudnet`). Navigate to the newly created folder with `cd [NAME]` (e.g. `cd cloudnet/`).
-3. Download CloudNet with `wget https://github.com/CloudNetService/CloudNet-v3/releases/latest/download/CloudNet.zip`.
+3. Download CloudNet with `wget "https://github.com/CloudNetService/CloudNet-v3/releases/latest/download/CloudNet.zip"`.
 4. Unzip the downloaded zip with `unzip CloudNet.zip`.
 5. Make the start file executable with `chmod +x start.sh`.
 6. Start the setup by executing the start file with `./start.sh`
