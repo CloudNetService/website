@@ -84,7 +84,7 @@ To create an animation you have to add multiple entries.
 %proxy_uniqueId% ------------- The UUID of the proxy the player is connected to
 %server% --------------------- The name of the server the player is connected to
 %online_players% ------------- The current amount of online players on the network
-%max_players% ---------------- The current amount of max players on the network
+%syncproxy_max_players% ---------------- The current amount of max players on the network
 %proxy_task_name% ------------ The name of the task of the proxy the player is connected to
 %name% ----------------------- The name of the player
 %ping% ----------------------- The current ping of the player
