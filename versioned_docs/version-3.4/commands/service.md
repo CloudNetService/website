@@ -8,7 +8,7 @@ description: Manages all services in the cluster
 The `service` command is used to manage all local services that are provided.
 
 Permission: `cloudnet.command.service`  
-Aliases: `paste`, `haste`
+Aliases: `ser`
 
 :::info Info
 
